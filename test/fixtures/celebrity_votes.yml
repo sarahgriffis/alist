@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  celebrity_id: 1
+  user_id: 1
+  vote_value: MyString
+
+two:
+  celebrity_id: 1
+  user_id: 1
+  vote_value: MyString

@@ -10,6 +10,45 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require flat-ui
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: 'Courier';
+  text-align: center;
+}
+
+.header {
+  li {
+    list-style-type: none;
+  }
+}
+
+.custom-radio {
+  label {
+    color: #fff;
+    background-color: #bdc3c7;
+    border-color: #ccc;
+    padding-right: 20px;
+    width: 300px;
+    .radio_buttons{
+      opacity: 0;
+      margin-left: -400px;
+    }
+  }
+}
+
+form {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.radio {
+  padding-left: 0px;
+}
