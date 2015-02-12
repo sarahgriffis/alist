@@ -16,14 +16,13 @@ class CelebritiesController < ApplicationController
   def update
     @celebrity = Celebrity.find(params[:id])
 
-    @celebrity_vote = CelebrityVote.find_or_initialize_by
+    #@celebrity_vote = CelebrityVote.find_or_initialize_by
 
 
     @celebrity.update(celebrity_params)
 
     redirect_to root_path
     #@celebrity_vote = CelebrityVote.new()
-    binding.pry
     #@celebrity_vote.update(celebrityvote_params)
     #redirect_to root_path
   end
