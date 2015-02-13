@@ -4,12 +4,10 @@
     %p= "#{c.first_name} #{c.last_name}"
     = image_tag c.photo_url , size: '300x300'
     = simple_form_for c,  :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f|
-      = f.fields_for :celebrity_votes, c.celebrity_votes.find_or_initialize_by( celebrity: c) do |cv|
-        = cv.input :vote_value, as: :radio_buttons, required: true, |
-        collection: [['A List', 1] ,['B List', 2], ['C List', 3], ['D List', 4]], |
-        label_method: lambda { |vv| vv[0]}, |
-        item_wrapper_class: 'custom-radio', |
-        label: false |
+      = f.fields_for :celebrity_votes, c.celebrity_votes.find_or_initialize_by(celebrity: c) do |cv|
+        = cv.collection_radio_buttons :vote_value,  [['A List', 1] ,['B List', 2], ['C List', 3], ['D List', 4]], :last, :first, |
+        :item_wrapper_class => 'custom_radio2', |
+        :label_html => { :class => "btn-default" } |
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
         = f.button :submit, class: 'btn btn-primary', value: 'Vote!'
