@@ -1,18 +1,29 @@
 
-- @celebrities.each do |c|
+- @celebrities.each.with_index do |c, index|
   .row
     %p= "#{c.first_name} #{c.last_name}"
     = image_tag c.photo_url , size: '300x300'
-    = simple_form_for c,  :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f|
-      = f.fields_for :celebrity_votes, c.celebrity_votes.find_or_initialize_by(celebrity: c) do |cv|
-        = cv.collection_radio_buttons :vote_value,  [['A List', 1] ,['B List', 2], ['C List', 3], ['D List', 4]], :last, :first, |
-        :item_wrapper_class => 'custom_radio2', |
-        :label_html => { :class => "btn-default" } |
+    = form_for c,  :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f|
+      = f.simple_fields_for :celebrity_votes, c.celebrity_votes.find_or_initialize_by(celebrity: c) do |cv|
+        - prefix = "celebrity[celebrity_votes_attributes][#{index}]"
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
+            = label_tag "#{prefix}[vote_value]_1", 'A List'
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
+            = label_tag "#{prefix}[vote_value]_2", 'B List'
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
+            = label_tag "#{prefix}[vote_value]_3", 'C List'
+
+
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
         = f.button :submit, class: 'btn btn-primary', value: 'Vote!'
     %hr
 
+= will_paginate @celebrities
 
-// = f.fields_for :celebrity_votes do |cv|
-//        = cv.input :vote_value, :default => 1//       = cv.input :vote_value

@@ -16,10 +16,20 @@ class CelebritiesController < ApplicationController
   def update
     @celebrity = Celebrity.find(params[:id])
 
-    #@celebrity_vote = CelebrityVote.find_or_initialize_by
+    #@celebrity_vote = Celebrity.celebrity_votes.build
+    #
+    vote_key = celebrity_params['celebrity_votes_attributes'].keys.first
+    vote_value = celebrity_params['celebrity_votes_attributes'][vote_key]['vote_value']
+    celebrity_votes_attributes = celebrity_params['celebrity_votes_attributes']['0'].merge(vote_value: vote_value)
+    celebrity_votes_attributes = {celebrity_votes_attributes: celebrity_votes_attributes}
 
+    if celebrity_params['celebrity_votes_attributes']['0']['id'].nil?
+      @celebrity_votes = @celebrity.celebrity_votes.build
+      @celebrity_votes.update(celebrity_votes_attributes[:celebrity_votes_attributes])
+    else
+      @celebrity.update(celebrity_votes_attributes)
+    end
 
-    @celebrity.update(celebrity_params)
 
     redirect_to root_path
     #@celebrity_vote = CelebrityVote.new()
