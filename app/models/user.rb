@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :celebrity_votes
   has_many :celebrities, :through => :celebrity_votes
+
+  scope :admin, -> { where(admin: true) }
 end

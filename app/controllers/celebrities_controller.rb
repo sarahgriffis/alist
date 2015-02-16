@@ -1,8 +1,24 @@
 class CelebritiesController < ApplicationController
   before_action :authenticate_user!, except: :edit
+  before_filter :check_if_admin, :only => [:new, :create]
 
   def index
     @celebrities = Celebrity.all
+  end
+
+  def new
+    @celebrity = Celebrity.new
+  end
+
+  def create
+    @celebrity = Celebrity.new(celebrity_params)
+    @celebrity.photo_url = @celebrity.wikipedia_url
+    if @celebrity.save
+      flash.now[:alert] = 'Created!'
+      redirect_to new_celebrity_path
+    else
+      redirect_to new_celebrity_path
+    end
   end
 
   def show
@@ -40,7 +56,7 @@ class CelebritiesController < ApplicationController
   private
 
   def celebrity_params
-    params.require(:celebrity).permit(:id, :user_id, :first_name,:celebrity_votes_attributes => [:id, :vote_value, :celebrity_id, :user_id])
+    params.require(:celebrity).permit(:id, :user_id, :first_name,:last_name, :photo_url ,:celebrity_votes_attributes => [:id, :vote_value, :celebrity_id, :user_id])
   end
 
  #def celebrityvote_params
