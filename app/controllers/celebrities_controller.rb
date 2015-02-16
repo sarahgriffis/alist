@@ -14,15 +14,16 @@ class CelebritiesController < ApplicationController
     @celebrity = Celebrity.new(celebrity_params)
     @celebrity.photo_url = @celebrity.wikipedia_url
     if @celebrity.save
-      flash.now[:alert] = 'Created!'
-      redirect_to new_celebrity_path
+      flash[:alert] = 'Created!'
+      redirect_to celebrity_path(@celebrity)
     else
+      flash[:alert] = 'Celebrity not saved'
       redirect_to new_celebrity_path
     end
   end
 
   def show
-    @celebrity = Celebrity.find(:id)
+    @celebrity = Celebrity.find(params[:id])
   end
 
   def edit
