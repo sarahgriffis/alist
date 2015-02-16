@@ -18,7 +18,10 @@
           %label
             = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
             = label_tag "#{prefix}[vote_value]_3", 'C List'
-
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 4, cv.object.vote_value == 4
+            = label_tag "#{prefix}[vote_value]_4", 'D List'
 
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
