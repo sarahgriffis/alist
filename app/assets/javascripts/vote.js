@@ -7,7 +7,7 @@ $( document ).ready(function() {
   });
 
 
-  $('#edit_celebrity_1').submit(function (){
+  $('#edit_celebrity').submit(function (){
     $.post($(this).attr('action'), $(this).serialize(), null, "script");
     console.log('got it here');
     return false;
