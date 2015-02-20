@@ -1,6 +1,6 @@
 class CelebritiesController < ApplicationController
   before_action :authenticate_user!, except: :edit
-  before_filter :check_if_admin, :only => [:new, :create]
+  before_filter :check_if_admin, :only => [:new, :create, :admin_index, :admin_update, :admin_bulk_import]
 
   def index
     @celebrities = Celebrity.all
