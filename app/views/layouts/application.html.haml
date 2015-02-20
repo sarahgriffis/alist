@@ -14,7 +14,7 @@
   = csrf_meta_tags
 
 %body
-  .col-xs-12.col-sm-12.col-md-12.col-lg-12
+  .col-xs-12.col-sm-12.col-md-12.col-lg-4.col-lg-offset-4
     %h1 The Official A List
     .header
       .alerts.text-center
@@ -33,6 +33,6 @@
             = link_to 'Sign Up', new_user_registration_path
           %li
             = link_to 'Log In', new_user_session_path
-    .container
+    .container-fluid
       = yield
 

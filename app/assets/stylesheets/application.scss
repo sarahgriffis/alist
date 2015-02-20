@@ -63,8 +63,12 @@ img {
 .custom_radio2 {
   display: block;
 
+  .img-responsize {
+    width: 100%;
+  }
+
   label {
-    width: 300px;
+    width: 100%;
     color: #fff;
     background-color: #bdc3c7;
     border-radius: 2em 1em 4em / 0.5em 3em;
