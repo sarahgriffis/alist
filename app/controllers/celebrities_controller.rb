@@ -26,6 +26,39 @@ class CelebritiesController < ApplicationController
     @celebrity = Celebrity.find(params[:id])
   end
 
+  def admin_index
+    @celebrities = Celebrity.all
+  end
+
+  def admin_update
+    @celebrity = Celebrity.find(params[:celebrity][:id])
+    if @celebrity.update(celebrity_params)
+      flash[:alert] = 'Updated!'
+      redirect_to celebrities_admin_index_path
+    end
+  end
+
+  def admin_bulk_import_post
+    csv = File.read(params[:csv_file].path)
+    csvtext = CSV.parse(csv, :headers => false)
+
+    csvtext.each do |row|
+      first_name = row[0]
+      last_name = row[1]
+
+      @celebrity = Celebrity.new()
+      @celebrity.first_name = first_name
+      @celebrity.last_name = last_name
+      @celebrity.photo_url = @celebrity.wikipedia_url
+      @celebrity.save
+
+    end
+
+    flash[:alert] = 'Created!'
+    redirect_to celebrities_admin_index_path
+  end
+
+
   def edit
     @celebrities = Celebrity.all.paginate(page: params[:page], per_page: 5)
   end
@@ -40,7 +73,6 @@ class CelebritiesController < ApplicationController
     celebrity_votes_attributes = celebrity_params['celebrity_votes_attributes']['0'].merge(vote_value: vote_value)
     celebrity_votes_attributes = {celebrity_votes_attributes: celebrity_votes_attributes}
 
-    binding.pry
 
     if celebrity_params['celebrity_votes_attributes']['0']['id'].nil?
       puts 'in if part'
@@ -76,7 +108,7 @@ class CelebritiesController < ApplicationController
   private
 
   def celebrity_params
-    params.require(:celebrity).permit(:id, :user_id, :first_name,:last_name, :photo_url ,:celebrity_votes_attributes => [:id, :vote_value, :celebrity_id, :user_id])
+    params.require(:celebrity).permit(:id, :user_id, :first_name,:last_name, :photo_url, :active ,:celebrity_votes_attributes => [:id, :vote_value, :celebrity_id, :user_id])
   end
 
  #def celebrityvote_params

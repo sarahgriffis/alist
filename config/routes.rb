@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
 
+  get 'celebrities/admin_index'
+
+  post 'celebrities/admin_update'
+
+  get 'celebrities/admin_bulk_import'
+  post 'celebrities/admin_bulk_import_post'
+
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

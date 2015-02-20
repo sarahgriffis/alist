@@ -1,3 +1,5 @@
 %p
   = "#{@celebrity.first_name} #{@celebrity.last_name}"
 =image_tag @celebrity.photo_url, size: '300x300'
+
+= link_to 'Edit Celebs', celebrities_admin_index_path

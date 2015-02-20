@@ -1,0 +1,13 @@
+%h2 Celebrities
+.admin_index
+  - @celebrities.each do |c|
+    .row
+      = simple_form_for c,  :url => celebrities_admin_update_path, :method => :post,   :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } }  do |f|
+        = f.input :first_name
+        = f.input :last_name
+        = f.input :photo_url
+        = image_tag c.photo_url, size: "100x100"
+        = f.input :active
+        = f.hidden_field :id, :input_html => { :value  => c.id}
+        = f.submit "Update", class: 'btn btn-primary'
+      %hr

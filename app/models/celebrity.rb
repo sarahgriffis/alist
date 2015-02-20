@@ -7,7 +7,16 @@ class Celebrity < ActiveRecord::Base
 
 
   def wikipedia_url
-    page = Wikipedia.find("#{self.first_name}  #{self.last_name}" )
+    if self.last_name.blank?
+      page = Wikipedia.find("#{self.first_name}  (entertainer)" )
+    else
+      page = Wikipedia.find("#{self.first_name}  #{self.last_name}" )
+    end
     page.image_urls[0]
+
+  end
+
+  def bulk_import(csv_file)
+    binding.pry
   end
 end
