@@ -40,19 +40,38 @@ class CelebritiesController < ApplicationController
     celebrity_votes_attributes = celebrity_params['celebrity_votes_attributes']['0'].merge(vote_value: vote_value)
     celebrity_votes_attributes = {celebrity_votes_attributes: celebrity_votes_attributes}
 
+    binding.pry
+
     if celebrity_params['celebrity_votes_attributes']['0']['id'].nil?
+      puts 'in if part'
       @celebrity_votes = @celebrity.celebrity_votes.build
-      @celebrity_votes.update(celebrity_votes_attributes[:celebrity_votes_attributes])
+      if @celebrity_votes.update(celebrity_votes_attributes[:celebrity_votes_attributes])
+        respond_to do |format|
+          render :nothing => true, :status => 200
+          format.js
+          return
+        end
+      end
     else
-      @celebrity.update(celebrity_votes_attributes)
+      puts 'in else part'
+      if @celebrity.update(celebrity_votes_attributes)
+        respond_to do |format|
+          render :nothing => true, :status => 200
+          format.js
+          puts 'in last part'
+          return
+        end
+      end
     end
 
 
-    redirect_to root_path
+    #redirect_to root_path
     #@celebrity_vote = CelebrityVote.new()
     #@celebrity_vote.update(celebrityvote_params)
     #redirect_to root_path
+    #
   end
+
 
   private
 
