@@ -100,4 +100,20 @@ img {
   }
 }
 
+.all-cards{
+  .row {
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    border-style: groove;
+    border-width: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .img-responsive {
+      height: 33vh;
+    }
+  }
+}
+
 
