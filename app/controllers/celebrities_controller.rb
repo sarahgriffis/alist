@@ -27,7 +27,7 @@ class CelebritiesController < ApplicationController
   end
 
   def admin_index
-    @celebrities = Celebrity.all
+    @celebrities = Celebrity.all.order(:id)
   end
 
   def admin_update
