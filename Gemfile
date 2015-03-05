@@ -39,6 +39,7 @@ gem 'simple_form', '~> 3.1.0rc1'
 gem 'geocoder'
 gem 'wikipedia-client'
 gem 'will_paginate'
+gem 'chartkick'
 
 
 group :production do

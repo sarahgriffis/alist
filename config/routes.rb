@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'celebrities/admin_bulk_import'
   post 'celebrities/admin_bulk_import_post'
 
+  get 'charts/celebrity_votes_graph'
+
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
