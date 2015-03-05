@@ -101,12 +101,10 @@ img {
 }
 
 .all-cards{
-  .row {
-    height: 100vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    border-style: groove;
-    border-width: 5px;
+  .card {
+    //height: 100vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     margin-top: 25px;
     margin-bottom: 25px;
 
@@ -120,6 +118,55 @@ img {
       display: inline;
     }
   }
+  p {
+    background: grey;
+  }
 }
 
+.back {
+  transition: all .4s ease-in-out;
+  z-index: 800;
+  transform-style: preserve-3d;
+  transform: rotateY(-179deg);
+  backface-visibility: hidden;
 
+  border-style: groove;
+  border-width: 5px;
+  top: 32px;
+  left: 14px;
+//  position: absolute;
+  float: none;
+
+  height: 75vh;
+}
+
+.front {
+  transition: all .4s ease-in-out;
+  z-index: 900;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  backface-visibility: hidden;
+
+  border-style: groove;
+  border-width: 5px;
+  height: 75vh;
+
+//  top: 0px;
+//  left: 0px;
+//  position: absolute;
+//  float: none;
+
+
+}
+
+.card.flip .back {
+  z-index: 1000;
+  transform: rotateX(0deg) rotateY(0deg);
+  position: absolute;
+}
+
+.card.flip .front {
+  z-index: 900;
+  transform: rotateY(180deg);
+  //display: none;
+}

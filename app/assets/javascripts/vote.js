@@ -7,11 +7,17 @@ $( document ).ready(function() {
   });
 
 
-  $('#edit_celebrity').submit(function (){
-    $.post($(this).attr('action'), $(this).serialize(), null, "script");
-    console.log('got it here');
-    return false;
-  });
+  $('.edit_celebrity').submit(function (){
+      $(this.parentNode.parentNode).addClass('flip');
+   });
+
+   ($('.change-vote')).submit(function (){
+   // $.post($(this).attr('action'), $(this).serialize(), null, "script");
+      console.log('got it here');
+      thing = this;
+      $(this.parentNode.parentNode).addClass('flip');
+   });
+
 
 //  $(":checked").parents('label').css({
 //    'border-color' : 'black',
