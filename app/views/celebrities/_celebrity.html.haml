@@ -3,7 +3,7 @@
     %p
       = "#{celebrity.first_name} #{celebrity.last_name}"
       <a  name="#{celebrity.id}"></a>
-    = image_tag celebrity.photo_url, :class => "img-responsive"
+    = image_tag "#{celebrity.id}_photo.jpg", :class => "img-responsive"
     = form_for celebrity, :remote => true, :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f|
       - user_id = current_user.nil? ? 1 : current_user.id
       = f.simple_fields_for :celebrity_votes, celebrity.celebrity_votes.find_or_initialize_by(celebrity: celebrity, user_id: user_id) do |cv|

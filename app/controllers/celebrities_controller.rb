@@ -2,6 +2,8 @@ class CelebritiesController < ApplicationController
   before_action :authenticate_user!, except: :edit
   before_filter :check_if_admin, :only => [:new, :create, :admin_index, :admin_update, :admin_bulk_import]
 
+  require 'open-uri'
+
   def index
     @celebrities = Celebrity.all
   end
@@ -15,10 +17,17 @@ class CelebritiesController < ApplicationController
     @celebrity.photo_url = @celebrity.wikipedia_url
     if @celebrity.save
       flash[:alert] = 'Created!'
+      download_photo
       redirect_to celebrity_path(@celebrity)
     else
       flash[:alert] = 'Celebrity not saved'
       redirect_to new_celebrity_path
+    end
+  end
+
+  def download_photo
+    open("app/assets/images/#{@celebrity.id}_photo.jpg", 'wb') do |file|
+      file << open(@celebrity.photo_url).read
     end
   end
 
