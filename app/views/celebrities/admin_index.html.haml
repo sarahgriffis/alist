@@ -8,7 +8,7 @@
           = f.input_field :first_name
           = f.input_field :last_name
           = f.input_field :photo_url, as: :string
-          <img class="img-responsive" src= "assets/#{c.id}_photo.jpg" width="100" height="100">
+          = image_tag "#{c.id}_photo.jpg"
           = f.input_field :active, inline_label: true, label: false
           = f.hidden_field :id, :input_html => { :value  => c.id}
           = f.submit "Update", class: 'btn btn-primary'
