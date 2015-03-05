@@ -14,25 +14,24 @@
   = csrf_meta_tags
 
 %body
-  .col-xs-12.col-sm-12.col-md-12.col-lg-6.col-lg-offset-3
-    %h1 The Official A List
-    .header
-      .alerts.text-center
-        - if notice
-          %p
-            .alert.alert-success= notice
-        - if alert
-          %p
-            .alert.alert-warming= alert
-      %ul.text-center.navigation
-        - if current_user
-          %li
-            = link_to 'Log Out', destroy_user_session_path, method: :delete
-        - else
-          %li
-            = link_to 'Sign Up', new_user_registration_path
-          %li
-            = link_to 'Log In', new_user_session_path
-    .container-fluid
-      = yield
+  %h1 The Official A List
+  .header
+    .alerts.text-center
+      - if notice
+        %p
+          .alert.alert-success= notice
+      - if alert
+        %p
+          .alert.alert-warming= alert
+    %ul.text-center.navigation
+      - if current_user
+        %li
+          = link_to 'Log Out', destroy_user_session_path, method: :delete
+      - else
+        %li
+          = link_to 'Sign Up', new_user_registration_path
+        %li
+          = link_to 'Log In', new_user_session_path
+  .container-fluid
+    = yield
 

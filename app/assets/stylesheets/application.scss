@@ -78,6 +78,8 @@ img {
       background-color: #bdc3c7;
       border-radius: 2em 1em 4em / 0.5em 3em;
       margin-top: 5px;
+      font-size: 1.5em;
+      line-height: 1.2;
     }
   }
 
@@ -107,9 +109,22 @@ img {
     padding-bottom: 5vh;
     margin-top: 25px;
     margin-bottom: 25px;
+    //overflow: scroll;
+
+    form {
+      height: 25vh;
+    }
 
     .img-responsive {
-      height: 33vh;
+      height: 25vh;
+    }
+
+    .chart {
+      height: 50vh;
+      //margin-top: -15px;
+    }
+  }
+}
 
 .admin_index {
   form {
