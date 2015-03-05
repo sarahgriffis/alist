@@ -2,6 +2,9 @@ class Celebrity < ActiveRecord::Base
   has_many :celebrity_votes
 
   accepts_nested_attributes_for :celebrity_votes
+  validates_uniqueness_of :first_name, scope: [:last_name]
+
+  scope :active, -> { where("active") }
 
   require 'wikipedia'
 

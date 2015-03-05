@@ -17,5 +17,12 @@ $( document ).ready(function() {
 //    'border-color' : 'black',
 //    'border-style' : 'solid'
 //  });
+   $(document).ajaxError(function (e, xhr, settings) {
+        if (xhr.status == 401) {
+           //$('.selector').html(xhr.responseText);
+          //location.reload();
+          window.location.replace("/users/sign_up");
+        }
+    });
 
 });

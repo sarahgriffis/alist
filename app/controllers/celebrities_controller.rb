@@ -60,52 +60,38 @@ class CelebritiesController < ApplicationController
 
 
   def edit
-    @celebrities = Celebrity.all.paginate(page: params[:page], per_page: 5)
+    @celebrities = Celebrity.active
+    #.paginate(page: params[:page], per_page: 5)
+    #respond_to do |format|
+    #  format.html
+    #  format.js
+    #end
   end
 
   def update
     @celebrity = Celebrity.find(params[:id])
+    @celebrity_vote = CelebrityVote.find_or_initialize_by(celebrity: @celebrity, user_id: current_user.nil? ? 1 : current_user.id)
 
-    #@celebrity_vote = Celebrity.celebrity_votes.build
-    #
     vote_key = celebrity_params['celebrity_votes_attributes'].keys.first
     vote_value = celebrity_params['celebrity_votes_attributes'][vote_key]['vote_value']
-    celebrity_votes_attributes = celebrity_params['celebrity_votes_attributes']['0'].merge(vote_value: vote_value)
-    celebrity_votes_attributes = {celebrity_votes_attributes: celebrity_votes_attributes}
 
+    respond_to do |format|
+      if @celebrity_vote.update(vote_value: vote_value)
+        format.html { redirect_to root_path, notice: 'Vote Logged!' }
+        format.json { render :json => { :error => @celebrity.errors } }
+        format.js
+        return
 
-    if celebrity_params['celebrity_votes_attributes']['0']['id'].nil?
-      puts 'in if part'
-      @celebrity_votes = @celebrity.celebrity_votes.build
-      if @celebrity_votes.update(celebrity_votes_attributes[:celebrity_votes_attributes])
-        respond_to do |format|
-          render :nothing => true, :status => 200
-          format.js
-          return
-        end
-      end
-    else
-      puts 'in else part'
-      if @celebrity.update(celebrity_votes_attributes)
-        respond_to do |format|
-          render :nothing => true, :status => 200
-          format.js
-          puts 'in last part'
-          return
-        end
+      else
+        #format.html { redirect_to new_user_session_path, notice: 'Not Logged.' }
+        #format.json { render json: @celebrity_vote.errors, status: :unprocessable_entity }
+        format.js
+        return
+
       end
     end
-
-
-    #redirect_to root_path
-    #@celebrity_vote = CelebrityVote.new()
-    #@celebrity_vote.update(celebrityvote_params)
-    #redirect_to root_path
-    #
   end
 
-
-  private
 
   def celebrity_params
     params.require(:celebrity).permit(:id, :user_id, :first_name,:last_name, :photo_url, :active ,:celebrity_votes_attributes => [:id, :vote_value, :celebrity_id, :user_id])

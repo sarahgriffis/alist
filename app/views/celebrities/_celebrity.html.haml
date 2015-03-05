@@ -1,0 +1,37 @@
+.row.col-xs-12.card
+  .front
+    %p
+      = "#{celebrity.first_name} #{celebrity.last_name}"
+      <a  name="#{celebrity.id}"></a>
+    = image_tag celebrity.photo_url, :class => "img-responsive"
+    = form_for celebrity, :remote => true, :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f|
+      - user_id = current_user.nil? ? 1 : current_user.id
+      = f.simple_fields_for :celebrity_votes, celebrity.celebrity_votes.find_or_initialize_by(celebrity: celebrity, user_id: user_id) do |cv|
+        - prefix = "celebrity[celebrity_votes_attributes][#{celebrity.id}]"
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
+            = label_tag "#{prefix}[vote_value]_1", 'A List'
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
+            = label_tag "#{prefix}[vote_value]_2", 'B List'
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
+            = label_tag "#{prefix}[vote_value]_3", 'C List'
+        .custom_radio2
+          %label
+            = radio_button_tag "#{prefix}[vote_value]", 4, cv.object.vote_value == 4
+            = label_tag "#{prefix}[vote_value]_4", 'D List'
+
+        - if current_user
+          = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
+        <button name="button" type="submit" class="btn btn-primary" value="Vote!">Vote!</button>
+    %hr
+  .back
+    .chart
+      = column_chart celebrity.graph_data, {library: { fontName:'Courier'  ,colors:['#bdc3c7'], vAxis: {format: '#%', maxValue: 1} }}
+      <button name="button" class="btn btn-primary change-vote" value="Change Vote">Change Vote</button>
+
+
