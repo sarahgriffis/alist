@@ -8,7 +8,7 @@
           = f.input_field :first_name
           = f.input_field :last_name
           = f.input_field :photo_url, as: :string
-          = image_tag "#{c.id}_photo.jpg",  size: "100x100"
+          = image_tag "#{c.photo_url}",  size: "100x100"
           = f.input_field :active, inline_label: true, label: false
           = f.hidden_field :id, :input_html => { :value  => c.id}
           = f.submit "Update", class: 'btn btn-primary'

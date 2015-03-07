@@ -1,3 +1,8 @@
-$('#edit_celebrity').reset();
-
+$('#mycards').append('<%= j render @celebrities %>');
+<% if @celebrities.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @celebrities %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>
 

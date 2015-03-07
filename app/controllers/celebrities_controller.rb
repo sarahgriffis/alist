@@ -69,12 +69,12 @@ class CelebritiesController < ApplicationController
 
 
   def edit
-    @celebrities = Celebrity.active
-    #.paginate(page: params[:page], per_page: 5)
-    #respond_to do |format|
-    #  format.html
-    #  format.js
-    #end
+    @celebrities = Celebrity.active.paginate(page: params[:page], per_page: 1)
+    # for infinite scroll
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def update

@@ -16,7 +16,6 @@ class Celebrity < ActiveRecord::Base
       page = Wikipedia.find("#{self.first_name}  #{self.last_name}" )
     end
     page.image_urls[0]
-
   end
 
   def graph_data
@@ -32,7 +31,11 @@ class Celebrity < ActiveRecord::Base
     else
       return {}
     end
+  end
 
+  def self.search(search, page)
+    paginate :per_page => 5, :page => page,
+           :conditions => ['name ilike ?', "%#{search}%"], :order => 'name'
   end
 
 end
