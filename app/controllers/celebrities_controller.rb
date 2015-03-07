@@ -69,7 +69,12 @@ class CelebritiesController < ApplicationController
 
 
   def edit
-    @celebrities = Celebrity.active.paginate(page: params[:page], per_page: 1)
+    if params[:celeb_id]
+      sql ="(select * from celebrities where id = '#{params[:celeb_id].to_i}') union all (select * from celebrities where id <> '#{params[:celeb_id].to_i}' AND active)"
+      @celebrities = Celebrity.paginate_by_sql(sql, :page => params[:page], :per_page => 5)
+    else
+      @celebrities = Celebrity.active.paginate(page: params[:page], per_page: 5)
+    end
     # for infinite scroll
     respond_to do |format|
       format.html

@@ -3,7 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
   if $('#infinite-scrolling').size() > 0
-    console.log('got to here')
     $(window).on 'scroll', ->
       more_posts_url = $('.pagination .next_page').attr('href')
       console.log(more_posts_url)
