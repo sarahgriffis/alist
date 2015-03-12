@@ -30,8 +30,30 @@
         <button name="button" type="submit" class="btn btn-primary" value="Vote!">Vote!</button>
     %hr
   .back
-    .chart
-      = column_chart celebrity.graph_data, {library: { fontName:'Courier'  ,colors:['#bdc3c7'], vAxis: {format: '#%', maxValue: 1} }}
-      //<button name="button" class="btn btn-primary change-vote" value="Change Vote">Change Vote</button>
+    .chart{:id => "celeb-#{celebrity.id}"}
+
+<style>
+.chart div {
+font: 10px sans-serif;
+background-color: steelblue;
+text-align: right;
+padding: 3px;
+margin: 1px;
+color: white;
+}
+</style>
+
+:javascript
+  window.graph_data = #{celebrity.graph_data}
+  chart_width = $('#celeb-#{celebrity.id}').width();
+  d3.select(".chart")
+  .selectAll("div")
+  .data(graph_data)
+  .enter().append("div")
+  .style("width", function(d) { return Math.max(d * chart_width, 25) + "px"; })
+  .text(function(d) { return d*100 + '%'; });
+
+//= column_chart celebrity.graph_data, {library: { fontName:'Courier'  ,colors:['#bdc3c7'], vAxis: {format: '#%', maxValue: 1} }}
+//<button name="button" class="btn btn-primary change-vote" value="Change Vote">Change Vote</button>
 
 

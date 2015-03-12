@@ -1,8 +1,22 @@
 $('#mycards').append('<%= j render @celebrities %>');
+
+<% @celebrities.each do |c| %>
+  <% puts c.id %>
+  chart_id = $('#celeb-<% c.id %>');
+  chart_id2 = document.getElementById("celeb-<%= c.id %>");
+  console.log('<%= c.first_name %>');
+<% end %>
+
+
+d3.select(chart_id2).selectAll("div").data(graph_data).enter().append("div").style("width", function(d) { return Math.max(d * chart_width, 25) + "px"; }).text(function(d) { return d*100 + '%'; });
+
+
 <% if @celebrities.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate @celebrities %>');
 <% else %>
   $(window).off('scroll');
   $('.pagination').remove();
 <% end %>
+
+
 

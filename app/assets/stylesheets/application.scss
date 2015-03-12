@@ -117,7 +117,7 @@ img {
 
 
     form {
-      height: 25vh;
+      height: 30vh;
     }
 
     .img-responsive {
@@ -141,6 +141,25 @@ img {
   p {
     background: grey;
   }
+}
+
+.chart div {
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+  height: 35px;
+}
+
+.front {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.back {
+  padding-top: 15px;
+  margin-top: 15px;
 }
 
 //.back {

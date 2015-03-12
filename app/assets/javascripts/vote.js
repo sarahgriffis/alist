@@ -6,7 +6,18 @@ $( document ).ready(function() {
 //      $(this).css("background-color", "#bdc3c7");
 //  });
 
-
+  if ($('#infinite-scrolling').size() > 0) {
+    $(window).on ("scroll", function() {
+      more_posts_url = $('.pagination .next_page').attr('href');
+      console.log(more_posts_url)
+      if (more_posts_url && $(window).scrollTop() > $(document).height() - $(window).height() - 100){
+        $('.pagination').html('<img src="/assets/ajax-loader.gif" alt="Loading..." title="Loading..." />')
+        $.getScript(more_posts_url)
+        return
+      };
+    });
+    return
+  };
 //  $('.edit_celebrity').submit(function (){
 //      console.log('flipping');
 //      $(this.parentNode.parentNode).addClass('flip');
@@ -29,7 +40,18 @@ $( document ).ready(function() {
 //       thing = this;
 //       $(this.parentNode.parentNode.parentNode).removeClass('flip');
 //     });
-//   });
+     //window.graph_data = #{celebrity.graph_data}
+ //    $('.chart').appear(function(){
+ //    console.log('about to graph')
+ //    chart_width = $('.chart').width();
+ //    d3.select(".chart")
+ //      .selectAll("div")
+ //      .data(graph_data)
+ //      .enter().append("div")
+ //      .style("width", function(d) { return Math.max(d * chart_width, 25) + "px"; })
+ //      .text(function(d) { return d*100 + '%'; });
+ //  });
+ //  });
 
 
    $(document).ajaxError(function (e, xhr, settings) {
