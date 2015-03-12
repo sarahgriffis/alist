@@ -7,29 +7,29 @@ $( document ).ready(function() {
 //  });
 
 
-  $('.edit_celebrity').submit(function (){
-      console.log('flipping');
-      $(this.parentNode.parentNode).addClass('flip');
-   });
+//  $('.edit_celebrity').submit(function (){
+//      console.log('flipping');
+//      $(this.parentNode.parentNode).addClass('flip');
+//   });
 
-   $('.change-vote').click(function (){
-   // $.post($(this).attr('action'), $(this).serialize(), null, "script");
-      console.log('got it here unflip');
-      thing = this;
-      $(this.parentNode.parentNode.parentNode).removeClass('flip');
-   });
+//   $('.change-vote').click(function (){
+//   // $.post($(this).attr('action'), $(this).serialize(), null, "script");
+//      console.log('got it here unflip');
+//      thing = this;
+//      $(this.parentNode.parentNode.parentNode).removeClass('flip');
+//   });
 
-   $(window).on ("scroll", function (){
-     $('.edit_celebrity').submit(function (){
-       console.log('flipping');
-       $(this.parentNode.parentNode).addClass('flip');
-     });
-
-     $('.change-vote').click(function (){
-       thing = this;
-       $(this.parentNode.parentNode.parentNode).removeClass('flip');
-     });
-   });
+//   $(window).on ("scroll", function (){
+//     $('.edit_celebrity').submit(function (){
+//       console.log('flipping');
+//       $(this.parentNode.parentNode).addClass('flip');
+//     });
+//
+//     $('.change-vote').click(function (){
+//       thing = this;
+//       $(this.parentNode.parentNode.parentNode).removeClass('flip');
+//     });
+//   });
 
 
    $(document).ajaxError(function (e, xhr, settings) {
