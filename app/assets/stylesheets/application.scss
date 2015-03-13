@@ -152,6 +152,14 @@ img {
   height: 35px;
 }
 
+.chart rect {
+  fill: steelblue;
+}
+.chart text {
+  fill: white;
+  text-anchor: end;
+}
+
 .front {
   padding-bottom: 15px;
   margin-bottom: 15px;

@@ -2,14 +2,78 @@ $('#mycards').append('<%= j render @celebrities %>');
 
 <% @celebrities.each do |c| %>
   <% puts c.id %>
-  chart_id = $('#celeb-<% c.id %>');
+  //chart_id = $('#celeb-<% c.id %>');
   chart_id2 = document.getElementById("celeb-<%= c.id %>");
   console.log('<%= c.first_name %>');
 <% end %>
 
+//Create initial d3 graph for each celeb
+var barHeight = 25;
+var x = d3.scale.linear()
+  .domain([0, 1])
+  .range([25, 700]);
+var chart = d3.select(chart_id2)
+  .attr("width", 700)
+  .attr("height", 275);
+var bar = chart.selectAll("g")
+  .data(graph_data)
+  .enter().append("g")
+  .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
+bar.append("rect")
+  .attr("width", x)
+  .attr("height", barHeight - 1);
+bar.append("text")
+  .attr("x", function(d) { return x(d) - 3; })
+  .attr("y", barHeight / 2)
+  .attr("dy", ".35em")
+  .text(function(d) { return Math.round(d*100) + '%'; });
 
-d3.select(chart_id2).selectAll("div").data(graph_data).enter().append("div").style("width", function(d) { return Math.max(d * chart_width, 25) + "px"; }).text(function(d) { return d*100 + '%'; });
-
+//Update d3 graph when submitting a vote
+//    $('.edit_celebrity').submit(function (){
+//
+//      console.log('move bars');
+//      form_array = $(this).serializeArray();
+//      form_array.forEach(function(field){
+//        if (field.name.search("vote_value") >= 0){
+//          vote_value = field.value;
+//        }
+//      });
+//
+//      var new_denom = raw_data[4] + 1;
+//      switch(vote_value){
+//        case 1:
+//          raw_data[0] += 1;
+//          break;
+//        case 2:
+//          raw_data[1] += 1;
+//          break;
+//        case 3:
+//          raw_data[2] += 1;
+//          break;
+//        case 4:
+//          raw_data[3] += 1;
+//          break;
+//      }
+//
+//      debugger;
+//
+//      graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
+//
+//
+//      chart = $(this.parentNode.parentNode).children('.back').children('.chart');
+//      d3.select(chart[0]).selectAll("rect")
+//        .data(graph_data)
+//        .transition()
+//        .ease("elastic")
+//        .duration(500)
+//        .attr("width", x);
+//
+//        d3.select(chart[0]).selectAll("text")
+//          .data(graph_data)
+//          .attr("x", function(d) { return x(d) - 3; })
+//          .text(function(d) { return d*100 + '%'; });
+//
+//  });
 
 <% if @celebrities.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate @celebrities %>');

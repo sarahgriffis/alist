@@ -18,6 +18,18 @@ $( document ).ready(function() {
     });
     return
   };
+
+//  $('.edit_celebrity').submit(function (){
+//      console.log('move bars');
+//      //$(this.parentNode.parentNode).addClass('flip');
+//      chart = $(this.parentNode.parentNode).children('.back').children('.chart');
+//      d3.select(chart[0]).selectAll("div")
+//        .transition()
+//        .ease("linear")
+//        .duration(500)
+//        .attr("width", 55)
+//   });
+
 //  $('.edit_celebrity').submit(function (){
 //      console.log('flipping');
 //      $(this.parentNode.parentNode).addClass('flip');

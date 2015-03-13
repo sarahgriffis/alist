@@ -1,1 +1,20 @@
+raw_data_updated = <%= @celebrity.graph_data %>;
+graph_data_updated = [raw_data_updated[0]/raw_data_updated[4],raw_data_updated[1]/raw_data_updated[4],raw_data_updated[2]/raw_data_updated[4],raw_data_updated[3]/raw_data_updated[4]]
+chart_id_to_update = document.getElementById("celeb-<%= @celebrity.id %>");
+//thing2 = this;
+//chart = $(this.parentNode.parentNode).children('.back').children('.chart');
+var x = d3.scale.linear()
+  .domain([0, 1])
+  .range([25, 700]);
 
+d3.select(chart_id_to_update).selectAll("rect")
+        .data(graph_data_updated)
+        .transition()
+        .ease("bounce")
+        .duration(500)
+        .attr("width", x);
+
+d3.select(chart_id_to_update).selectAll("text")
+          .data(graph_data_updated)
+          .attr("x", function(d) { return x(d) - 3; })
+          .text(function(d) { return Math.round(d*100) + '%'; });

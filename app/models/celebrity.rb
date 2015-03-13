@@ -28,10 +28,11 @@ class Celebrity < ActiveRecord::Base
       #   "C List" => (votes[3].nil? ? 0 : votes[3]) / total_votes.to_f,
       #   "D List" => (votes[4].nil? ? 0 : votes[4]) / total_votes.to_f
       #  }
-      return[(votes[1].nil? ? 0 : votes[1]) / total_votes.to_f,
-             (votes[2].nil? ? 0 : votes[2]) / total_votes.to_f,
-             (votes[3].nil? ? 0 : votes[3]) / total_votes.to_f,
-             (votes[4].nil? ? 0 : votes[4]) / total_votes.to_f]
+      return[(votes[1].nil? ? 0 : votes[1]),
+             (votes[2].nil? ? 0 : votes[2]),
+             (votes[3].nil? ? 0 : votes[3]),
+             (votes[4].nil? ? 0 : votes[4]),
+             total_votes]
     else
       return []
     end
