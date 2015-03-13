@@ -11,9 +11,9 @@ $('#mycards').append('<%= j render @celebrities %>');
 var barHeight = 25;
 var x = d3.scale.linear()
   .domain([0, 1])
-  .range([25, 700]);
+  .range([25, 600]);
 var chart = d3.select(chart_id2)
-  .attr("width", 700)
+  .attr("width", 600)
   .attr("height", 275);
 var bar = chart.selectAll("g")
   .data(graph_data)
