@@ -1,0 +1,97 @@
+.all-cards{
+  .card {
+    //height: 775px;
+    height: 80vh;
+    padding-top: 10px;
+    //padding-bottom: 5vh;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    //overflow: scroll;
+    //border-style: groove;
+    //border-width: 5px;
+    background-color: #bdc3c7;
+
+    .celeb-name {
+      color: black;
+      font-size: 2.5em;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 250px;
+      max-height: 250px;
+    }
+
+    .bar-chart {
+      width: 100%;
+    }
+
+    .action-text {
+      margin-bottom: 0px;
+      margin-left: 25px;
+      text-align: left;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .front {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+
+    .back {
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+  }
+}
+
+//KEEP FOR CARD FLIP IN FUTURE
+//.back {
+//  transition: all .4s ease-in-out;
+//  z-index: 800;
+//  transform-style: preserve-3d;
+//  transform: rotateY(-179deg);
+//  backface-visibility: hidden;
+//
+//  border-style: groove;
+//  border-width: 5px;
+//  top: 32px;
+//  left: 14px;
+////  position: absolute;
+//  float: none;
+//
+//  height: 75vh;
+//}
+
+//.front {
+//  transition: all .4s ease-in-out;
+//  z-index: 900;
+//  transform-style: preserve-3d;
+//  transform: rotateX(0deg) rotateY(0deg);
+//  backface-visibility: hidden;
+//
+//  border-style: groove;
+//  border-width: 5px;
+//  height: 75vh;
+//
+////  top: 0px;
+////  left: 0px;
+////  position: absolute;
+////  float: none;
+//
+//
+//}
+//
+//.card.flip .back {
+//  z-index: 1000;
+//  transform: rotateX(0deg) rotateY(0deg);
+//  position: absolute;
+//}
+//
+//.card.flip .front {
+//  z-index: 900;
+//  transform: rotateY(180deg);
+//  //display: none;
+//}

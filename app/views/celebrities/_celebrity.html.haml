@@ -1,49 +1,52 @@
 .row.col-xs-12.card
   .front
-    %p
+    %p{:class => "celeb-name"}
       = "#{celebrity.first_name} #{celebrity.last_name}"
       <a  name="#{celebrity.id}"></a>
     = image_tag "#{celebrity.photo_url}"
+    .bar-chart
+      %svg{:class => "chart", :id => "celeb-#{celebrity.id}"}
+    %p{:class => "action-text"}
+      = "Put #{celebrity.first_name} #{celebrity.last_name} on the:"
     = form_for celebrity, :remote => true, :defaults => { :wrapper_html => {:class => 'form-group'}, :input_html => { :class => 'form-control' } } do |f|
       - user_id = current_user.nil? ? 1 : current_user.id
       = f.simple_fields_for :celebrity_votes, celebrity.celebrity_votes.find_or_initialize_by(celebrity: celebrity, user_id: user_id) do |cv|
         - prefix = "celebrity[celebrity_votes_attributes][#{celebrity.id}]"
-        .custom_radio2
+        .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
-            = label_tag "#{prefix}[vote_value]_1", 'A List'
-        .custom_radio2
+            = label_tag "#{prefix}[vote_value]_1", 'A<br/>List'.html_safe
+        .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
-            = label_tag "#{prefix}[vote_value]_2", 'B List'
-        .custom_radio2
+            = label_tag "#{prefix}[vote_value]_2", 'B<br/>List'.html_safe
+        .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
-            = label_tag "#{prefix}[vote_value]_3", 'C List'
-        .custom_radio2
+            = label_tag "#{prefix}[vote_value]_3", 'C<br/>List'.html_safe
+        .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 4, cv.object.vote_value == 4
-            = label_tag "#{prefix}[vote_value]_4", 'D List'
+            = label_tag "#{prefix}[vote_value]_4", 'D<br/>List'.html_safe
 
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
-        <button name="button" type="submit" class="btn btn-primary" value="Vote!">Vote!</button>
-    %hr
+        <button name="button" type="submit" class="btn btn-primary" value="Vote!">VOTE</button>
   .back
-    %svg{:class => "chart", :id => "celeb-#{celebrity.id}"}
 
 :javascript
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
   var chart_width = $('#celeb-#{celebrity.id}').width();
-  var barHeight = 25;
+  barHeight = 45;
+  chart_height = 200;
   var x = d3.scale.linear()
     .domain([0, 1])
-    .range([25, 600]);
+    .range([35, 600]);
   var chart = d3.select(".chart")
     .attr("width", 600)
-    .attr("height", 275);
+    .attr("height", chart_height);
   var bar = chart.selectAll("g")
     .data(graph_data)
     .enter().append("g")
@@ -58,21 +61,7 @@
     .text(function(d) { return Math.round(d*100) + '%'; });
 
   $(document).ajaxError(function (e, xhr, settings) {
-        if (xhr.status == 401) {
-          window.location.replace("/users/sign_up");
-        }
-    });
-
-
-
-
-//.selectAll("div")
-//  .data(graph_data)
-//  .enter().append("div")
-//  .style("width", function(d) { return Math.max(d * chart_width, 25) + "px"; })
-//  .text(function(d) { return d*100 + '%'; });
-
-//= column_chart celebrity.graph_data, {library: { fontName:'Courier'  ,colors:['#bdc3c7'], vAxis: {format: '#%', maxValue: 1} }}
-//<button name="button" class="btn btn-primary change-vote" value="Change Vote">Change Vote</button>
-
-
+    if (xhr.status == 401) {
+      window.location.replace("/users/sign_up");
+    }
+  });

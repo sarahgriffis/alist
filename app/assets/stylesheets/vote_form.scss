@@ -1,0 +1,61 @@
+form {
+  text-align: center;
+  //height: 20vh;
+
+  .custom_radio {
+    display: inline-block;
+    width: 150px;
+
+    label {
+      width: 100%;
+
+      label {
+        color: black;
+        background-color: white;
+        //border-radius: 2em 1em 4em / 0.5em 3em;
+        margin-top: 5px;
+        font-size: 1.5em;
+        line-height: 1.2;
+      }
+
+      label::first-line {
+        font-size: 3em;
+      }
+    }
+
+    input[type="radio"] {
+      opacity: 0;
+      display: none;
+    }
+
+    input[type="radio"]:checked + label {
+      border-style: solid;
+      border-color: black;
+    }
+  }
+
+  .btn-primary {
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 1.4em;
+    &:hover {
+      background-color: white;
+      color: black;
+
+      &:active {
+      color: white;
+      background-color: black;
+      }
+    }
+  }
+
+  .btn-primary:focus, .btn-primary:active, .btn-primary.active{
+        color: white;
+    background-color: black;
+
+  }
+}
+
+
