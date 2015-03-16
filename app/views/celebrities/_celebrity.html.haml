@@ -38,14 +38,15 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  var chart_width = $('#celeb-#{celebrity.id}').width();
+  chart_width = $('.all-cards').width();
+  //$('#celeb-#{celebrity.id}').width();
   barHeight = 45;
   chart_height = 200;
   var x = d3.scale.linear()
     .domain([0, 1])
-    .range([35, 600]);
+    .range([35, chart_width]);
   var chart = d3.select(".chart")
-    .attr("width", 600)
+    .attr("width", chart_width)
     .attr("height", chart_height);
   var bar = chart.selectAll("g")
     .data(graph_data)

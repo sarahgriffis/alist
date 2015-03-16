@@ -14,7 +14,7 @@ var x = d3.scale.linear()
   .domain([0, 1])
   .range([35, 600]);
 var chart = d3.select(chart_id)
-  .attr("width", 600)
+  .attr("width", chart_width)
   .attr("height", chart_height);
 var bar = chart.selectAll("g")
   .data(graph_data)

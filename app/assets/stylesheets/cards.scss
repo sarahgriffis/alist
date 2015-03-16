@@ -1,7 +1,7 @@
 .all-cards{
   .card {
     //height: 775px;
-    height: 80vh;
+    height: 90vh;
     padding-top: 10px;
     //padding-bottom: 5vh;
     margin-top: 25px;
@@ -14,17 +14,24 @@
     .celeb-name {
       color: black;
       font-size: 2.5em;
+      height: 7vh;
+      margin-bottom: 0px;
     }
 
     img {
       display: block;
       margin: auto;
-      max-width: 250px;
-      max-height: 250px;
+      max-width: 300px;
+      max-height: 25vh;
+      margin-bottom: 5vh;
     }
 
     .bar-chart {
+      //margin-top: 15vh;
       width: 100%;
+      margin-left: 25px;
+      //margin-bottom: 5vh;
+      max-height: 33vh;
     }
 
     .action-text {
@@ -32,8 +39,10 @@
       margin-left: 25px;
       text-align: left;
       color: black;
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
+
+    //form
 
     .front {
       padding-bottom: 15px;
