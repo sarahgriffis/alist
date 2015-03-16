@@ -1,12 +1,11 @@
 .all-cards{
   .card {
-    //height: 775px;
     height: 90vh;
     //padding-top: 10px;
     //padding-bottom: 5vh;
     margin-top: 25px;
     margin-bottom: 25px;
-    //overflow: scroll;
+    overflow: scroll;
     //border-style: groove;
     //border-width: 5px;
     background-color: #bdc3c7;
@@ -23,12 +22,11 @@
       margin: auto;
       max-width: 300px;
       max-height: 25vh;
-      margin-bottom: 5vh;
+      margin-bottom: 3vh;
       margin-top: 3vh;
     }
 
     .bar-chart {
-      //margin-top: 15vh;
       width: 100%;
       margin-left: 25px;
       //margin-bottom: 5vh;
