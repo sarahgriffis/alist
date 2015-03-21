@@ -31,7 +31,7 @@
 
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
-        <button name="button" type="submit" class="btn btn-primary" value="Vote!">VOTE</button>
+
   .back
 
 :javascript
@@ -65,4 +65,9 @@
     if (xhr.status == 401) {
       window.location.replace("/users/sign_up");
     }
+  });
+
+  $('.custom_radio').on('change', function() {
+    $(this.parentNode).submit();
+    console.log('custom radio changed');
   });

@@ -36,6 +36,11 @@ $(document).ajaxError(function (e, xhr, settings) {
   }
 });
 
+$('.custom_radio').on('change', function() {
+  $(this.parentNode).submit();
+  console.log('custom radio changed');
+});
+
 <% if @celebrities.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate @celebrities %>');
 <% else %>
