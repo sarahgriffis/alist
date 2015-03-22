@@ -1,4 +1,4 @@
-.row.col-xs-12.card
+.row.card
   .front
     %p{:class => "celeb-name"}
       = "#{celebrity.first_name} #{celebrity.last_name}"
@@ -38,13 +38,16 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  chart_width = $('.all-cards').width();
+  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.10;
   //$('#celeb-#{celebrity.id}').width();
-  barHeight = 45;
-  chart_height = 200;
+  chart_height = $('.card').first().height()*0.20;
+  barHeight = chart_height/4 - 5;
+
+  //200;
+  min_width = 35;
   var x = d3.scale.linear()
     .domain([0, 1])
-    .range([35, chart_width]);
+    .range([min_width, chart_width]);
   var chart = d3.select(".chart")
     .attr("width", chart_width)
     .attr("height", chart_height);

@@ -23,6 +23,7 @@ body {
 
 h1 {
   color: black;
+  font-size: 120%;
 }
 
 .header {
@@ -34,11 +35,13 @@ h1 {
 
       a {
         color: black;
+        font-size: 100%;
       }
     }
   }
 }
 
 #infinite-scrolling {
-  //opacity: 0;
+  position: fixed;
+  bottom:  -500px;
 }

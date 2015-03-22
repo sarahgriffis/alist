@@ -5,7 +5,7 @@ chart_id_to_update = document.getElementById("celeb-<%= @celebrity.id %>");
 //chart = $(this.parentNode.parentNode).children('.back').children('.chart');
 var x = d3.scale.linear()
   .domain([0, 1])
-  .range([25, 600]);
+  .range([min_width, chart_width]);
 
 d3.select(chart_id_to_update).selectAll("rect")
         .data(graph_data_updated)

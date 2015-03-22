@@ -12,7 +12,7 @@ $('#mycards').append('<%= j render @celebrities %>');
 //var barHeight = 50;
 var x = d3.scale.linear()
   .domain([0, 1])
-  .range([35, chart_width]);
+  .range([min_width, chart_width]);
 var chart = d3.select(chart_id)
   .attr("width", chart_width)
   .attr("height", chart_height);
