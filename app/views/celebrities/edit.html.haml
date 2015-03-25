@@ -1,6 +1,15 @@
-= javascript_include_tag "//www.google.com/jsapi", "chartkick"
 .col-xs-12.col-sm-12.col-md-12.col-lg-6.col-lg-offset-3
+  %form#search
+    = form_tag :action => "search", :id => "search"
+    .right-inner-addon
+      %i.glyphicon.glyphicon-search
+      = select_tag "celeb_id", options_for_select(@all_names), :include_blank => true, :class => 'form-control'
   #mycards.all-cards
     = render @celebrities
   #infinite-scrolling
     = will_paginate @celebrities
+:javascript
+  e = document.getElementById("search");
+  e.onchange = function(){
+  e.submit();
+  };

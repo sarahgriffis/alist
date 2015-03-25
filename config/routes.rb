@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   get 'charts/celebrity_votes_graph'
 
+  get 'celebrities/search'
+
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

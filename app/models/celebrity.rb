@@ -8,6 +8,10 @@ class Celebrity < ActiveRecord::Base
 
   require 'wikipedia'
 
+  def full_name
+    "#{self.first_name.strip} #{self.last_name}"
+  end
+
 
   def wikipedia_url
     if self.last_name.blank?
