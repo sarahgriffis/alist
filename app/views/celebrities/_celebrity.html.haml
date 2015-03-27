@@ -71,6 +71,5 @@
   });
 
   $('.custom_radio').on('change', function() {
-    $(this.parentNode).submit();
-    console.log('custom radio changed');
+    $(this.parentNode).ajaxSubmit();
   });

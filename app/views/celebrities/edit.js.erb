@@ -37,8 +37,7 @@ $(document).ajaxError(function (e, xhr, settings) {
 });
 
 $('.custom_radio').on('change', function() {
-  $(this.parentNode).submit();
-  console.log('custom radio changed');
+  $(this.parentNode).ajaxSubmit();
 });
 
 <% if @celebrities.next_page %>
