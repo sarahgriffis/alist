@@ -8,7 +8,7 @@
     overflow: scroll;
     //border-style: groove;
     //border-width: 5px;
-    background-color: #f89750;
+    background-color: #fff;
 
     .celeb-name {
       color: black;
@@ -37,6 +37,7 @@
       max-height: 33%;
       svg {
         max-height: 100%;
+        fill:#f89750;
       }
     }
 
