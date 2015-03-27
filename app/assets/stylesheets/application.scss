@@ -45,13 +45,12 @@ h1 {
   }
 }
 
-input {
-  background: rgba (255, 255, 255, 0.5);
+input, input[type="password" i], input[type="search" i] {
+  background-color: rgba (255, 255, 255, 0.5);
   border: .3em solid  (255, 255, 255, 0.9);
   -moz-border-radius: 0.7em;
-    -webkit-border-radius: 0.7em;
-    border-radius: 0.7em;
-  
+  -webkit-border-radius: 0.7em;
+  border-radius: 0.7em;
   } 
 
 .right-inner-addon {
