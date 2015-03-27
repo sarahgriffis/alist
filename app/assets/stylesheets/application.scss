@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #fff;
   font-size: 1.4em;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -36,12 +36,19 @@ h1 {
       list-style-type: none;
 
       a {
-        color: black;
-        font-size: 100%;
+        color: #fff;
+        font-size: .9em;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
       }
     }
   }
 }
+
+input, textarea, select {
+  background-color : #fff;
+  color : #fff;
+  } 
 
 .right-inner-addon {
   display: inline;
@@ -50,6 +57,8 @@ h1 {
     position: absolute;
     top: 10px;
     right: 30px;
+    color: white;
+    opacity: 0.9;
   }
 
   select.form-control {
