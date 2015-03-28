@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'charts/celebrity_votes_graph'
 
   get 'celebrities/search'
+  get 'celebrities/all_full_names'
+
+  get 'celebrities/test_typeahead'
 
 
   devise_for :users

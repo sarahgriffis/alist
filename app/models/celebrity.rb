@@ -5,6 +5,7 @@ class Celebrity < ActiveRecord::Base
   validates_uniqueness_of :first_name, scope: [:last_name]
 
   scope :active, -> { where("active") }
+  scope :name_contains, -> (name) { where("trim(both ' ' from trim(both ' '  from first_name) || trim(both ' ' from last_name)) ILIKE ?", "%#{name}%")}
 
   require 'wikipedia'
 
@@ -42,9 +43,11 @@ class Celebrity < ActiveRecord::Base
     end
   end
 
-  def self.search(search, page)
-    paginate :per_page => 5, :page => page,
-           :conditions => ['name ilike ?', "%#{search}%"], :order => 'name'
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['first_name || ' ' || last_name ILIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
   end
-
 end

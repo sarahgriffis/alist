@@ -55,10 +55,14 @@ form {
     }
   }
 
-  .btn-primary:focus, .btn-primary:active, .btn-primary.active{
-        color: white;
+  .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    color: white;
     background-color: black;
+  }
 
+  .btn.glyphicon:focus, .btn.glyphicon:hover, .btn.glyphicon.active {
+    color: #f89750;
+    //background-color: black;
   }
 }
 

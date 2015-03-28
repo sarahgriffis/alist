@@ -2,14 +2,18 @@
   %form#search
     = form_tag :action => "search", :id => "search", :authenticity_token => false
     .right-inner-addon
-      %i.glyphicon.glyphicon-search
-      = select_tag "celeb_id", options_for_select(@all_names), :include_blank => true, :class => 'form-control'
+      %i.glyphicon.glyphicon-search.btn
+      = text_field_tag "query", nil, :class => 'form-control typeahead'
+  %br
+  %br
+  %br
   #mycards.all-cards
     = render @celebrities
   #infinite-scrolling
     = will_paginate @celebrities
 :javascript
-  e = document.getElementById("search");
-  e.onchange = function(){
-  e.submit();
-  };
+  f = $(".btn.glyphicon");
+  f.click(function(){
+  $("#search").submit();
+  console.log('search')
+  });
