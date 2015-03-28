@@ -1,5 +1,5 @@
 class CelebritiesController < ApplicationController
-  before_action :authenticate_user!, except: :edit
+  before_action :authenticate_user!, except: [:edit, :all_full_names]
   before_filter :check_if_admin, :only => [:new, :create, :admin_index, :admin_update, :admin_bulk_import]
 
   require 'open-uri'
@@ -69,18 +69,23 @@ class CelebritiesController < ApplicationController
 
 
   def edit
-    if params[:celeb_name]
-    end
-
-    if params[:celeb_id]
+    if params[:query]
+      ids = Celebrity.active.name_contains(params[:query].gsub(/\s+/, "")).map {|c| c.id}
+      if ids.empty?
+        @celebrities = Celebrity.active.paginate(page: params[:page], per_page: 1)
+      else
+        sql ="(select * from celebrities where id IN (#{ids.join(',')})) union all (select * from celebrities where id NOT IN (#{ids.join(",")}) AND id > '#{ids.min}' AND active) union all (select * from celebrities where id NOT IN (#{ids.join(",")}) AND id < '#{ids.min}' AND active)"
+        @celebrities = Celebrity.paginate_by_sql(sql, :page => params[:page], :per_page => 1)
+      end
+    elsif params[:celeb_id]
       sql ="(select * from celebrities where id = '#{params[:celeb_id].to_i}') union all (select * from celebrities where id > '#{params[:celeb_id].to_i}' AND active) union all (select * from celebrities where id <  '#{params[:celeb_id].to_i}' AND active)"
       @celebrities = Celebrity.paginate_by_sql(sql, :page => params[:page], :per_page => 1)
     else
       @celebrities = Celebrity.active.paginate(page: params[:page], per_page: 1)
     end
 
-    @all_names = Celebrity.active.map {|c| ["#{c.full_name.strip}", c.id] }
-    @all_names.sort!
+    #@all_names = Celebrity.active.map {|c| ["#{c.full_name.strip}", c.id] }
+    #@all_names.sort!
 
     # for infinite scroll
     respond_to do |format|
@@ -89,7 +94,10 @@ class CelebritiesController < ApplicationController
     end
   end
 
-  def search
+
+
+  def all_full_names
+    render json: Celebrity.active.map {|c| c.full_name.strip}
   end
 
   def update
