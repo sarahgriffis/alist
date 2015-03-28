@@ -18,9 +18,11 @@ form {
         color: black;
         background-color: #fff;
         margin-top: 5px;
-        font-size: 1.5em;
-        line-height: 1.2;
+        font-size: .5em;
+        line-height: 1;
         box-shadow: 6px 6px 5px #ccc;
+        text-transform: uppercase;
+        outline: rgba(204,204,204,.7) solid 2px;
       }
 
       label::first-line {
