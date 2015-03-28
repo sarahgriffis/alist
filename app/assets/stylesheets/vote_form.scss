@@ -16,10 +16,11 @@ form {
 
       label {
         color: black;
-        background-color: white;
+        background-color: #fff;
         margin-top: 5px;
         font-size: 1.5em;
         line-height: 1.2;
+        box-shadow: 6px 6px 5px #ccc;
       }
 
       label::first-line {
