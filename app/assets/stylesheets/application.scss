@@ -23,7 +23,7 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 1.4em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -64,21 +64,27 @@ h1 {
     
   }
 
-  .form-control{
+  .form-control {
     background-color: rgba(255, 255, 255, 0.5);
     border: .2em solid  rgba(255, 255, 255, 0.9);
     border-radius: .5em;
   }
 
-  .tt-dropdown-menu{
+  .tt-hint{
+    color: #333;
+  }
+
+  .tt-dropdown-menu {
     background-color: #fff;
     border: .2em solid  rgba(255, 255, 255, 0.9);
   }
 
-    .tt-dataset-r{
-      background-color: transparent;
-      color:f89750
-    }
+  .tt-dropdown-menu:hover {
+    background-color: transparent;
+    color: #f89750;
+  }
+
+    
 }
 
 
