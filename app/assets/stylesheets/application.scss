@@ -61,13 +61,13 @@ h1 {
     -webkit-appearance: none;
     appearance: none;
     padding-right: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: .2em solid  rgba(255, 255, 255, 0.9);
-    border-radius: .5em;
+    
   }
-  .twitter-typeahead{
+
+  .form-control{
   background-color: rgba(255, 255, 255, 0.5);
   border: .2em solid  rgba(255, 255, 255, 0.9);
+  border-radius: .5em;
   }
 }
 
