@@ -78,9 +78,9 @@ h1 {
     background-color: #fff;
     border: .1em solid #fff;
 
-    .tt-dataset-r {
+    &.tt-dataset-r {
 
-      &:hover {
+      &li:hover {
       background-color: transparent;
       color: #f89750;
       }
