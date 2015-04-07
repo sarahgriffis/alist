@@ -1,5 +1,5 @@
-$aspectRatio = 2/3
-$boxSize = 90
+$aspectRatio: 2/3;
+$boxSize: 90;
 
 .all-cards{
   .card {
@@ -17,9 +17,9 @@ $boxSize = 90
     background-color: #fff;
     border-radius: .9em;
     width: $boxSize vw;
-    max-width: ($aspectRatio*$boxSize) vh;
+    max-width: $aspectRatio*$boxSize vh;
     height: $boxSize vh;
-    max-height: ($boxSize/$aspectRatio) vw;
+    max-height: $boxSize/$aspectRatio vw;
 
 
     .celeb-name {
