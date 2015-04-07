@@ -80,20 +80,12 @@ h1 {
 
     &.tt-dataset-r {
 
-      &li:hover {
-      background-color: transparent;
+      &:hover {
+      background-color: #fff;
       color: #f89750;
       }
 
-      &li:hover:after {
-      background-color: transparent;
-      color: #f89750;
-      }
-
-      &li:focus {
-      background-color: transparent;
-      color: #f89750;
-      }
+      
     }
   }
     
