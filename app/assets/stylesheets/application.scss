@@ -78,7 +78,7 @@ h1 {
     background-color: #fff;
     border: .1em solid #fff;
 
-    li:hover:after {
+    &:hover {
       background-color: transparent;
       color: #f89750;
     }
