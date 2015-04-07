@@ -78,12 +78,7 @@ h1 {
     background-color: #fff;
     border: .1em solid #fff;
 
-      &:hover {
-      background-color: #fff;
-      color: #f89750;
-      }
-
-      &:active {
+      &:focus {
       background-color: #fff;
       color: #f89750;
       } 
