@@ -78,7 +78,7 @@ h1 {
     background-color: #fff;
     border: .1em solid #fff;
 
-    .tt-dataset-r li:hover{
+    li:hover:after {
       background-color: transparent;
       color: #f89750;
     }
