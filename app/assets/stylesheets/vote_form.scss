@@ -10,7 +10,12 @@ form {
     display: inline-block;
     width: 20%;
     height: 20%;
-    border-radius: .8em;
+    margin-right:2%;
+
+      &:last-child{
+      margin-right:0;
+      }
+    
 
     label {
       width: 100%;
@@ -24,6 +29,7 @@ form {
         box-shadow: 6px 6px 2px #ccc;
         text-transform: uppercase;
         outline: rgba(204,204,204,.7) solid 2px;
+        border-radius: .8em;
       }
 
       label::first-line {
