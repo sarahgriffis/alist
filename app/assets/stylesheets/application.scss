@@ -16,7 +16,7 @@
  */
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Arial, sans-serif;
   text-align: center;
   background-color: #f89750;
 }
@@ -74,16 +74,15 @@ h1 {
     color: #666;
   }
 
-  .tt-dropdown-menu {
-    background-color: #fff;
-    border: .2em solid  rgba(255, 255, 255, 0.9);
-  }
-
-  .tt-dataset-r:focus{
+  .tt-input{
     background-color: transparent;
     color: #f89750;
   }
 
+  .tt-dropdown-menu {
+    background-color: #fff;
+    border: .2em solid  rgba(255, 255, 255, 0.9);
+  }
     
 }
 

@@ -1,7 +1,6 @@
 .all-cards{
   .card {
     height: 95%;
-    
     //padding-top: 10px;
     //padding-bottom: 5vh;
     margin-top: 3%;
@@ -20,7 +19,7 @@
       height: 7%;
       margin-bottom: 0;
       margin-top:2%;
-      font-family: 'Varela Round';
+      font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
     }
 
@@ -42,7 +41,8 @@
       max-height: 33%;
       svg {
         max-height: 100%;
-        
+        border-radius: .25em;
+        margin-bottom: 1%;
       }
     }
 
