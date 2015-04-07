@@ -74,14 +74,14 @@ h1 {
     color: #666;
   }
 
-  .tt-input{
-    background-color: transparent;
-    color: #f89750;
-  }
-
   .tt-dropdown-menu {
     background-color: #fff;
     border: .2em solid  rgba(255, 255, 255, 0.9);
+  }
+
+  .tt-dropdown-menu:active{
+    background-color: transparent;
+    color: #f89750;
   }
     
 }
