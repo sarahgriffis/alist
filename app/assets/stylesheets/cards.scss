@@ -1,11 +1,9 @@
 $aspectRatio: 2/3;
-$boxSize: 50;
+$boxSize: 30;
 
 .all-cards{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  
+
   .card {
     display: flex;
     justify-content: center;
