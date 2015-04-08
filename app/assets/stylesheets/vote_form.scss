@@ -10,7 +10,7 @@ form {
   .custom_radio {
     display: inline-block;
     width: 23%;
-    height: 23%;
+    height: 34.5%;
     margin-right:2%;
 
       &:last-child{
@@ -33,6 +33,16 @@ form {
         -moz-border-radius: 30px;
         border-radius: 30px;
         
+        .label:before {
+          content: " ";
+          position: absolute;
+          z-index: -1;
+          top: 2px;
+          left: 2px;
+          right: 2px;
+          bottom: 2px;
+          border: 5px solid #ccc;
+        }
       }
 
       label::first-line {
