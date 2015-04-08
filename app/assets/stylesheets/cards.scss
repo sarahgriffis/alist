@@ -2,7 +2,8 @@ $aspectRatio: 2/3;
 $boxSize: 90;
 
 .all-cards{
-
+  display: flex;
+  flex-flow: column;
   .card {
     display: flex;
     justify-content: center;
