@@ -78,11 +78,13 @@ h1 {
     background-color: #fff;
     border: .1em solid #fff;
 
-      &:after {
-      background-color: #fff;
-      color: #f89750;
-      } 
-    
+    .tt-suggestion{
+      
+      .tt-cursor{
+        background-color: #fff;
+        color: #f89750;
+      }
+    }  
   }   
 }
 
