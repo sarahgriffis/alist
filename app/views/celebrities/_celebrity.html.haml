@@ -3,7 +3,8 @@
     %p{:class => "celeb-name"}
       = "#{celebrity.first_name} #{celebrity.last_name}"
       <a  name="#{celebrity.id}"></a>
-    = image_tag "#{celebrity.photo_url}"
+    .img-container
+      = image_tag "#{celebrity.photo_url}"
     .bar-chart
       %svg{:class => "chart", :id => "celeb-#{celebrity.id}"}
     %p{:class => "action-text"}
