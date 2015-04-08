@@ -4,8 +4,8 @@ $boxSize: 20;
 .all-cards{
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  //justify-content: center;
+  //align-items: center;
 
   .card {
     display: flex;
@@ -35,12 +35,13 @@ $boxSize: 20;
       max-height: 30%;
       margin: 0 auto;
       overflow: hidden;
+      display: block;
 
       img {
         max-height: 100%;
         height: 100%;
         width: auto;
-        display: block;
+        
       }
     }
 
