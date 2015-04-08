@@ -9,8 +9,8 @@ form {
 
   .custom_radio {
     display: inline-block;
-    width: 19.3%;
-    height: 19.3%;
+    width: 23%;
+    height: 23%;
     margin-right:2%;
 
       &:last-child{
@@ -29,8 +29,9 @@ form {
         line-height: 1;
         box-shadow: 6px 6px 2px #ccc;
         text-transform: uppercase;
-        outline: rgba(204,204,204,.7) solid 2px;
-        border-radius: .8em;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
         
       }
 
