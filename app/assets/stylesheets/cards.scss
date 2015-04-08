@@ -39,8 +39,6 @@ $boxSize: 20;
 
       img {
         position: relative;
-        left: 50%;
-        @include translateX(-50%);
         max-height: 100%;
       }
     }
