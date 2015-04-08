@@ -2,7 +2,7 @@ $aspectRatio: 2/3;
 $boxSize: 90;
 
 .all-cards{
-  //display: flex;
+  display: flex;
 
   .card {
     display: flex;
@@ -31,7 +31,7 @@ $boxSize: 90;
     img {
       display: block;
       margin: auto;
-      width: auto%;
+      width: auto;
       max-width: 85%;
       max-height: 39%;
       height: 39%;
