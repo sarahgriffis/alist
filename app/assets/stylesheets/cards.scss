@@ -30,12 +30,13 @@ $boxSize: 90;
     img {
       display: block;
       margin: auto;
-      width: 40%;
+      //width: 40%;
       max-width: 85%;
       max-height: 39%;
-      height: 39%;
+      //height: 39%;
       margin-bottom: 2%;
       margin-top: 2%;
+      clip-path: inset(5% 5% 5% 5%);
     }
 
     .bar-chart {
