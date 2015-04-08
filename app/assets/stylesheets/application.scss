@@ -75,12 +75,12 @@ h1 {
   }
 
   .tt-dropdown-menu {
-    background-color: #fff;
-    border: .1em solid #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: .2em solid  rgba(255, 255, 255, 0.9);
 
     .tt-suggestion{
       
-      .tt-cursor{
+      &.tt-cursor{
         background-color: #fff;
         color: #f89750;
       }
