@@ -16,10 +16,10 @@ $boxSize: 20;
     overflow: scroll;
     background-color: #fff;
     border-radius: .9em;
-    width: $boxSize vw;
-    max-width: $aspectRatio*$boxSize vh;
-    height: $boxSize vh;
-    max-height: $boxSize/$aspectRatio vw;
+    //width: $boxSize vw;
+    width: $aspectRatio*$boxSize vh;
+    //height: $boxSize vh;
+    height: $boxSize/$aspectRatio vw;
 
     .celeb-name {
       color: black;
