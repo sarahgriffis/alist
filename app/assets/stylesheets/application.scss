@@ -26,10 +26,11 @@ body {
 h1 {
   color: #fff;
   font-size: 2em;
-  font-size: 8vh;
+  font-size: 3vw;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
+
 
 .header {
   ul {
@@ -58,7 +59,7 @@ h1 {
 
   .glyphicon-search {
     position: absolute;
-    right: 3%;
+    right: 30px;
     z-index: 1;
     color: #fff;
     float: right;
