@@ -6,83 +6,82 @@ $boxSize: 90;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1 1 auto;
+    margin: 3% auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: .9em;
+    height: 90vh;
+    width: 67.5vh;
+    max-height: 90vh;
+    max-width: 90vw;
+    //width: $boxSize vw;
+    //max-width: $aspectRatio*$boxSize vh;
+    //height: $boxSize vh;
+    //max-height: $boxSize/$aspectRatio vw;
 
-  //.row {
-    //margin: 0 auto;
-    .card {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1 1 auto;
-      margin: 3% auto;
-      overflow: hidden;
-      background-color: #fff;
-      border-radius: .9em;
-      height: 90vh;
-      width: 67.5vh;
-      max-height: 90vh;
-      max-width: 90vw;
-      //width: $boxSize vw;
-      //max-width: $aspectRatio*$boxSize vh;
-      //height: $boxSize vh;
-      //max-height: $boxSize/$aspectRatio vw;
-
-      .celeb-name {
-        color: black;
-        font-size: 1rem;
-        height: 7%;
-        margin: 2% auto;
-        font-family: 'Varela Round', Arial, sans-serif;
-        text-transform: uppercase;
-      }
-
-      .img-container {
-        max-height: 30vh;
-        max-width: 30vh;
-        margin: 0 auto 3%;
-        overflow: hidden;
-        display: block;
-
-        img {
-          height: auto;
-          width: 30vh;
-          //max-height:30vh;
-          //max-width: 30vh;
-          object-fit: cover;
-        }
-      }
-
-      .bar-chart {
-        width: 60vh;
-        margin: auto;
-        //margin-left: 5%;
-        //margin-bottom: 5vh;
-        max-height: 33%;
-        svg{
-          max-height: 100%;
-          margin-bottom: 1%;
-        }
-      }       
-
-      .action-text {
-        margin-bottom: 0px;
-        margin-left: 5%;
-        text-align: left;
-        color: black;
+    .celeb-name {
+      color: black;
+      font-size: 1rem;
+      @media screen and (max-width: 35px){
         font-size: .7rem;
-        text-transform: uppercase;
       }
+      height: 7%;
+      margin: 2% auto;
+      font-family: 'Varela Round', Arial, sans-serif;
+      text-transform: uppercase;
+    }
 
-      //form
+    .img-container {
+      max-height: 30vh;
+      max-width: 30vh;
+      margin: 0 auto 3%;
+      overflow: hidden;
+      display: block;
 
-      .front {
-        margin: 0 auto;
+      img {
+        height: auto;
+        width: 30vh;
+        //max-height:30vh;
+        //max-width: 30vh;
+        object-fit: cover;
       }
+    }
 
-      .back {
-        padding-top: 15px;
-        margin-top: 15px;
+    .bar-chart {
+      width: 60vh;
+      margin: auto;
+      //margin-left: 5%;
+      //margin-bottom: 5vh;
+      max-height: 33%;
+      svg{
+        max-height: 100%;
+        margin-bottom: 1%;
       }
+    }       
+
+    .action-text {
+      margin-bottom: 0px;
+      margin-left: 5%;
+      text-align: left;
+      color: black;
+      font-size: .7rem;
+      text-transform: uppercase;
+    }
+
+    //form
+
+    .front {
+      margin: 0 auto;
+    }
+
+    .back {
+      padding-top: 15px;
+      margin-top: 15px;
     }
   } 
 }
