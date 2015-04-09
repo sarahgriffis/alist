@@ -17,12 +17,12 @@ $boxSize: 90;
     border-radius: .9em;
     height: 90vh;
     width: 67.5vh;
-    //max-height: 90vw;
-    //max-width: 75vw;
+    max-height: 90vh;
+    max-width: 75vw;
     //width: $boxSize vw;
-    max-width: $aspectRatio*$boxSize vh;
+    //max-width: $aspectRatio*$boxSize vh;
     //height: $boxSize vh;
-    max-height: $boxSize/$aspectRatio vw;
+    //max-height: $boxSize/$aspectRatio vw;
 
     .celeb-name {
       color: black;
