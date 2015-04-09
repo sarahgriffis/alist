@@ -59,6 +59,9 @@
   bar.append("rect")
     .attr("width", x)
     .attr("height", barHeight);
+    .attr("style,"fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9")
+    .attr("rx","20")
+    .attr("ry","20")
   bar.append("text")
     .attr("x", function(d) { return x(d) - 3; })
     .attr("y", barHeight / 2)
