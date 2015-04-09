@@ -14,7 +14,7 @@
  *= require_tree .
  *= require_self
  */
-
+$break-small: 350px;
 //$tablet: "(min-width: 768px)";
 
 html{
@@ -29,7 +29,10 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: .7rem;
+  @media (min-width: $break-small){
+        font-size: .7rem;
+      }
   text-transform: uppercase;
   letter-spacing: 0.02rem;
 }
