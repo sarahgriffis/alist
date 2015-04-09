@@ -4,7 +4,8 @@ $boxSize: 90;
 .all-cards{
   display: flex;
   flex-flow: column;
- 
+  justify-content: center;
+  align-items: center;
 
   .card {
     display: flex;
