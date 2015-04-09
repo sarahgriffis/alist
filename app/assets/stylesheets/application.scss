@@ -58,7 +58,7 @@ h1 {
 #search {
   width: 67.5vh;
   max-width: 90vw;
-  margin: auto;
+  margin: 0 3%;
 }
 
 .right-inner-addon {
@@ -68,7 +68,7 @@ h1 {
   .glyphicon-search {
     position: absolute;
     //right: 30vh;
-    z-index: 99;
+    z-index: 1;
     color: #fff;
     //float: right;
     right: 0;
