@@ -30,14 +30,14 @@ form {
         line-height: 1;
         box-shadow: 6px 6px 2px #ccc;
         text-transform: uppercase;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
+        -webkit-border-radius: 20em;
+        -moz-border-radius: 20em;
+        border-radius: 20em;
         
       }
 
       label::first-line {
-        font-size: 3em;
+        //font-size: 3em;
       }
     }
 
