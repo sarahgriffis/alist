@@ -65,6 +65,10 @@ h1 {
   display: inline;
   position: relative;
 
+  .glyphicon{
+    right:0;
+  }
+  
   .glyphicon-search {
     position: absolute;
     pointer-events: none;
