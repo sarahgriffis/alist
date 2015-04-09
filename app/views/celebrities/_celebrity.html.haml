@@ -49,6 +49,7 @@
   var x = d3.scale.linear()
     .domain([0, 1])
     .range([min_width, chart_width]);
+    .rangeRoundBands([0, width], .1);
   var chart = d3.select(".chart")
     .attr("width", chart_width)
     .attr("height", chart_height);
