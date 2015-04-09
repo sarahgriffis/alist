@@ -60,7 +60,7 @@
     .enter().append("g")
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
   bar.append("rect")
-    .attr("width", x)
+    .attr("width", x * 1.3)
     .attr("height", barHeight - 5);
   bar.append("text")
     .attr("x", function(d) { return x(d) - 3; })
