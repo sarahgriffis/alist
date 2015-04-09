@@ -62,12 +62,11 @@ h1 {
 }
 
 .right-inner-addon {
-  display: inline;
+  //display: inline;
   position: relative;
 
   .glyphicon-search {
     position: absolute;
-    pointer-events: none;
     //right: 30vh;
     z-index: 99;
     color: #fff;
