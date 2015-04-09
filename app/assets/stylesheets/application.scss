@@ -15,7 +15,7 @@
  *= require_self
  */
 
-$tablet: "(min-width: 768px)";
+//$tablet: "(min-width: 768px)";
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -48,22 +48,16 @@ h1 {
   }
 }
 
-@media #{$tablet} {
-  #search {
-    width: 70%;
-    margin: auto;
-  }
-
-  .glyphicon-search {
-    right: 25%;
-  }
+#search {
+  width: 67.5vw;
+  margin: auto;
 }
 
 .right-inner-addon {
   display: inline;
 
   .glyphicon-search {
-    //position: absolute;
+    position: absolute;
     right: 3%;
     z-index: 1;
     color: #fff;
