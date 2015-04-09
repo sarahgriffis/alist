@@ -49,6 +49,9 @@
   var x = d3.scale.linear()
     .domain([0, 1])
     .range([min_width, chart_width]);
+  var y = d3.scale.ordinal()
+    .domain(1)
+    .rangeBands([0, 120]);
   var chart = d3.select(".chart")
     .attr("width", chart_width)
     .attr("height", chart_height);
