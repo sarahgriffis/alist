@@ -46,6 +46,7 @@
 
   //200;
   rounded_corners = 10;
+  padding = "fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9";
   min_width = 35;
   var x = d3.scale.linear()
     .domain([0, 1])
@@ -60,7 +61,7 @@
   bar.append("rect")
     .attr("width", x)
     .attr("height", barHeight)
-    .attr("style,"fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9")
+    .attr("style, padding)
     .attr("rx", rounded_corners)
     .attr("ry", rounded_corners);
   bar.append("text")
