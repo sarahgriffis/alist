@@ -39,7 +39,7 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.9;
+  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.1;
   //$('#celeb-#{celebrity.id}').width();
   chart_height = $('.card').first().width()*0.20;
   barHeight = chart_height/4 - 5;
