@@ -36,16 +36,17 @@ $boxSize: 90;
     }
 
     .img-container {
-      max-height: 40%;
-      max-width: 40%;
+      max-height: 30vh;
+      max-width: 30vh;
       margin: 0 auto 3%;
       overflow: hidden;
       display: block;
 
       img {
         height: auto;
-        max-height:100%;
-        max-width: 30vh;
+        width: 30vh;
+        //max-height:30vh;
+        //max-width: 30vh;
         object-fit: cover;
       }
     }
