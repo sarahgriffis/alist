@@ -61,6 +61,11 @@ $boxSize: 90;
         border-radius: .25em;
         margin-bottom: 1%;
       }
+        g {
+          rect {
+          border-radius: .3rem;
+          }
+        }
     }
 
     .action-text {
