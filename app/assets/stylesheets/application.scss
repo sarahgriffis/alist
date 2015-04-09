@@ -17,6 +17,10 @@
 
 //$tablet: "(min-width: 768px)";
 
+html{
+  font-size: 20px; //1rem=16px
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   text-align: center;
@@ -25,10 +29,9 @@ body {
 
 h1 {
   color: #fff;
-  font-size: 2em;
-  font-size: 3vw;
+  font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02rem;
 }
 
 
@@ -77,7 +80,7 @@ h1 {
   .form-control {
     background-color: rgba(255, 255, 255, 0.5);
     border: .2em solid  rgba(255, 255, 255, 0.9);
-    border-radius: .8em;
+    border-radius: 1em;
   }
 
   .tt-hint {
