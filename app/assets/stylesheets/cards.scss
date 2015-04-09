@@ -80,7 +80,11 @@ $break-small: 350px;
     //form
 
     .front {
-      margin: 0 auto;
+      margin: 3% auto;
+      height: 90vh;
+      width: 67.5vh;
+      max-height: 90vh;
+      max-width: 90vw;
     }
 
     .back {
