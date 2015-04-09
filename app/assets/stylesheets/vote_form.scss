@@ -13,10 +13,6 @@ form {
     width: 22%;
     height: 100%;
     margin-right:2%;
-    position: relative; 
-    overflow: hidden;
-    padding-bottom: 100%;
-
       &:last-child{
       //margin-right:0;
       }
@@ -37,7 +33,6 @@ form {
         -moz-border-radius: 20px;
         border-radius: 20px;
         border: 1px solid #ccc;
-        position: absolute;
       }
 
       label::first-line {
