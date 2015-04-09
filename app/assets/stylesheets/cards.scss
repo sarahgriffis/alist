@@ -10,6 +10,7 @@ $boxSize: 20;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1 1 auto;
     margin-top: 3%;
     margin-bottom: 3%;
     overflow: scroll;
