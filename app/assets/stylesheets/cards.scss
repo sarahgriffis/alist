@@ -6,7 +6,7 @@ $boxSize: 90;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 3%;
   .card {
     display: flex;
     justify-content: center;
@@ -28,6 +28,9 @@ $boxSize: 90;
     .celeb-name {
       color: black;
       font-size: 1rem;
+      @media (min-width: $break-small){
+        font-size: .8rem;
+      }
       height: 7%;
       margin: 2% auto;
       font-family: 'Varela Round', Arial, sans-serif;
