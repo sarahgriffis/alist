@@ -56,14 +56,12 @@ $boxSize: 90;
       //margin-left: 5%;
       //margin-bottom: 5vh;
       max-height: 33%;
-      svg {
+      .chart {
         max-height: 100%;
         border-radius: .25em;
         margin-bottom: 1%;
-        &.chart{
-          rect {
-            border-radius: 10px;
-          }
+        &rect {
+          border-radius: 10px;
         }
       }
     }       
