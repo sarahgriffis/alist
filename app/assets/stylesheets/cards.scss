@@ -33,14 +33,15 @@ $boxSize: 20;
 
     .img-container {
       max-height: 40%;
-      max-width: 50%;
+      max-width: 40%;
       margin: 0 auto 3%;
       overflow: hidden;
       display: block;
 
       img {
         height: auto;
-        width: 30vh;
+        max-height:100%;
+        max-width: 30vh;
         object-fit: cover;
       }
     }
