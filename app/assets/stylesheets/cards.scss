@@ -35,7 +35,7 @@ $break-small: 350px;
       }
       height: 7%;
       margin: 2% auto;
-      top: 2%;
+      top: 0;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
     }
@@ -81,6 +81,8 @@ $break-small: 350px;
 
     .front {
       margin: 0 auto;
+      top: 3%;
+      bottom: 3%;
     }
 
     .back {
