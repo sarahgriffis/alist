@@ -39,10 +39,10 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.10;
+  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.20;
   //$('#celeb-#{celebrity.id}').width();
   chart_height = $('.card').first().height()*0.20;
-  barHeight = chart_height/4 - 5;
+  barHeight = (chart_height/4 - 5)*0.5;
 
   //200;
   min_width = 35;
@@ -58,7 +58,7 @@
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
   bar.append("rect")
     .attr("width", x)
-    .attr("height", barHeight * .25);
+    .attr("height", barHeight);
   bar.append("text")
     .attr("x", function(d) { return x(d) - 3; })
     .attr("y", barHeight / 2)
