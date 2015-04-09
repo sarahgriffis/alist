@@ -27,9 +27,6 @@ $boxSize: 90;
     .celeb-name {
       color: black;
       font-size: 1rem;
-      @media screen and (max-width: 35px){
-        font-size: .7rem;
-      }
       height: 7%;
       margin: 2% auto;
       font-family: 'Varela Round', Arial, sans-serif;
@@ -37,15 +34,15 @@ $boxSize: 90;
     }
 
     .img-container {
-      max-height: 30vh;
-      max-width: 30vh;
+      max-height: 35vh;
+      max-width: 35vh;
       margin: 0 auto 3%;
       overflow: hidden;
       display: block;
 
       img {
         height: auto;
-        width: 30vh;
+        width: 35vh;
         //max-height:30vh;
         //max-width: 30vh;
         object-fit: cover;
