@@ -26,13 +26,14 @@ form {
         color: black;
         background-color: #fff;
         margin-top: 1%;
-        font-size: 1.2em;
+        font-size: 1em;
         line-height: 1;
         box-shadow: 6px 6px 2px #ccc;
         text-transform: uppercase;
-        -webkit-border-radius: 10em;
-        -moz-border-radius: 10em;
-        border-radius: 10em;
+        -webkit-border-radius: 5em;
+        -moz-border-radius: 5em;
+        border-radius: 5em;
+        border: 1px solid #ccc;
         
       }
 
