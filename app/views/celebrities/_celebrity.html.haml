@@ -4,7 +4,7 @@
       = "#{celebrity.first_name} #{celebrity.last_name}"
       <a  name="#{celebrity.id}"></a>
     .img-container
-      = image_tag("#{celebrity.photo_url}", class: "img-responsive")
+      = image_tag("#{celebrity.photo_url}", :class => "img-responsive")
     .bar-chart
       %svg{:class => "chart", :id => "celeb-#{celebrity.id}"}
     %p{:class => "action-text"}
