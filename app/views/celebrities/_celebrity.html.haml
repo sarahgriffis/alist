@@ -45,7 +45,7 @@
   barHeight = chart_height/4 - 5;
 
   //200;
-  rounded_corners = 20;
+  rounded_corners = 10;
   min_width = 35;
   var x = d3.scale.linear()
     .domain([0, 1])
@@ -60,7 +60,7 @@
   bar.append("rect")
     .attr("width", x)
     .attr("height", barHeight)
-    //.attr("style,"fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9")
+    .attr("style,"fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9")
     .attr("rx", rounded_corners)
     .attr("ry", rounded_corners);
   bar.append("text")
