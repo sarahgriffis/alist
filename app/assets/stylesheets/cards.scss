@@ -60,13 +60,14 @@ $boxSize: 90;
         max-height: 100%;
         border-radius: .25em;
         margin-bottom: 1%;
+        &.chart{
+          rect {
+            border-radius: 10px;
+          }
+        }
       }
     }       
-    
-    rect {
-      border-radius: 10px;
-    }
-    
+
     .action-text {
       margin-bottom: 0px;
       margin-left: 5%;
