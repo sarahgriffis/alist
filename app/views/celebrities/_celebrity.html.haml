@@ -61,7 +61,7 @@
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
   bar.append("rect")
     .attr("width", x * 1.3)
-    .attr("height", barHeight - 5);
+    .attr("height", barHeight - 8);
   bar.append("text")
     .attr("x", function(d) { return x(d) - 3; })
     .attr("y", barHeight / 2)
