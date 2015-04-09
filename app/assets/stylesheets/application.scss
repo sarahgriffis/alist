@@ -63,13 +63,16 @@ h1 {
 
 .right-inner-addon {
   display: inline;
+  position: relative;
 
   .glyphicon-search {
     position: absolute;
-    right: 30vh;
+    padding: 1%;
+    pointer-events: none;
+    //right: 30vh;
     z-index: 1;
     color: #fff;
-    float: right;
+    //float: right;
   }
 
   select.form-control {
