@@ -18,9 +18,9 @@ $break-small: 350px;
     overflow: hidden;
     background-color: #fff;
     border-radius: .9em;
-    height: 90vh;
+    height: 95vh;
     width: 67.5vh;
-    max-height: 90vh;
+    max-height: 95vh;
     max-width: 90vw;
     //width: $boxSize vw;
     //max-width: $aspectRatio*$boxSize vh;
@@ -30,6 +30,7 @@ $break-small: 350px;
     .celeb-name {
       color: black;
       font-size: .8rem;
+      font-weight: 100;
       @media (min-width: $break-small){
         font-size: 1rem;
       }
@@ -74,8 +75,9 @@ $break-small: 350px;
       margin-left: 2%;
       text-align: left;
       color: black;
-      font-size: .7rem;
+      font-size: .6rem;
       text-transform: uppercase;
+      font-weight: 600;
     }
 
     //form
@@ -84,7 +86,7 @@ $break-small: 350px;
       margin: 3% auto;
       height: 90vh;
       width: 67.5vh;
-      max-height: 90vh;
+      max-height: 95vh;
       max-width: 90vw;
     }
 
