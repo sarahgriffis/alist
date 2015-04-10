@@ -7,4 +7,12 @@ class User < ActiveRecord::Base
   has_many :celebrities, :through => :celebrity_votes
 
   scope :admin, -> { where(admin: true) }
+
+ after_create :welcome_message
+
+  private
+
+  def welcome_message
+    UserMailer.welcome_email(self).deliver
+  end
 end
