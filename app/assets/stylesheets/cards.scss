@@ -30,7 +30,7 @@ $break-small: 350px;
     .celeb-name {
       color: black;
       font-size: .8rem;
-      font-weight: 600;
+      font-weight: 200;
       @media (min-width: $break-small){
         font-size: 1rem;
       }
@@ -75,8 +75,9 @@ $break-small: 350px;
       margin-left: 2%;
       text-align: left;
       color: black;
-      font-size: .7rem;
+      font-size: .6rem;
       text-transform: uppercase;
+      font=weight: 600;
     }
 
     //form
