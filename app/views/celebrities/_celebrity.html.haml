@@ -15,9 +15,8 @@
         - prefix = "celebrity[celebrity_votes_attributes][#{celebrity.id}]"
         .custom_radio
           %label
-            = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
-            = label_tag "#{prefix}[vote_value]_2"
-              = img_tag(src="../assets/a-icon.png")
+            = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
+            = label_tag "#{prefix}[vote_value]_2", '<img src="../images/a-icon.png />'.html_safe
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
