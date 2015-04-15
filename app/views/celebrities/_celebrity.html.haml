@@ -51,6 +51,9 @@
   var x = d3.scale.linear()
     .domain([0, 1])
     .range([min_width, chart_width]);
+  var y = d3.scale.ordinal()
+    .domain(["A","B","C","D"])
+    .rangeRoundBands([0, chart_width], .2);
   var chart = d3.select(".chart")
     .attr("width", chart_width)
     .attr("height", chart_height);
@@ -70,7 +73,7 @@
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
     .attr("text-anchor", "middle")
-    .text(function(d) { return Math.round(d*100) + '%'; });
+    .text(function(d) { return y + " " + Math.round(d*100) + '%'; });
 
   $(document).ajaxError(function (e, xhr, settings) {
     if (xhr.status == 401) {
