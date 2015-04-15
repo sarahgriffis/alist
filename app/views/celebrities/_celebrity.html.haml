@@ -16,8 +16,7 @@
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
-            = label_tag "#{prefix}[vote_value]_1"
-              = image_tag asset_path('a-icon.png')
+            = label_tag "#{prefix}[vote_value]_1", %img asset_path('a-icon.png')
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
