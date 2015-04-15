@@ -54,7 +54,7 @@
     .range([min_width, chart_width]);
   var y = d3.scale.ordinal()
     .domain(["A","B","C","D"])
-    .rangeRoundBands([0, chart_width], .2);
+    .rangeRoundBands([0, chart_width], .5);
   var chart = d3.select(".chart")
     .attr("width", chart_width)
     .attr("height", chart_height);
