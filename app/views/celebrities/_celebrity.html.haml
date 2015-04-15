@@ -63,7 +63,7 @@
     .enter().append("g")
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
   bar.append("rect")
-    .attr("width", x)
+    .attr("width", x*1.5)
     .attr("height", barHeight)
     .attr("style", padding)
     .attr("rx", rounded_corners)
