@@ -70,6 +70,10 @@ $break-small: 350px;
         width: 100%;
         overflow: visible;
         margin-bottom: 20%;
+        rect{
+          margin: 20px;
+          border-box: content-box;
+        }
       }
     }       
 
