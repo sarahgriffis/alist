@@ -1,6 +1,7 @@
 //$aspectRatio: 3/4;
 //$boxSize: 90;
 $break-small: 350px;
+$horiz-small: 790px;
 
 .all-cards{
   display: flex;
@@ -60,7 +61,7 @@ $break-small: 350px;
     .bar-chart {
       width: 90%;
       height: auto;
-      margin: 2% auto;
+      margin: 4% auto 2%;
       //margin-left: 5%;
       //margin-bottom: 5vh;
       //height: 50%;
