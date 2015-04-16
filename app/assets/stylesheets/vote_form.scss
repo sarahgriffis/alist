@@ -47,10 +47,14 @@ form {
         border-radius: 20px;
         //border: 1px solid #ccc;
         .letter-container{
-          height: 80%;
+          height: 70%;
+          top: 0;
+          margin: 1% auto;
         }
         .list-container{
           height: 20%;
+          bottom: 0;
+          margin: 1% auto;
         }
       }
 
