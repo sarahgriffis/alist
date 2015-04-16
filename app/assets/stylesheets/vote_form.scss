@@ -53,7 +53,8 @@ form {
           display: inline-block;
           margin: 1% auto;
           .letter-text{
-            line-height: .3rem;
+            line-height: 10px;
+            position: absolute;
           }
         }
         .list-container{
