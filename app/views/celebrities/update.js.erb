@@ -8,13 +8,12 @@ var x = d3.scale.linear()
   .range([min_width, chart_width]);
 
 d3.select(chart_id_to_update).selectAll("rect")
-        .data(graph_data_updated)
-        .transition()
-        .ease("bounce")
-        .duration(500)
-        .attr("width", x);
+  .data(graph_data_updated)
+  .transition()
+  .ease("bounce")
+  .duration(500)
+  .attr("width", x);
 
 d3.select(chart_id_to_update).selectAll("text")
-          .data(graph_data_updated)
-          .attr("x", function(d) { return x(d) - 3; })
-          .text(function(d) { return Math.round(d*100) + '%'; });
+  .data(graph_data_updated)
+  .text(function(d, idx) { return letters[idx] + " " + Math.round(d*100) + '%'; });
