@@ -16,7 +16,7 @@
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
-            = label_tag "#{prefix}[vote_value]_1", 'A<br/>List'.html_safe, :class => "label-text"
+            = label_tag "#{prefix}[vote_value]_1", '<span class="letter-text">A</span><br/><span class="list-text">List</span>'.html_safe, :class => "label-text"
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
@@ -83,5 +83,5 @@
     $(this.parentNode).ajaxSubmit();
   });
 
-  $('.celeb-name').fitText(1, {maxFontSize: '32px' });
+  //$('.celeb-name').fitText(1, {maxFontSize: '32px' });
   $('.label-text').fitText(1.2, { minFontSize: '20px', maxFontSize: '70px' });
