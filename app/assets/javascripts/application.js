@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery.fittext.js
-
 //= require jquery_ujs
 //= require d3.v3
 //= require typeahead.bundle.min
