@@ -50,14 +50,12 @@ form {
           max-height: 70%;
           top: 0;
           margin: 1% auto;
-          overflow: auto;
         }
         .list-container{
           max-height: 20%;
           bottom: 0;
           margin: 1% auto;
           position: absolute;
-          overflow: auto;
         }
       }
 
@@ -106,4 +104,6 @@ form {
   }
 }
 
-
+.clearfix {
+  clear: both; 
+}
