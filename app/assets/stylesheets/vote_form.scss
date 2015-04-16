@@ -34,10 +34,9 @@ form {
         color: black;
         background-color: #fff;
         margin-top: 1%;
-        font-size: .9rem;
-        line-height: 1;
-        float: left;
-        clear: none;
+        //font-size: .9rem;
+        //line-height: 1;
+        display: inline-block;
         -webkit-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
         -moz-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
         box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
@@ -47,13 +46,19 @@ form {
         -moz-border-radius: 20px;
         border-radius: 20px;
         //border: 1px solid #ccc;
+        .letter-text {
+          font-size: 2.3rem;
+        }
+        .list-text {
+          font-size: .9rem;
+        }
       }
 
-      label::first-line {
-        font-size: 2.3rem;
-        font-weight: 700;
-        height: 80%;
-      }
+      //label::first-line {
+        //font-size: 2.3rem;
+        //font-weight: 700;
+        //height: 80%;
+      //}
     }
 
     input[type="radio"] {
