@@ -7,7 +7,7 @@ form {
   bottom: 0;
   //left: 0;
   width: 97%;
-  margin: 0 1.5%;
+  margin: 1.5%;
   
 
   .custom_radio {
@@ -33,13 +33,13 @@ form {
         margin-top: 1%;
         font-size: .5rem;
         line-height: 1;
-        box-shadow: 4px 4px 2px #ccc;
+        box-shadow: 4px 4px 2px #ccc, -2px -2px 2px #ccc;
         text-transform: uppercase;
         font-weight: 700;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        border: 1px solid #ccc;
+        //border: 1px solid #ccc;
       }
 
       label::first-line {
