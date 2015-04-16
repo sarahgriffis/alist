@@ -20,7 +20,7 @@
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
-            = label_tag "#{prefix}[vote_value]_2", 'B<br/>List'.html_safe, :class => "label-text"
+            = label_tag "#{prefix}[vote_value]_2", 'B<br/><sub>List</sub>'.html_safe, :class => "label-text"
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
@@ -86,22 +86,3 @@
   //$('.celeb-name').fitText(1, {maxFontSize: '32px' });
   jQuery('.letter-text').fitText(1 {minFontSize: '5px', maxFontSize: '30px' });
   jQuery('.list-text').fitText(1, {minFontSize: '5px', maxFontSize: '30px' });
-
-  // adjustHeight is the function that makes the objects squares
-  // (by setting each one's height equal to its width)
-  function adjustHeight() {
-    var myWidth = jQuery('.label-content-container').width();
-    var myString = myWidth + 'px';
-    jQuery('.label-content-container').css('height', myString);
-    return myHeight;
-  }
-
-  // calls adjustHeight on window load
-  jQuery(window).load(function() {
-    adjustHeight();
-  });
-
-  // calls adjustHeight anytime the browser window is resized
-  jQuery(window).resize(function() {
-    adjustHeight();
-  });
