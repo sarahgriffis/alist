@@ -35,7 +35,7 @@ form {
         background-color: #fff;
         margin-top: 1%;
         //font-size: .9rem;
-        line-height: .3;
+        line-height: .3rem;
         display: inline-block;
         -webkit-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
         -moz-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
@@ -52,6 +52,9 @@ form {
           top: 0;
           display: inline-block;
           margin: 1% auto;
+          .letter-text{
+            line-height: .3rem;
+          }
         }
         .list-container{
           padding-bottom: 20%;
@@ -59,7 +62,9 @@ form {
           bottom: 0;
           margin: 1% auto;
           display: inline-block;
-          //position: absolute;
+          .list-text{
+            line-height: .3rem;
+          }
         }
       }
 
