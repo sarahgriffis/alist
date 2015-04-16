@@ -3,8 +3,7 @@
     %p{:class => "celeb-name"}
       = "#{celebrity.first_name} #{celebrity.last_name}"
       <a  name="#{celebrity.id}"></a>
-    .img-container
-      = image_tag("#{celebrity.photo_url}", :class => "img-responsive")
+    = image_tag "#{celebrity.photo_url}"
     .bar-chart
       %svg{:class => "chart", :id => "celeb-#{celebrity.id}"}
     %p{:class => "action-text"}
@@ -16,11 +15,11 @@
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
-            = label_tag "#{prefix}[vote_value]_1", '<div class="letter-container"><span class="letter-text">A</span></div><br/><div class="list-container"><span class="list-text">List</span></div>'.html_safe, :class => "label-content-container"
+            = label_tag "#{prefix}[vote_value]_1", 'A<br/>List'.html_safe
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
-            = label_tag "#{prefix}[vote_value]_2", 'B<br/><sub>List</sub>'.html_safe
+            = label_tag "#{prefix}[vote_value]_2", 'B<br/>List'.html_safe
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
@@ -39,16 +38,13 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.01;
+  chart_width = $('.all-cards').width() - $('.all-cards').width()*0.10;
   //$('#celeb-#{celebrity.id}').width();
   chart_height = $('.card').first().height()*0.20;
-  barHeight = chart_height/4 - .01;
+  barHeight = chart_height/4 - 5;
 
   //200;
-  rounded_corners = 5;
-  padding = "fill:#f89750;stroke:white;stroke-width:5;fill-opacity:1;stroke-opacity:1;";
-  min_width = 65;
-  var letters = ["A","B","C","D"]
+  min_width = 35;
   var x = d3.scale.linear()
     .domain([0, 1])
     .range([min_width, chart_width]);
@@ -61,17 +57,12 @@
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
   bar.append("rect")
     .attr("width", x)
-    .attr("height", barHeight)
-    .attr("style", padding)
-    .attr("rx", rounded_corners)
-    .attr("ry", rounded_corners);
+    .attr("height", barHeight - 1);
   bar.append("text")
-    //.attr("x", function(d) { return x(d) - 3; })
-    .attr("x", 10)
+    .attr("x", function(d) { return x(d) - 3; })
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
-    .attr("text-anchor", "start")
-    .text(function(d, idx) { return letters[idx] + " " + Math.round(d*100) + '%'; });
+    .text(function(d) { return Math.round(d*100) + '%'; });
 
   $(document).ajaxError(function (e, xhr, settings) {
     if (xhr.status == 401) {
@@ -82,7 +73,3 @@
   $('.custom_radio').on('change', function() {
     $(this.parentNode).ajaxSubmit();
   });
-
-  //$('.celeb-name').fitText(1, {maxFontSize: '32px' });
-  jQuery('.letter-text').fitText(1 {minFontSize: '5px', maxFontSize: '30px' });
-  jQuery('.list-text').fitText(1, {minFontSize: '5px', maxFontSize: '30px' });
