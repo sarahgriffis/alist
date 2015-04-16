@@ -54,8 +54,7 @@ form {
     }
 
     input[type="radio"]:checked + label {
-      border-style: solid;
-      border-color: black;
+      border: 3px solid #f89750;
     }
   }
 
