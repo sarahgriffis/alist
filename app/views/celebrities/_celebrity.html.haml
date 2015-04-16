@@ -16,8 +16,7 @@
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 1, cv.object.vote_value == 1
-            = label_tag "#{prefix}[vote_value]_1", '<div class="letter-container"><span class="letter-text">A</span></div><br/><div class="list-container"><span class="list-text">List</span></div>'.html_safe
-            //:class => "label-text"
+            = label_tag "#{prefix}[vote_value]_1", '<div class="letter-container"><span class="letter-text">A</span></div><br/><div class="list-container"><span class="list-text">List</span></div>'.html_safe, :class => "label-content-container"
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
@@ -85,5 +84,11 @@
   });
 
   //$('.celeb-name').fitText(1, {maxFontSize: '32px' });
-  jQuery('.letter-text').fitText(1);
+  jQuery('.letter-text').fitText(1 {minFontSize: '5px', maxFontSize: '30px' });
   jQuery('.list-text').fitText(1, {minFontSize: '5px', maxFontSize: '30px' });
+
+  $(document).ready(function(){
+  var height = $(window).height();
+  $('.label-content-container').css('height', height);
+  $('.label-content-container').css('width', height);
+});
