@@ -46,13 +46,11 @@ form {
         -moz-border-radius: 20px;
         border-radius: 20px;
         //border: 1px solid #ccc;
-        .letter-text {
-          font-size: 2.3rem;
-          margin: 3% auto;
+        .letter-container{
+          height: 80%;
         }
-        .list-text {
-          font-size: .9rem;
-          margin: 3% auto;
+        .list-container{
+          height: 20%;
         }
       }
 
