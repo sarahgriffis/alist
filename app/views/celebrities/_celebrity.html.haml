@@ -42,7 +42,7 @@
   chart_width = $('.all-cards').width() - $('.all-cards').width()*0.01;
   //$('#celeb-#{celebrity.id}').width();
   chart_height = $('.card').first().height()*0.20;
-  barHeight = chart_height/4 - 15;
+  barHeight = chart_height/4 - 1;
 
   //200;
   rounded_corners = 5;
@@ -83,4 +83,5 @@
     $(this.parentNode).ajaxSubmit();
   });
 
+  $('.celeb-name').fitText();
   $('.celeb-name').fitText();
