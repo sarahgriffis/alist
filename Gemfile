@@ -42,6 +42,8 @@ gem 'wikipedia-client'
 gem 'will_paginate'
 gem 'chartkick'
 
+# Added by amy to make button text responsive
+gem 'fittextjs_rails'
 
 group :production do
   gem 'unicorn'
