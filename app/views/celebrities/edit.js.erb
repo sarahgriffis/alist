@@ -13,7 +13,7 @@ $('#mycards').append('<%= j render @celebrities %>');
 var x = d3.scale.linear()
   .domain([0, 1])
   .range([min_width, chart_width]);
-var chart = d3.select(".chart")
+var chart = d3.select(chart_id)
   .attr("width", chart_width)
   .attr("height", chart_height);
 var bar = chart.selectAll("g")
