@@ -11,7 +11,7 @@
 // about supported directives.
 //
 = require jquery
-= require jquery.fittext.js
+//= require jquery.fittext.js
 
 //= require jquery_ujs
 //= require d3.v3
