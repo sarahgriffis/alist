@@ -5,7 +5,7 @@ form {
   //min-width: 214px;
   width: auto;
   //position: absolute;
-  //top: 0;
+  top: 100%;
   //bottom: 0;
   //left: 0;
   //width: 97%;
@@ -47,12 +47,12 @@ form {
         border-radius: 20px;
         //border: 1px solid #ccc;
         .letter-container{
-          height: 70%;
+          max-height: 70%;
           top: 0;
           margin: 1% auto;
         }
         .list-container{
-          height: 20%;
+          max-height: 20%;
           bottom: 0;
           margin: 1% auto;
         }
