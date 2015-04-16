@@ -33,7 +33,9 @@ form {
         margin-top: 1%;
         font-size: .5rem;
         line-height: 1;
-        box-shadow: 4px 4px 2px #ccc, -2px -2px 1px #ccc;
+        -webkit-box-shadow: 6px 4px 24px 5px rgba(166,166,166,1);
+        -moz-box-shadow: 6px 4px 24px 5px rgba(166,166,166,1);
+        box-shadow: 6px 4px 24px 5px rgba(166,166,166,1);
         text-transform: uppercase;
         font-weight: 700;
         -webkit-border-radius: 20px;
