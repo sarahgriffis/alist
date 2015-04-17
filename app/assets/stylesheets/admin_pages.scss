@@ -43,5 +43,12 @@ h2 {
   text-transform: uppercase;
   a {
     font-size: .9rem;
+    color: rgba(0,0,0, 0.7);
+    font-weight: 300;
   }
+}
+.btn-default{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #f89750;
+  font-weight: 300;
 }
