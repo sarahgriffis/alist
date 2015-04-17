@@ -1,4 +1,5 @@
 $break-800: 800px;
+$break-690: 690px;
 
 .chart {
   height: 30%;
@@ -9,6 +10,9 @@ $break-800: 800px;
   fill: #f89750;
   max-width: 83%;
   @media (min-width: $break-800){
+    max-width: 30%;
+  }  
+  @media (max-height: $break-690){
     max-width: 30%;
   }  
 }
