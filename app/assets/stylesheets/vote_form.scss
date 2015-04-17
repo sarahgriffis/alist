@@ -9,13 +9,11 @@ form {
 
   .custom_radio {
     display: inline-block;
-    //position: relative;
-    //float: left;
     width: 22%;
     margin-right: 2%;
     &:last-child{
       margin-right:0;
-      }
+    }
 
     label {
       width: 100%;
