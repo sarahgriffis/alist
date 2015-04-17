@@ -3,6 +3,7 @@
 $break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
+$break-650: 650px;
 $break-700: 700px;
 .all-cards{
   display: flex;
@@ -42,6 +43,9 @@ $break-700: 700px;
     .img-container {
       //height: 38vh;
       max-height: 38vh;
+      @media (min-height: $break-650){
+        max-height: 42vh;
+      }
       max-width: 45vh;
       margin: 1% auto 3%;
       overflow: hidden;
@@ -50,6 +54,9 @@ $break-700: 700px;
       img {
         margin: 0 auto;
         min-height: 38vh;
+        @media (min-height: $break-650){
+          min-height: 42vh;
+        }
         height: auto;
         max-width: 100%;
         //width: 35vh;
