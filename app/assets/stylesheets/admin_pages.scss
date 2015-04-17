@@ -53,9 +53,19 @@ h2 {
     font-weight: 900;
     padding-left: 8%;
   }
+  .email-link{
+    a{
+    font-size: .4rem;
+    margin: 0 auto;
+    color: #fff;
+    }
+    &:hover{
+    color: #ccc;
+    }
+  }
 }
 .btn-default{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #f89750;
   font-weight: 700;
   font-size: .7rem;
