@@ -1,13 +1,22 @@
-//$aspectRatio: 3/4;
-//$boxSize: 90;
+
+$small-screen: em-calc(768);
+$medium-screen: em-calc(1280);
+$large-screen: em-calc(1440);
+$screen: "only screen";
+$small: "only screen and (min-width:"#{$small-screen}")";
+$medium: "only screen and (min-width:"#{$medium-screen}")";
+$large: "only screen and (min-width:"#{$large-screen}")";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
 $break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
 $break-650: 650px;
 $break-700: 700px;
 $break-1000: 1000px;
-$tablet-landscape: (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1);
 $break-2000: 2000px;
+
 .all-cards{
   display: flex;
   flex-flow: column;
@@ -25,10 +34,8 @@ $break-2000: 2000px;
     overflow: hidden;
     background-color: #fff;
     border-radius: .9em;
-    //height: 90vh;
     height: auto;
     width: 67.5vh;
-    //max-height: 90vh;
     max-width: 90vw;
 
     .celeb-name {
@@ -46,7 +53,7 @@ $break-2000: 2000px;
         font-size: 2.5rem;
         margin: 0 auto;
       }
-      @media ($tablet-landscape){
+      @media #(landscape){
         font-size: 1rem;
         margin: 0 auto;
       }
