@@ -35,6 +35,9 @@ $break-700: 700px;
       @media (min-width: $break-360){
         font-size: 1rem;
       }
+      @media (min-width: $break-450){
+        font-size: 1.3rem;
+      }
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
