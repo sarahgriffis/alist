@@ -40,18 +40,10 @@ form {
         -webkit-border-radius: 18px;
         -moz-border-radius: 18px;
         border-radius: 18px;
-        .letter-container{
-          //display: block;
-          top: 0;
-          margin: 1% auto;
-          width: 100%;
+        .label-content-container{
+          padding: 5% auto;
         }
-        .list-container{
-          //display: block;
-          bottom: 0;
-          margin: 1% auto;
-          width: 100%;
-        sub {
+        sub{
           font-size: 30%;
         }
       }
