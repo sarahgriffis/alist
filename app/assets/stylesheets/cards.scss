@@ -1,7 +1,7 @@
 //$aspectRatio: 3/4;
 //$boxSize: 90;
 $break-small: 350px;
-$horiz-small: 790px;
+$break-two-small: 400px;
 
 .all-cards{
   display: flex;
@@ -68,7 +68,10 @@ $horiz-small: 790px;
       //height: 50%;
       max-height: 35%;
       svg{
-        overflow: visible; 
+        overflow: visible;
+        @media (min-width: $break-two-small){
+        width: 90vw;
+      } 
       }
     }       
 
