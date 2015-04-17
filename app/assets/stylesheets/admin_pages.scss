@@ -23,10 +23,13 @@ h2 {
   text-transform: uppercase;
 }
 .form-inputs{
-  max-width: 70vw;
+  max-width: 60vw;
   margin: 0 auto;
 
   label{
     text-transform: uppercase;
+  }
+  p{
+    color: color: rgba(255, 255, 255, 0.8);
   }
 }
