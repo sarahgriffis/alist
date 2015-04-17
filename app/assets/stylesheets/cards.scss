@@ -68,7 +68,7 @@ $break-two-small: 400px;
       //height: 50%;
       max-height: 35%;
       svg{
-        overflow: hidden;
+        overflow: visible;
         @media (max-width: $break-two-small){
           width: 90vw;
         } 
