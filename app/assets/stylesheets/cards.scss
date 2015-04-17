@@ -1,6 +1,6 @@
 //$aspectRatio: 3/4;
 //$boxSize: 90;
-$break-350: 350px;
+$break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
 .all-cards{
@@ -30,10 +30,10 @@ $break-450: 450px;
       color: black;
       font-size: .8rem;
       font-weight: 400;
-      @media (min-width: $break-350){
+      @media (min-width: $break-360){
         font-size: 1rem;
       }
-      margin: 3vh auto 1%;
+      margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
     }
