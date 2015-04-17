@@ -20,9 +20,10 @@ $break-three-small: 450px;
     overflow: hidden;
     background-color: #fff;
     border-radius: .9em;
-    height: 90vh;
+    //height: 90vh;
+    height: auto;
     width: 67.5vh;
-    max-height: 90vh;
+    //max-height: 90vh;
     max-width: 90vw;
 
     .celeb-name {
