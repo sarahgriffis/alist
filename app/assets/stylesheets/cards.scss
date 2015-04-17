@@ -2,6 +2,7 @@
 //$boxSize: 90;
 $break-small: 350px;
 $break-two-small: 400px;
+$break-three-small: 450;
 
 .all-cards{
   display: flex;
@@ -67,6 +68,7 @@ $break-two-small: 400px;
       max-height: 35%;
       svg{
         overflow: visible;
+        display: block;
         @media (max-width: $break-two-small){
           width: 90vw;
         } 
