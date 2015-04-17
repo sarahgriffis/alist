@@ -45,7 +45,11 @@ form {
         }
         sub{
           font-size: 22%;
-          vertical-align: 60%;
+          vertical-align: inherit;
+        }
+        sup{
+          font-size: 22%;
+          vertical-align: inherit;
         }
       }
 
