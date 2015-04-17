@@ -1,5 +1,6 @@
 $break-800: 800px;
 $break-690: 690px;
+$break-1000: 1500px;
 $break-2000: 2000px;
 
 .chart {
@@ -20,6 +21,9 @@ $break-2000: 2000px;
   fill: #fff;
   text-anchor: start;
   font-size: .7rem;
+  @media (min-width: $break-1500){
+    font-size: 1.15rem;
+  }
   @media (min-width: $break-2000){
     font-size: 1.5rem;
   }
