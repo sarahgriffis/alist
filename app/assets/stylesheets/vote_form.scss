@@ -7,7 +7,7 @@ form {
   overflow: visible;
 
   .custom_radio {
-    //display: inline-block;
+    display: inline-block;
     //position: relative;
     //float: left;
     width: 22%;
@@ -41,7 +41,7 @@ form {
         -moz-border-radius: 20px;
         border-radius: 20px;
         .letter-container{
-          display: block;
+          //display: block;
           top: 0;
           margin: 1% auto;
           width: 100%;
@@ -50,7 +50,7 @@ form {
           }
         }
         .list-container{
-          display: block;
+          //display: block;
           bottom: 0;
           margin: 1% auto;
           width: 100%;
