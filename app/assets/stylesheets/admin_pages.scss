@@ -27,6 +27,7 @@ h2 {
   margin: 0 auto;
   label{
     text-transform: uppercase;
+    justify: right;
   }
   p{
     color: rgba(255, 255, 255, 0.5);
@@ -40,4 +41,7 @@ h2 {
 }
 .form-actions{
   text-transform: uppercase;
+  a {
+    font-size: .9rem;
+  }
 }
