@@ -5,7 +5,7 @@ $break-630: 630px;
 $break-700: 700px;
 $break-780: 780px;
 $break-850: 850px;
-
+$break-1000: 1000px;
 form {
   width: 97%;
   bottom: 0;
@@ -46,6 +46,9 @@ form {
         }
         @media (min-height: $break-850){
           font-size: 3.6rem;
+        }
+        @media (min-height: $break-100){
+          font-size: 5rem;
         }
         line-height: .3;
         text-transform: uppercase;
