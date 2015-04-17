@@ -52,18 +52,16 @@ h2 {
     color: rgba(0,0,0, 0.7);
     font-weight: 900;
     padding-left: 8%;
-  }
-  &:hover{
-    color: #ccc;
+    &:hover{
+      color: #ccc;
   }
   .email-link{
     a{
       font-size: .4rem;
       margin: 0 auto;
       color: #fff;
-    }
-    &:hover{
-      color: #ccc;
+      &:hover{
+        color: #ccc;
     }
   }
 }
