@@ -4,6 +4,7 @@ form {
   margin: 1.5% auto;
   max-height: 25%;
   overflow: visible;
+
   .custom_radio {
     //display: inline-block;
     //position: relative;
@@ -12,14 +13,14 @@ form {
     //height: 100%;
     //margin-right: 2%;
     //bottom: 0;
-      //&:last-child{
+      &:last-child{
       //margin-right:0;
-      //}
-      //&:before{
+      }
+      &:before{
       //content:"";
       //display: inline-block;
       //padding-top: 100%;
-      // }
+      }
     }
     label {
       width: 100%;
