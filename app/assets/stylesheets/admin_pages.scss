@@ -54,14 +54,13 @@ h2 {
     padding-left: 8%;
     &:hover{
       color: #ccc;
-  }
-  .email-link{
-    a{
+    &:last-child{
       font-size: .4rem;
       margin: 0 auto;
       color: #fff;
       &:hover{
         color: #ccc;
+      }
     }
   }
 }
