@@ -32,6 +32,7 @@ h2 {
   p{
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
+    line-height:.9;
   }
   .form-control {
     background-color: rgba(255, 255, 255, 0.5);
@@ -42,13 +43,17 @@ h2 {
 .form-actions{
   text-transform: uppercase;
   a {
-    font-size: .9rem;
+    vertical-align: middle;
+    font-size: .7rem;
     color: rgba(0,0,0, 0.7);
-    font-weight: 300;
+    font-weight: 700;
   }
 }
 .btn-default{
   background-color: rgba(255, 255, 255, 0.5);
   color: #f89750;
-  font-weight: 300;
+  font-weight: 700;
+  font-size: .9rem;
+  text-transform: uppercase;
+
 }
