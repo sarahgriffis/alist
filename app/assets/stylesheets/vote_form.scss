@@ -23,19 +23,30 @@ form {
       //padding-top: 100%;
       }
     label {
-      width: 100%;
+      //width: 100%;
       //display: inline-block;
 
       label {
-        width: 100%;
+        width: 22%;
+        position: relative;
+        float: left;
+        margin-right: 2%;
+        &:last-child{
+          margin-right:0;
+        }
+        &:before{
+          content:"";
+          display: inline-block;
+          padding-top: 100%;
+        }
         //height: 0;
         //padding-bottom: 100%;
         color: black;
         background-color: #fff;
         margin-top: 1%;
         //font-size: .9rem;
-        line-height: .3rem;
-        //display: inline-block;
+        line-height: .7rem;
+        display: inline-block;
         -webkit-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
         -moz-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
         box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
@@ -44,25 +55,20 @@ form {
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
         border-radius: 20px;
-        //border: 1px solid #ccc;
         .letter-container{
-          //padding-bottom: 70%;
-          //height: 0;
+          height: 75%;
           top: 0;
           margin: 1% auto;
           width: 100%;
-          .letter-text{
-            //line-height: .3rem;
+          .letter-text{ 
           }
         }
         .list-container{
-          //padding-bottom: 20%;
-          //height: 0;
+          height: 22%;
           bottom: 0;
           margin: 1% auto;
           width: 100%;
           .list-text{
-            //line-height: .3rem;
           }
         }
       }
