@@ -3,6 +3,7 @@
 $break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
+$break-700: 700px;
 .all-cards{
   display: flex;
   flex-flow: column;
@@ -83,6 +84,9 @@ $break-450: 450px;
       text-align: left;
       color: black;
       font-size: .6rem;
+      @media (min-height: $break-700){
+        font-size: .9rem;
+      }
       text-transform: uppercase;
       font-weight: 700;
     }
