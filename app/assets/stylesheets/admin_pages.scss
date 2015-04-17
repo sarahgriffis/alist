@@ -1,3 +1,4 @@
+$break-450: 450px;
 .admin_index {
   .boolean {
     label {
@@ -23,7 +24,10 @@ h2 {
   text-transform: uppercase;
 }
 .form-inputs{
-  max-width: 60vw;
+  max-width: 80vw;
+  @media (min-width: $break-450){
+          max-width: 60vw;
+        }
   margin: 0 auto;
   label{
     text-transform: uppercase;
