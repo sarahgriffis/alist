@@ -6,6 +6,7 @@ $break-450: 450px;
 $break-650: 650px;
 $break-700: 700px;
 $break-1000: 1000px;
+$break-2000: 2000px;
 .all-cards{
   display: flex;
   flex-flow: column;
@@ -63,7 +64,7 @@ $break-1000: 1000px;
       img {
         margin: 0 auto;
         min-height: 38vh;
-        @media (min-height: $break-650){
+        @media (min-width: $break-2000){
           min-height: 42vh;
         }
         height: auto;
@@ -108,11 +109,13 @@ $break-1000: 1000px;
         font-size: .9rem;
         margin-top: 1%;
       }
+      @media (min-height: $break-2000){
+        font-size: 1.4rem;
+        margin-top: 2%;
+      }
       text-transform: uppercase;
       font-weight: 700;
     }
-
-    //form
 
     .front {
       margin: 1.5% auto;
