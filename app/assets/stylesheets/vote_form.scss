@@ -1,4 +1,5 @@
 $break-350: 350px;
+$break-360: 360px;
 $break-450: 450px;
 
 form {
@@ -30,8 +31,8 @@ form {
         background-color: #fff;
         margin-top: 1%;
         font-size: 2rem;
-        @media (min-width: $break-350){
-          //font-size: 2.5rem;
+        @media (max-width: $break-360){
+          //font-size: 1.8rem;
         }
         @media (min-width: $break-450){
           font-size: 2.7rem;
