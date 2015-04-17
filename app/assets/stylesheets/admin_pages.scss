@@ -34,6 +34,9 @@ h2 {
     text-transform: uppercase;
     line-height:1;
   }
+  .control-label{
+    line-height: 1.5;
+  }
   .form-control {
     background-color: rgba(255, 255, 255, 0.5);
     border: .2em solid  rgba(255, 255, 255, 0.9);
