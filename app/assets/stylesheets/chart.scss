@@ -3,7 +3,11 @@ $break-690: 690px;
 
 .chart {
   height: 30%;
-
+  g{
+  	@media (max-height: $break-690){
+    	max-width: 70%;
+  } 
+  }
 }
 
 .chart rect {
@@ -21,3 +25,4 @@ $break-690: 690px;
   text-anchor: start;
   font-size: .7rem;
 }
+
