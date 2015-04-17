@@ -46,14 +46,16 @@ h2 {
     vertical-align: middle;
     font-size: .7rem;
     color: rgba(0,0,0, 0.7);
-    font-weight: 700;
+    font-weight: 900;
+    padding-right: 5%;
   }
 }
 .btn-default{
   background-color: rgba(255, 255, 255, 0.5);
   color: #f89750;
   font-weight: 700;
-  font-size: .9rem;
+  font-size: .8rem;
   text-transform: uppercase;
+  border: .2em solid  rgba(255, 255, 255, 0.9);
 
 }
