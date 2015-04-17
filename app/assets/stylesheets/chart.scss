@@ -1,3 +1,5 @@
+$break-800: 800px;
+
 .chart {
   height: 30%;
 
@@ -5,8 +7,10 @@
 
 .chart rect {
   fill: #f89750;
-  max-width: 80%;
-  
+  max-width: 83%;
+  @media (min-width: $break-800){
+    max-width: 60%;
+  }  
 }
 .chart text {
   fill: #fff;

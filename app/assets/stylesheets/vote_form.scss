@@ -1,4 +1,6 @@
-$break-three-small: 450px;
+$break-350: 350px;
+$break-450: 450px;
+
 form {
   width: 97%;
   bottom: 0;
@@ -28,7 +30,10 @@ form {
         background-color: #fff;
         margin-top: 1%;
         font-size: 2rem;
-        @media (min-width: $break-three-small){
+        @media (min-width: $break-350){
+          font-size: 2.5rem;
+        }
+        @media (min-width: $break-450){
           font-size: 2.7rem;
         }
         line-height: .3;
@@ -54,12 +59,6 @@ form {
           top: -.2em;
         }
       }
-
-      //label::first-line {
-        //font-size: 2.3rem;
-        //font-weight: 700;
-        //height: 80%;
-      //}
     }
 
     input[type="radio"] {
