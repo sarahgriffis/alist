@@ -12,12 +12,6 @@ form {
     float: left;
     width: 22%;
     margin-right: 2%;
-    -webkit-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
-    -moz-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
-    box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
     &:last-child{
       margin-right:0;
       }
@@ -50,12 +44,12 @@ form {
         line-height: .7rem;
         text-transform: uppercase;
         font-weight: 700;
-        //-webkit-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
-        //-moz-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
-        //box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
-        //-webkit-border-radius: 20px;
-        //-moz-border-radius: 20px;
-        //border-radius: 20px;
+        -webkit-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
+        -moz-box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
+        box-shadow: 2px 1px 4px 2px rgba(166,166,166,1);
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
         .letter-container{
           height: 75%;
           top: 0;
