@@ -2,8 +2,8 @@ form {
   width: 97%;
   bottom: 0;
   margin: 1.5% auto;
-  height: 25vh;
-  max-height: 25%;
+  height: 20%;
+  //max-height: 25%;
   overflow: visible;
 
   .custom_radio {
@@ -39,6 +39,7 @@ form {
         -moz-border-radius: 20px;
         border-radius: 20px;
         .letter-container{
+          display: block;
           height: 75%;
           top: 0;
           margin: 1% auto;
@@ -47,6 +48,7 @@ form {
           }
         }
         .list-container{
+          display: block;
           height: 22%;
           bottom: 0;
           margin: 1% auto;
