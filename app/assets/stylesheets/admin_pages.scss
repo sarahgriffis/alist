@@ -30,9 +30,14 @@ h2 {
   }
   p{
     color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
   }
+  .form-control {
     background-color: rgba(255, 255, 255, 0.5);
     border: .2em solid  rgba(255, 255, 255, 0.9);
     border-radius: 1em;
   }
+}
+.form-actions{
+  text-transform: uppercase;
 }
