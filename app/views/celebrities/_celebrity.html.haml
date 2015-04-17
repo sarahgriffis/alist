@@ -20,15 +20,15 @@
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 2, cv.object.vote_value == 2
-            = label_tag "#{prefix}[vote_value]_2", '<div class="label-content-container">B<br/><sub>List</sub></div>'.html_safe, :class => "label-content-container"
+            = label_tag "#{prefix}[vote_value]_2", '<div class="label-content-container">B<br/><sup>List</sup></div>'.html_safe, :class => "label-content-container"
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 3, cv.object.vote_value == 3
-            = label_tag "#{prefix}[vote_value]_3", '<div class="label-content-container">C<br/><sub>List</sub></div>'.html_safe, :class => "label-content-container"
+            = label_tag "#{prefix}[vote_value]_3", '<div class="label-content-container">C<br/><sup>List</sup></div>'.html_safe, :class => "label-content-container"
         .custom_radio
           %label
             = radio_button_tag "#{prefix}[vote_value]", 4, cv.object.vote_value == 4
-            = label_tag "#{prefix}[vote_value]_4", '<div class="label-content-container">D<br/><sub>List</sub></div>'.html_safe, :class => "label-content-container"
+            = label_tag "#{prefix}[vote_value]_4", '<div class="label-content-container">D<br/><sup>List</sup></div>'.html_safe, :class => "label-content-container"
 
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
