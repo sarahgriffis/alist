@@ -70,6 +70,12 @@ $break-2000: 2000px;
       @media (max-height: $break-950) and (orientation: landscape){
         font-size: 1.3rem;
       }
+       @media (min-height: $tablet-768){
+        font-size: 2rem;
+      }
+      @media (max-height: $tablet-800) and (orientation: landscape){
+        font-size: 1.4rem;
+      }
       @media (max-height: $break-600) and (orientation: landscape){
         font-size: 1rem;
         margin: 0 auto;
@@ -83,12 +89,6 @@ $break-2000: 2000px;
       }
       @media (min-height: $tablet-768) and (orientation: portrait){
           //font-size: 2rem;
-      }
-      @media (min-height: $tablet-768){
-        font-size: 2rem;
-      }
-      @media (max-height: $tablet-800) and (orientation: landscape){
-        font-size: 1.4rem;
       }
       @media (min-height: $screen-1200) and (orientation: landscape){
           font-size: 1.7rem;
