@@ -161,6 +161,9 @@ $break-2000: 2000px;
         @media (max-width: $break-400){
           //width: 90vw;
         } 
+        @media (orientation: landscape){
+          width: 100%;
+        }
       }
     }       
 
