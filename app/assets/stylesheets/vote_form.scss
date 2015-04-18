@@ -24,6 +24,7 @@ $break-650: 650px;
 $break-780: 780px;
 $break-850: 850px;
 $break-1000: 1000px;
+$break-1900: 1900px;
 $break-2000: 2000px;
 
 form {
@@ -88,6 +89,9 @@ form {
         }
         @media (min-height: $tablet-1024) and (orientation: portrait){
           font-size: 4rem;
+        }
+        @media (min-height: $break-1900) and (orientation: portrait){
+          font-size: 5.5rem;
         }
         @media (min-height: $break-2000){
           font-size: 9rem;

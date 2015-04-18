@@ -23,6 +23,7 @@ $break-650: 650px;
 $break-700: 700px;
 $break-950: 950px;
 $break-1000: 1000px;
+$break-1900: 1900px;
 $break-2000: 2000px;
 
 .all-cards{
@@ -89,6 +90,9 @@ $break-2000: 2000px;
       @media (min-height: $screen-1200) and (orientation: landscape){
           font-size: 1.7rem;
       }
+      @media (min-height: $break-1900) and (orientation: portrait){
+          font-size: 3.2rem;
+      }
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
@@ -99,7 +103,7 @@ $break-2000: 2000px;
       @media (min-height: $break-650){
       }
       @media (max-height: $break-400) and (orientation: landscape){
-        max-height: 33vh;
+        max-height: 35vh;
       }
       max-width: 45vh;
       margin: 1% auto 3%;
@@ -113,7 +117,7 @@ $break-2000: 2000px;
           min-height: 42vh;
         }
         @media (max-height: $break-400) and (orientation: landscape){
-          min-height: 33vh;
+          min-height: 35vh;
         }
         height: auto;
         max-width: 100%;
