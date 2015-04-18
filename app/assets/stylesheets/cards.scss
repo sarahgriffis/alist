@@ -164,7 +164,7 @@ $break-2000: 2000px;
         overflow: visible;
         display: block;
         @media (orientation: landscape){
-          //overflow-x: hidden;
+          object-fit: contain;
         }
       }
     }       
