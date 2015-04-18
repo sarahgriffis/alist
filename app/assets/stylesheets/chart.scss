@@ -7,19 +7,6 @@ $break-690: 690px;
 $break-1500: 1500px;
 $break-2000: 2000px;
 
-.chart {
-  height: 30%; 
-  g {
-    @media (orientation: landscape){
-	  width: 90%;
-  rect {
-  	fill: #f89750;
-  	max-width: 83%;
-  	@media (orientation: landscape){
-	  object-fit: contain;
-  	}
-  }
-}
 .chart text {
   fill: #fff;
   text-anchor: start;
