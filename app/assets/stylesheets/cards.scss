@@ -107,6 +107,10 @@ $break-2000: 2000px;
       @media (min-height: $tablet-768) and (orientation: portrait){
           //font-size: 2rem;
       }
+      @media (min-height: $break-1000) and (orientation: landscape){
+          font-size: 1.25rem;
+          margin: 0 auto;
+      }
       @media (min-height: $screen-1200) and (orientation: landscape){
           font-size: 1.7rem;
           margin: 0 auto;
