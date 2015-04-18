@@ -151,22 +151,13 @@ $break-2000: 2000px;
       width: 90%;
       height: auto;
       margin: 4% auto 2%;
-      //margin-left: 5%;
-      //margin-bottom: 5vh;
-      //height: 50%;
       max-height: 35%;
-      @media (orientation: landscape){
-          height: 100%;
-        }
       svg{
         overflow: visible;
         display: block;
-        @media (max-width: $break-400){
-          //width: 90vw;
-        } 
         @media (orientation: landscape){
-          width: 100%;
-          //margin-bottom: 10%;
+          width: 90vw;
+          height: 20vh;
         }
       }
     }       
