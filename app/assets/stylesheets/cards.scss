@@ -68,6 +68,9 @@ $break-2000: 2000px;
        @media (max-height: $break-500) and (orientation: landscape){
         font-size: .7rem;
       }
+      @media (min-height: $tablet-768) and (orientation: portrait){
+          font-size: 2rem;
+      }
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
