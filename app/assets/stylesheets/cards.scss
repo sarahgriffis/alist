@@ -57,7 +57,7 @@ $break-2000: 2000px;
         font-size: 1.15rem;
         margin: 0 auto;
       }
-      @media (min-width: $iphone-736) and ($landscape){
+      @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: .8rem;
       }
       margin: 2vh auto 1%;
