@@ -78,7 +78,7 @@ $break-2000: 2000px;
         font-size: 2rem;
       }
       @media (min-width: $tablet-768) and (orientation: portrait){
-        font-size: 2rem;
+        //font-size: 2rem;
         margin: 0 auto;
       }
       @media (max-width: $break-700) and (orientation: potrait){
