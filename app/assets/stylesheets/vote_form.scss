@@ -1,12 +1,31 @@
-$break-350: 350px;
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+$iphone-320: 320px;
+$iphone-375: 375px;
+$iphone-480: 480px;
+$iphone-480: 480px;
+$iphone-568: 568px;
+$iphone-568: 601px;
+$galaxy-640: 640px;
+$iphone-667: 667px;
+$iphone-736: 736px;
+$tablet-768: 768px;
+$tablet-800: 800px;
+$tablet-906: 906px;
+$tablet-1024: 1024px;
+$screen-1200: 1200px;
+$tablet-1280: 1280px;
+$tablet-screen-1600: 1600px;
+
 $break-360: 360px;
+$break-400: 400px;
 $break-450: 450px;
-$break-630: 630px;
+$break-650: 650px;
 $break-700: 700px;
-$break-780: 780px;
-$break-850: 850px;
 $break-1000: 1000px;
 $break-2000: 2000px;
+
 form {
   width: 97%;
   bottom: 0;
@@ -37,6 +56,10 @@ form {
         @media (max-width: $break-360){
           font-size: 1.8rem;
         }
+        @media #{$landscape} and (min-width: $tablet-1024){
+          font-size: 2.4rem;
+        }
+
         @media (min-width: $break-450){
           font-size: 2.7rem;
         }
