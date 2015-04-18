@@ -21,6 +21,7 @@ $break-500: 500px;
 $break-600: 600px;
 $break-650: 650px;
 $break-700: 700px;
+$break-950: 950px;
 $break-1000: 1000px;
 $break-2000: 2000px;
 
@@ -65,7 +66,7 @@ $break-2000: 2000px;
       @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: 1.1rem;
       }
-      @media (max-height: $tablet-906) and (orientation: landscape){
+      @media (max-height: $break-950) and (orientation: landscape){
         font-size: 1.3rem;
       }
       @media (max-height: $break-600) and (orientation: landscape){
