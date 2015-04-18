@@ -4,9 +4,8 @@ $portrait: "only screen and (orientation: portrait)";
 $iphone-320: 320px;
 $iphone-375: 375px;
 $iphone-480: 480px;
-$iphone-480: 480px;
 $iphone-568: 568px;
-$iphone-568: 601px;
+$iphone-601: 601px;
 $galaxy-640: 640px;
 $iphone-667: 667px;
 $iphone-736: 736px;
@@ -57,6 +56,9 @@ $break-2000: 2000px;
       @media (min-width: $break-450){
         font-size: 1.15rem;
         margin: 0 auto;
+      }
+      @media (min-width: $iphone-736) and #{$landscape}{
+        font-size: .8rem;
       }
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
