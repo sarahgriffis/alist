@@ -12,14 +12,12 @@ form {
   bottom: 0;
   margin: .5% auto;
   height: 15%;
-  //max-height: 25%;
   overflow: visible;
-  //display: inline;
 
   .custom_radio {
     display: inline-block;
     width: 22%;
-    margin-right: 2.5%;
+    margin-right: 2%;
     &:last-child{
       margin-right:0;
     }
