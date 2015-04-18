@@ -58,11 +58,11 @@ $break-2000: 2000px;
         font-size: 1.15rem;
         margin: 0 auto;
       }
-      @media #{$landscape}{
+      @media #{$landscape} {
         font-size: 1rem;
         margin: 0 auto;
       }
-      @media #{$portrait}{
+      @media #{$portrait} {
         font-size: 1rem;
         margin: 0 auto;
       }
