@@ -78,12 +78,14 @@ $break-2000: 2000px;
       }
       @media (min-width: $tablet-768) and (orientation: portrait){
         font-size: 2rem;
+        margin: 0 auto;
       }
       @media (max-width: $break-700) and (orientation: potrait){
         font-size: 1.5rem;
       }
       @media (max-height: $tablet-800) and (orientation: landscape){
         font-size: 1.4rem;
+        margin: 0 auto;
       }
       @media (max-height: $break-600) and (orientation: landscape){
         font-size: 1rem;
