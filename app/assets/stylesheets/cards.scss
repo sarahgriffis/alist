@@ -65,6 +65,12 @@ $break-2000: 2000px;
       @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: 1.1rem;
       }
+      @media (max-height: $tablet-800) and (orientation: landscape){
+        font-size: 1.3rem;
+      }
+      @media (max-height: $break-600) and (orientation: landscape){
+        margin: 0 auto;
+      }
       @media (max-height: $break-500) and (orientation: landscape){
         font-size: .7rem;
       }
@@ -90,7 +96,7 @@ $break-2000: 2000px;
       @media (min-height: $break-650){
       }
       @media (max-height: $break-400) and (orientation: landscape){
-        max-height: 30vh;
+        max-height: 33vh;
       }
       max-width: 45vh;
       margin: 1% auto 3%;
@@ -104,7 +110,7 @@ $break-2000: 2000px;
           min-height: 42vh;
         }
         @media (max-height: $break-400) and (orientation: landscape){
-          min-height: 30vh;
+          min-height: 33vh;
         }
         height: auto;
         max-width: 100%;
