@@ -9,14 +9,15 @@ $break-2000: 2000px;
 
 .chart {
   height: 30%; 
-}
-
-.chart rect {
-  fill: #f89750;
-  max-width: 83%;
-  @media (orientation: landscape){
-	width: 90%;
-	object-fit: contain;
+  g {
+    @media (orientation: landscape){
+	  width: 90%;
+  rect {
+  	fill: #f89750;
+  	max-width: 83%;
+  	@media (orientation: landscape){
+	  object-fit: contain;
+  	}
   }
 }
 .chart text {
