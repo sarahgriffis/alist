@@ -65,7 +65,7 @@ $break-2000: 2000px;
       @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: 1.1rem;
       }
-      @media (max-height: $iphone-320) and (orientation: landscape){
+      @media (max-height: $break-400) and (orientation: landscape){
         font-size: .4rem;
       }
       @media (max-height: $break-500) and (orientation: landscape){
@@ -89,8 +89,8 @@ $break-2000: 2000px;
       max-height: 39.5vh;
       @media (min-height: $break-650){
       }
-      @media (max-height: $iphone-320) and (orientation: landscape){
-        max-height: 32vh;
+      @media (max-height: $break-400) and (orientation: landscape){
+        max-height: 30vh;
       }
       max-width: 45vh;
       margin: 1% auto 3%;
@@ -103,8 +103,8 @@ $break-2000: 2000px;
         @media (min-width: $break-2000){
           min-height: 42vh;
         }
-        @media (max-height: $iphone-320) and (orientation: landscape){
-          min-height: 32vh;
+        @media (max-height: $break-400) and (orientation: landscape){
+          min-height: 30vh;
         }
         height: auto;
         max-width: 100%;
@@ -149,7 +149,7 @@ $break-2000: 2000px;
         font-size: 1.8rem;
         margin-top: 3%;
       }
-      @media (max-height: $iphone-320) and (orientation: landscape){
+      @media (max-height: $break-400) and (orientation: landscape){
         font-size: .35rem;
       }
       text-transform: uppercase;
