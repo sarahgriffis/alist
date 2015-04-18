@@ -63,11 +63,11 @@ form {
         @media (min-height: $break-780){
           font-size: 3.2rem;
         }
-        @media (min-height: $break-850){
+        @media (min-height: $break-850) and (orientation: landscape){
           font-size: 3.6rem;
         }
-        @media (min-height: $break-1000){
-          //font-size: 5rem;
+        @media (min-height: $break-1000) and (orientation: landscape){
+          font-size: 5rem;
         }
         @media (min-height: $break-2000){
           font-size: 9rem;
