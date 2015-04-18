@@ -155,6 +155,9 @@ $break-2000: 2000px;
       //margin-bottom: 5vh;
       //height: 50%;
       max-height: 35%;
+      @media (orientation: landscape){
+          height: 100%;
+        }
       svg{
         overflow: visible;
         display: block;
@@ -163,7 +166,7 @@ $break-2000: 2000px;
         } 
         @media (orientation: landscape){
           width: 100%;
-          margin-bottom: 10%;
+          //margin-bottom: 10%;
         }
       }
     }       
