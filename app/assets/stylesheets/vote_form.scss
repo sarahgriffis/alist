@@ -60,7 +60,7 @@ form {
         @media (max-width: $break-360){
           font-size: 1.8rem;
         }
-        @media (max-width: $break-600) and (orientation: portrait){
+        @media (min-width: $break-600) and (orientation: portrait){
           font-size: 3.5rem;
         }
         @media (max-height: $iphone-414) and (orientation: landscape){
