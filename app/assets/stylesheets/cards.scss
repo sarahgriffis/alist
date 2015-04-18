@@ -161,6 +161,8 @@ $break-2000: 2000px;
         display: block;
         @media (orientation: landscape){
           overflow-x: hidden;
+        rect{
+          overflow-x: hidden;
         }
       }
     }       
