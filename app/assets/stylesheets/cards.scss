@@ -88,6 +88,9 @@ $break-2000: 2000px;
       @media (min-height: $break-650){
         //max-height: 42vh;
       }
+      @media (max-height: $iphone-320) and (orientation: landscape){
+        max-height: 32vh;
+      }
       max-width: 45vh;
       margin: 1% auto 3%;
       overflow: hidden;
@@ -98,6 +101,9 @@ $break-2000: 2000px;
         min-height: 39.5vh;
         @media (min-width: $break-2000){
           min-height: 42vh;
+        }
+        @media (max-height: $iphone-320) and (orientation: landscape){
+          min-height: 32vh;
         }
         height: auto;
         max-width: 100%;
