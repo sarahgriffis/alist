@@ -62,13 +62,6 @@ $break-2000: 2000px;
         font-size: 1rem;
         margin: 0 auto;
       }
-      @media ($landscape) and (min-width: $break-450){
-        font-size: .6rem;
-        margin: 0 auto;
-      }
-      @media ($landscape) and (min-width: $tablet-1024){
-        font-size: 1rem;
-      }
       @media #{$portrait}{
         font-size: 1rem;
         margin: 0 auto;

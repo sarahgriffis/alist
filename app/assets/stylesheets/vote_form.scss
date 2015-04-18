@@ -56,12 +56,6 @@ form {
         @media (max-width: $break-360){
           font-size: 1.8rem;
         }
-        @media ($landscape) and (min-width: $tablet-1024){
-          font-size: 2.4rem;
-        }
-        @media ($landscape) and (min-width: $tablet-667){
-          font-size: 1.5rem;
-        }
         @media (min-width: $break-450){
           //font-size: 2.7rem;
         }
