@@ -49,16 +49,12 @@ $break-2000: 2000px;
         font-size: 1.15rem;
         margin: 0 auto;
       }
-      @media (min-width: $break-1000){
-        //font-size: 2.5rem;
-        margin: 0 auto;
-      }
       @media #{$landscape}{
         font-size: 1rem;
         margin: 0 auto;
       }
-      @media (min-width: $break-1000){
-        //font-size: 3.2rem;
+      @media #{$portrait}{
+        font-size: 1rem;
         margin: 0 auto;
       }
       margin: 2vh auto 1%;
@@ -68,7 +64,7 @@ $break-2000: 2000px;
 
     .img-container {
       //height: 38vh;
-      max-height: 38vh;
+      max-height: 39.5vh;
       @media (min-height: $break-650){
         //max-height: 42vh;
       }
@@ -79,7 +75,7 @@ $break-2000: 2000px;
 
       img {
         margin: 0 auto;
-        min-height: 38vh;
+        min-height: 39.5vh;
         @media (min-width: $break-2000){
           min-height: 42vh;
         }
