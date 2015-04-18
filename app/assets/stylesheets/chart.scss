@@ -2,7 +2,7 @@ $iphone-320: 320px;
 $tablet-1280: 1280px;
 
 $break-800: 800px;
-$break-400: 400px;
+$break-450: 450px;
 $break-690: 690px;
 $break-1500: 1500px;
 $break-2000: 2000px;
@@ -34,7 +34,7 @@ $break-2000: 2000px;
   @media (min-width: $break-800) and (orientation: portrait) {
     font-size: 1.15rem;
   }
-  @media (max-height: $break-400) and (orientation: landscape){
+  @media (max-height: $break-450) and (orientation: landscape){
     font-size: .3rem;
   }
   @media (min-height: $tablet-1280) and (orientation: portrait) {
