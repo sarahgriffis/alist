@@ -75,10 +75,13 @@ form {
           font-size: 2rem;
         }
         @media (min-height: $tablet-768) and (orientation: landscape){
-          font-size: 3.4rem;
+          font-size: 3.3rem;
         }
         @media (min-height: $break-1000) and (orientation: landscape){
           font-size: 5rem;
+        }
+        @media (min-height: $tablet-1024) and (orientation: portrait){
+          font-size: 4rem;
         }
         @media (min-height: $break-2000){
           font-size: 9rem;
