@@ -1,3 +1,5 @@
+$tablet-1280: 1280px;
+
 $break-800: 800px;
 $break-690: 690px;
 $break-1500: 1500px;
@@ -26,6 +28,9 @@ $break-2000: 2000px;
   }
   @media (min-width: $break-2000){
     font-size: 1.5rem;
+  }
+  @media (min-height: $tablet-1280){
+    font-size: 1.8rem;
   }
 }
 
