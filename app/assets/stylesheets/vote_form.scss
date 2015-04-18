@@ -1,5 +1,6 @@
 $iphone-320: 320px;
 $iphone-375: 375px;
+$iphone-414: 414px;
 $iphone-480: 480px;
 $iphone-568: 568px;
 $iphone-601: 601px;
@@ -54,7 +55,7 @@ form {
         @media (max-width: $break-360){
           font-size: 1.8rem;
         }
-        @media (max-height: $iphone-375) and (orientation: landscape){
+        @media (max-height: $iphone-414) and (orientation: landscape){
           font-size: 1.5rem;
         }
         @media (min-width: $break-450){
