@@ -59,7 +59,7 @@ form {
         margin-top: 1%;
         font-size: 2rem;
         @media (max-width: $break-360){
-          font-size: 1.8rem;
+          font-size: 1.7rem;
         }
         @media (min-width: $break-600) and (orientation: portrait){
           font-size: 3.5rem;
@@ -80,7 +80,7 @@ form {
           font-size: 2.65rem;
         }
         @media (max-height: $break-630) and (orientation: landscape){
-          font-size: 2rem;
+          font-size: 2.3rem;
         }
         @media (max-height: $iphone-480) and (orientation: landscape){
           font-size: 1.75rem;
