@@ -37,5 +37,8 @@ $break-2000: 2000px;
   @media (min-height: $tablet-1280) and (orientation: portrait) {
     font-size: 1.6rem;
   }
+  @media (max-width: $break-800) and (orientation: portrait) {
+    font-size: 1.3rem;
+  }
 }
 
