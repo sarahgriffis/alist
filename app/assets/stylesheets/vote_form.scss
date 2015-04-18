@@ -63,13 +63,16 @@ form {
           font-size: 4rem;
         }
         @media (min-height: $break-780){
-          //font-size: 3.2rem;
+          font-size: 3.2rem;
         }
         @media (min-height: $break-850) and (orientation: landscape){
           font-size: 3.6rem;
         }
         @media (min-width: $screen-1200) and (orientation: landscape){
           font-size: 2.65rem;
+        }
+        @media (max-height: $iphone-320) and (orientation: landscape){
+          font-size: 1rem;
         }
         @media (max-height: $break-630) and (orientation: landscape){
           font-size: 2rem;

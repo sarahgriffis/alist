@@ -53,8 +53,8 @@ $break-2000: 2000px;
         font-size: 1rem;
       }
       @media (min-width: $break-450){
-        font-size: 1.15rem;
-        margin: 0 auto;
+        //font-size: 1.15rem;
+        //margin: 0 auto;
       }
       @media (min-height: $iphone-375) and (orientation: landscape){
           font-size: .7rem;
@@ -65,7 +65,10 @@ $break-2000: 2000px;
       @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: 1.1rem;
       }
-       @media (max-height: $break-500) and (orientation: landscape){
+      @media (max-height: $break-320) and (orientation: landscape){
+        font-size: .4rem;
+      }
+      @media (max-height: $break-500) and (orientation: landscape){
         font-size: .7rem;
       }
       @media (min-height: $tablet-768) and (orientation: portrait){
