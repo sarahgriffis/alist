@@ -108,6 +108,11 @@ form {
         -webkit-border-radius: 18px;
         -moz-border-radius: 18px;
         border-radius: 18px;
+        @media (max-height: $break-400) and (orientation: landscape){
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+        }
         .label-content-container{
           margin-top: 27%;
           margin-bottom: 1%;
