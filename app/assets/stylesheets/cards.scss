@@ -70,7 +70,8 @@ $break-2000: 2000px;
         font-size: 1.3rem;
       }
       @media (max-height: $break-600) and (orientation: landscape){
-        margin: 1.1rem;
+        margin: 1rem;
+        margin: 0 auto;
       }
       @media (max-height: $break-500) and (orientation: landscape){
         font-size: .7rem;
