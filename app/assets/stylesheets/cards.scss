@@ -58,14 +58,6 @@ $break-2000: 2000px;
         font-size: 1.15rem;
         margin: 0 auto;
       }
-      @media #{$landscape} {
-        font-size: 1rem;
-        margin: 0 auto;
-      }
-      @media #{$portrait} {
-        font-size: 1rem;
-        margin: 0 auto;
-      }
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
