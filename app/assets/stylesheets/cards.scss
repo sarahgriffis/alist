@@ -59,14 +59,14 @@ $break-2000: 2000px;
       @media (min-height: $iphone-375) and (orientation: landscape){
           font-size: .7rem;
       }
-      @media (max-height: $break-500) and (orientation: landscape){
-        font-size: .7rem;
-      }
       @media (min-width: $break-600) and (orientation: potrait){
         font-size: 1.5rem;
       }
       @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: 1.1rem;
+      }
+       @media (max-height: $break-500) and (orientation: landscape){
+        font-size: .7rem;
       }
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;

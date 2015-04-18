@@ -54,7 +54,7 @@ form {
         @media (max-width: $break-360){
           font-size: 1.8rem;
         }
-        @media (min-height: $iphone-375) and (orientation: landscape){
+        @media (max-height: $iphone-375) and (orientation: landscape){
           font-size: 1.5rem;
         }
         @media (min-width: $break-450){
