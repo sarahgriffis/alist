@@ -8,6 +8,9 @@ $break-690: 690px;
 $break-1500: 1500px;
 $break-2000: 2000px;
 
+.chart rect{
+  overflow-x: hidden;
+}
 .chart text {
   fill: #fff;
   text-anchor: start;

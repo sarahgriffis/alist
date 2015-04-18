@@ -160,9 +160,7 @@ $break-2000: 2000px;
         overflow: visible;
         display: block;
         @media (orientation: landscape){
-          overflow-x: hidden;
-        .chart rect{
-          overflow-x: hidden;
+          //overflow-x: hidden;
         }
       }
     }       
