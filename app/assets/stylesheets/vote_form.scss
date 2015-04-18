@@ -71,11 +71,11 @@ form {
         @media (min-width: $screen-1200) and (orientation: landscape){
           font-size: 2.65rem;
         }
-        @media (max-height: $iphone-320) and (orientation: landscape){
-          font-size: 1rem;
-        }
         @media (max-height: $break-630) and (orientation: landscape){
           font-size: 2rem;
+        }
+        @media (max-height: $iphone-320) and (orientation: landscape){
+          font-size: 1rem;
         }
         @media (min-height: $tablet-768) and (orientation: landscape){
           font-size: 3.3rem;
