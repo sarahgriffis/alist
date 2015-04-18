@@ -1,6 +1,3 @@
-$landscape: "only screen and (orientation: landscape)";
-$portrait: "only screen and (orientation: portrait)";
-
 $iphone-320: 320px;
 $iphone-375: 375px;
 $iphone-480: 480px;
@@ -20,6 +17,7 @@ $tablet-screen-1600: 1600px;
 $break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
+$break-600: 600px;
 $break-650: 650px;
 $break-700: 700px;
 $break-1000: 1000px;
@@ -56,6 +54,9 @@ $break-2000: 2000px;
       @media (min-width: $break-450){
         font-size: 1.15rem;
         margin: 0 auto;
+      }
+      @media (min-width: $break-600) and (orientation: potrait){
+        font-size: 1.5rem;
       }
       @media (min-width: $iphone-736) and (orientation: landscape){
         font-size: .8rem;

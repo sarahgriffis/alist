@@ -1,12 +1,8 @@
-$landscape: "only screen and (orientation: landscape)";
-$portrait: "only screen and (orientation: portrait)";
-
 $iphone-320: 320px;
 $iphone-375: 375px;
 $iphone-480: 480px;
-$iphone-480: 480px;
 $iphone-568: 568px;
-$iphone-568: 601px;
+$iphone-601: 601px;
 $galaxy-640: 640px;
 $iphone-667: 667px;
 $iphone-736: 736px;
@@ -59,6 +55,9 @@ form {
         }
         @media (min-width: $break-450){
           //font-size: 2.7rem;
+        }
+        @media (min-width: $break-600) and (orientation: potrait){
+          font-size: 4rem;
         }
         @media (min-height: $break-780){
           font-size: 3.2rem;
