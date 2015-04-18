@@ -70,8 +70,8 @@ $break-2000: 2000px;
       @media (max-height: $break-950) and (orientation: landscape){
         font-size: 1.3rem;
       }
-       @media (min-height: $tablet-768){
-        //font-size: 2rem;
+       @media (min-height: $tablet-768) and (orientation: landscape){
+        font-size: 2rem;
       }
       @media (max-width: $break-700) and (orientation: potrait){
         font-size: 1.5rem;
