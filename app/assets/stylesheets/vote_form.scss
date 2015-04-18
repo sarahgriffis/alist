@@ -18,6 +18,7 @@ $tablet-screen-1600: 1600px;
 $break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
+$break-630: 630px;
 $break-600: 600px;
 $break-650: 650px;
 $break-780: 780px;
@@ -58,9 +59,6 @@ form {
         @media (max-height: $iphone-414) and (orientation: landscape){
           font-size: 1.5rem;
         }
-        @media (min-width: $break-450){
-          //font-size: 2.7rem;
-        }
         @media (min-width: $break-600) and (orientation: potrait){
           font-size: 4rem;
         }
@@ -72,6 +70,9 @@ form {
         }
         @media (min-width: $screen-1200) and (orientation: landscape){
           font-size: 2.65rem;
+        }
+        @media (max-height: $break-630) and (orientation: landscape){
+          font-size: 2rem;
         }
         @media (min-height: $break-1000) and (orientation: landscape){
           font-size: 5rem;
@@ -138,6 +139,5 @@ form {
 
   .btn.glyphicon:focus, .btn.glyphicon:hover, .btn.glyphicon.active {
     color: #f89750;
-    //background-color: black;
   }
 }
