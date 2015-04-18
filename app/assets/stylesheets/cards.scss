@@ -158,6 +158,7 @@ $break-2000: 2000px;
         @media (orientation: landscape){
           width: 90%;
           height: 20vh;
+          object-fit: contain;
         }
       }
     }       
