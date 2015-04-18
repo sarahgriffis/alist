@@ -55,7 +55,7 @@ form {
           font-size: 1.8rem;
         }
         @media (min-height: $iphone-375) and (orientation: landscape){
-          font-size: .7rem;
+          font-size: 2rem;
         }
         @media (min-width: $break-450){
           //font-size: 2.7rem;
@@ -70,7 +70,7 @@ form {
           font-size: 3.6rem;
         }
         @media (min-width: $screen-1200) and (orientation: landscape){
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
         @media (min-height: $break-1000) and (orientation: landscape){
           font-size: 5rem;

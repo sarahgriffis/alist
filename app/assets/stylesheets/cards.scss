@@ -55,6 +55,9 @@ $break-2000: 2000px;
         font-size: 1.15rem;
         margin: 0 auto;
       }
+      @media (min-height: $iphone-375) and (orientation: landscape){
+          font-size: .8rem;
+      }
       @media (min-width: $break-600) and (orientation: potrait){
         font-size: 1.5rem;
       }
