@@ -3,6 +3,7 @@ $tablet-1280: 1280px;
 
 $break-800: 800px;
 $break-450: 450px;
+$break-500: 500px;
 $break-690: 690px;
 $break-1500: 1500px;
 $break-2000: 2000px;
@@ -22,6 +23,9 @@ $break-2000: 2000px;
   }
   @media (max-height: $break-450) and (orientation: landscape){
     font-size: .3rem;
+  }
+  @media (max-height: $break-500) and (orientation: landscape){
+    font-size: .5rem;
   }
   @media (min-height: $tablet-1280) and (orientation: portrait) {
     font-size: 1.6rem;
