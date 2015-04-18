@@ -17,6 +17,7 @@ $tablet-screen-1600: 1600px;
 $break-360: 360px;
 $break-400: 400px;
 $break-450: 450px;
+$break-500: 500px;
 $break-600: 600px;
 $break-650: 650px;
 $break-700: 700px;
@@ -57,6 +58,9 @@ $break-2000: 2000px;
       }
       @media (min-height: $iphone-375) and (orientation: landscape){
           font-size: .7rem;
+      }
+      @media (max-height: $break-500) and (orientation: landscape){
+        font-size: .7rem;
       }
       @media (min-width: $break-600) and (orientation: potrait){
         font-size: 1.5rem;
