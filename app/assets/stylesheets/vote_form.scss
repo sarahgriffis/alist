@@ -74,7 +74,7 @@ form {
         background-color: #fff;
         margin-top: 1%;
         font-size: 2rem;
-        @media (max-width: $break-360) and (orientation: landscape){
+        @media (max-width: $break-370) and (orientation: landscape){
           font-size: 1.7rem;
         }
         @media (min-width: $break-1200) and (orientation: landscape){
