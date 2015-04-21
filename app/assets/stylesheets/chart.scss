@@ -19,7 +19,7 @@ $break-2000: 2000px;
   text-anchor: start;
   font-size: .7rem;
   @media (max-height: $break-400) and (orientation: landscape){
-    font-size: .2rem;
+    font-size: .25rem;
   }
   @media (min-height: $break-401) and (max-height: $break-500) and (orientation: landscape){
     font-size: .3rem;
