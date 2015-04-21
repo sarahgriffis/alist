@@ -17,14 +17,24 @@ $tablet-screen-1600: 1600px;
 
 $break-360: 360px;
 $break-370: 370px;
+$break-371: 371px;
 $break-400: 400px;
+$break-401: 401px;
 $break-450: 450px;
+$break-451: 451px;
+$break-500: 500px;
 $break-630: 630px;
 $break-600: 600px;
 $break-650: 650px;
+$break-666: 666px;
+$break-667: 667px;
+$break-767: 767px;
 $break-780: 780px;
+$break-849: 849px;
 $break-850: 850px;
 $break-1000: 1000px;
+$break-1001: 1001px;
+$break-1200: 1200px;
 $break-1900: 1900px;
 $break-2000: 2000px;
 
@@ -58,59 +68,86 @@ form {
         background-color: #fff;
         margin-top: 1%;
         font-size: 2rem;
-        @media (max-width: $break-360){
-          font-size: 1.7rem;
+        @media (max-height: $break-370) and (orientation: landscape){
+          font-size: 1.1rem;
         }
-        @media (min-width: $break-600) and (orientation: portrait){
-          font-size: 3.5rem;
-        }
-        @media (max-height: $iphone-414) and (orientation: landscape){
-          font-size: 1.5rem;
-        }
-        @media (min-width: $break-600) and (orientation: potrait){
-          //font-size: 4rem;
-        }
-        @media (min-height: $break-780){
-          font-size: 3.2rem;
-        }
-        @media (min-height: $break-850) and (orientation: landscape){
-          font-size: 3.6rem;
-        }
-        @media (min-width: $screen-1200) and (orientation: landscape){
-          font-size: 2.65rem;
-        }
-        @media (max-height: $iphone-667) and (orientation: landscape){
-          font-size: 2.6rem;
-        }
-        @media (max-height: $break-630) and (orientation: landscape){
-          font-size: 2.3rem;
-        }
-        @media (max-height: $iphone-480) and (orientation: landscape){
-          font-size: 1.75rem;
-        }
-        @media (max-height: $break-450) and (orientation: landscape){
-          font-size: 1.55rem;
-        }
-        @media (max-height: $break-400) and (orientation: landscape){
+        @media (min-height: $break-371) and (max-height: $break-400) and (orientation: landscape){
           font-size: 1.4rem;
         }
-        @media (max-height: $break-370) and (orientation: landscape){
-          font-size: 1rem;
+        @media (min-height: $break-401) and (max-height: $break-450) and (orientation: landscape){
+          font-size: 1.55rem;
         }
-        @media (min-height: $tablet-768) and (orientation: landscape){
+        @media (min-height: $break-451) and (max-height: $break-500) and (orientation: landscape){
+          font-size: 1.75rem;
+        }
+        @media (min-height: $break-630) and (max-height: $break-666) and (orientation: landscape){
+          font-size: 2.3rem;
+        }
+        @media (min-height: $break-667) and (max-height: $break-767) and (orientation: landscape){
+          font-size: 2.6rem;
+        }
+        @media (min-height: $tablet-768) and (max-height: $break-849) and (orientation: landscape){
           font-size: 3.3rem;
         }
-        @media (min-height: $break-1000) and (orientation: landscape){
+        @media (min-height: $break-850) and (max-height: $break-1000) and (orientation: landscape){
+          font-size: 3.6rem;
+        }
+        @media (min-height: $break-1001) and (orientation: landscape){
           font-size: 5rem;
         }
+        @media (min-width: $break-1200) and (orientation: landscape){
+          font-size: 2.65rem;
+        }
+        @media (max-width: $break-360){
+          //font-size: 1.7rem;
+        }
+        @media (min-width: $break-600) and (orientation: portrait){
+          //font-size: 3.5rem;
+        }
+        @media (max-height: $iphone-414) and (orientation: landscape){
+          //font-size: 1.5rem;
+        }
+        @media (min-height: $break-780){
+          //font-size: 3.2rem;
+        }
+        @media (min-height: $break-850) and (orientation: landscape){
+          //font-size: 3.6rem;
+        }
+        @media (min-width: $screen-1200) and (orientation: landscape){
+          //font-size: 2.65rem;
+        }
+        @media (max-height: $iphone-667) and (orientation: landscape){
+          //font-size: 2.6rem;
+        }
+        @media (max-height: $break-630) and (orientation: landscape){
+          //font-size: 2.3rem;
+        }
+        @media (max-height: $iphone-480) and (orientation: landscape){
+          //font-size: 1.75rem;
+        }
+        @media (max-height: $break-450) and (orientation: landscape){
+          //font-size: 1.55rem;
+        }
+        @media (max-height: $break-400) and (orientation: landscape){
+          //font-size: 1.4rem;
+        }
+        @media (max-height: $break-370) and (orientation: landscape){
+          //font-size: 1rem;
+        }
+        @media (min-height: $tablet-768) and (orientation: landscape){
+          //font-size: 3.3rem;
+        }
+        @media (min-height: $break-1000) and (orientation: landscape){
+          //font-size: 5rem;
+        }
         @media (min-height: $tablet-1024) and (orientation: portrait){
-          font-size: 3.5rem;
+          //font-size: 3.5rem;
         }
         @media (min-height: $break-1900) and (orientation: portrait){
-          font-size: 6.3rem;
+          //font-size: 6.3rem;
         }
         @media (min-height: $break-2000){
-          font-size: 9rem;
+          //font-size: 9rem;
         }
         line-height: .3;
         text-transform: uppercase;
