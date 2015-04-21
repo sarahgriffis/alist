@@ -233,11 +233,11 @@ $break-2000: 2001px;
         font-size: .4rem;
         margin-top: 1%;
       }
-      @media (min-height: $break-700) and (max-height $break-1000){
+      @media (min-height: $break-700) and (max-height: $break-1000){
         font-size: .75rem;
         margin-top: 1%;
       }
-      @media (min-height: $break-1001) and (max-height $break-2000){
+      @media (min-height: $break-1001) and (max-height: $break-2000){
         font-size: .9rem;
         margin-top: 1%;
       }
