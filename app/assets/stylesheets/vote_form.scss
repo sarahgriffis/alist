@@ -70,6 +70,12 @@ form {
         background-color: #fff;
         margin-top: 1%;
         font-size: 2rem;
+        @media (max-width: $break-360) and (orientation: landscape){
+          font-size: 1.7rem;
+        }
+        @media (min-width: $break-1200) and (orientation: landscape){
+          font-size: 2.65rem;
+        }
         @media (max-height: $break-370) and (orientation: landscape){
           font-size: 1.1rem;
         }
@@ -96,12 +102,6 @@ form {
         }
         @media (min-height: $break-1001) and (orientation: landscape){
           font-size: 5rem;
-        }
-        @media (max-width: $break-360) and (orientation: landscape){
-          font-size: 1.7rem;
-        }
-        @media (min-width: $break-1200) and (orientation: landscape){
-          font-size: 2.65rem;
         }
         @media (min-width: $break-600) and (orientation: portrait){
           font-size: 3.5rem;
