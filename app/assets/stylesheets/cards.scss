@@ -39,7 +39,7 @@ $break-1201: 1201px;
 $break-1900: 1900px;
 $break-1901: 1901px;
 $break-2000: 2000px;
-$break-2000: 2001px;
+$break-2001: 2001px;
 
 .all-cards{
   display: flex;
@@ -95,7 +95,6 @@ $break-2000: 2001px;
        @media (max-height: $break-360) and (orientation: landscape){
         font-size: .5rem;
       }  
-
       @media (min-width: $break-501) and (max-width: $tablet-768) and (orientation: portrait){
         font-size: 1.5rem;
         margin: 0 auto;
