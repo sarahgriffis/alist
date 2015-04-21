@@ -14,14 +14,23 @@ $screen-1200: 1200px;
 $tablet-1280: 1280px;
 $tablet-screen-1600: 1600px;
 
+$break-320: 320px;
+$break-321: 321px;
 $break-360: 360px;
 $break-370: 370px;
+$break-371: 371px;
 $break-400: 400px;
+$break-401: 401px;
 $break-450: 450px;
 $break-500: 500px;
+$break-501: 501px;
 $break-600: 600px;
 $break-650: 650px;
 $break-700: 700px;
+$break-701: 701px;
+$break-769: 769px;
+$break-800: 800px;
+$break-801: 801px;
 $break-950: 950px;
 $break-1000: 1000px;
 $break-1900: 1900px;
@@ -64,7 +73,7 @@ $break-2000: 2000px;
       @media (min-width: $break-401) and (max-width: $break-500) and (orientation: landscape){
         font-size: .7rem;
       }     
-      @media (min-width: $break-601) and (max-width: $break-700) and (orientation: landscape){
+      @media (min-width: $break-600) and (max-width: $break-700) and (orientation: landscape){
         font-size: 1rem;
       }  
       @media (min-width: $break-701) and (max-width: $break-800) and (orientation: landscape){
@@ -74,6 +83,21 @@ $break-2000: 2000px;
         font-size: 1.7rem;
         margin: 0 auto;
       }  
+
+      @media (min-width: $break-501) and (max-width: $tablet-768) and (orientation: portrait){
+        font-size: 1.5rem;
+        margin: 0 auto;
+      } 
+      @media (min-height: $tablet-768) and (orientation: portrait){
+        font-size: 1.5rem;
+        margin: 0 auto;
+      }
+      @media (min-width: $break-769) and (orientation: portrait){
+        font-size: 1.7rem;
+        margin: 0 auto;
+      }
+    
+
       @media (min-height: $iphone-375) and (orientation: landscape){
           //font-size: .7rem;
       }
