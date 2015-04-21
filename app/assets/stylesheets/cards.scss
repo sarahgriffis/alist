@@ -63,9 +63,11 @@ $break-2001: 2001px;
       }     
       @media (min-width: $break-600) and (max-width: $break-700) and (orientation: landscape){
         font-size: 1rem;
+        margin: 0 auto;
       }  
       @media (min-width: $break-701) and (max-width: $break-1200) and (orientation: landscape){
         font-size: 1.3rem;
+        margin: 0 auto;
       }
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
