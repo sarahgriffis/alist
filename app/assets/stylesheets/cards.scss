@@ -15,6 +15,7 @@ $break-600: 600px;
 $break-700: 700px;
 $break-701: 701px;
 $break-769: 769px;
+$break-850: 850px;
 $break-1000: 1000px;
 $break-1001: 1001px;
 $break-1200: 1200px;
@@ -139,8 +140,13 @@ $break-2001: 2001px;
       svg{
         overflow: visible;
         display: block;
-        @media (orientation: landscape){
+        @media (max-height: $break-850) and (orientation: portrait){
           object-fit: contain;
+          max-width: 80vw;
+        }
+        @media (max-height: $break-750) and (orientation: landscape){
+          object-fit: contain;
+          max-width: 80vw;
         }
       }
     }       
