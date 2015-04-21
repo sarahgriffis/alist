@@ -36,7 +36,9 @@ $break-1000: 1000px;
 $break-1001: 1001px;
 $break-1200: 1200px;
 $break-1900: 1900px;
+$break-1901: 1901px;
 $break-2000: 2000px;
+$break-2001: 2001px;
 
 form {
   width: 97%;
@@ -95,59 +97,23 @@ form {
         @media (min-height: $break-1001) and (orientation: landscape){
           font-size: 5rem;
         }
+        @media (max-width: $break-360) and (orientation: landscape){
+          font-size: 1.7rem;
+        }
         @media (min-width: $break-1200) and (orientation: landscape){
           font-size: 2.65rem;
         }
-        @media (max-width: $break-360){
-          //font-size: 1.7rem;
-        }
         @media (min-width: $break-600) and (orientation: portrait){
-          //font-size: 3.5rem;
+          font-size: 3.5rem;
         }
-        @media (max-height: $iphone-414) and (orientation: landscape){
-          //font-size: 1.5rem;
+        @media (min-height: $tablet-1024) (max-height: $break-1900) and (orientation: portrait){
+          font-size: 3.5rem;
         }
-        @media (min-height: $break-780){
-          //font-size: 3.2rem;
+        @media (min-height: $break-1901) and (max-height: $break-2000) and (orientation: portrait){
+          font-size: 6.3rem;
         }
-        @media (min-height: $break-850) and (orientation: landscape){
-          //font-size: 3.6rem;
-        }
-        @media (min-width: $screen-1200) and (orientation: landscape){
-          //font-size: 2.65rem;
-        }
-        @media (max-height: $iphone-667) and (orientation: landscape){
-          //font-size: 2.6rem;
-        }
-        @media (max-height: $break-630) and (orientation: landscape){
-          //font-size: 2.3rem;
-        }
-        @media (max-height: $iphone-480) and (orientation: landscape){
-          //font-size: 1.75rem;
-        }
-        @media (max-height: $break-450) and (orientation: landscape){
-          //font-size: 1.55rem;
-        }
-        @media (max-height: $break-400) and (orientation: landscape){
-          //font-size: 1.4rem;
-        }
-        @media (max-height: $break-370) and (orientation: landscape){
-          //font-size: 1rem;
-        }
-        @media (min-height: $tablet-768) and (orientation: landscape){
-          //font-size: 3.3rem;
-        }
-        @media (min-height: $break-1000) and (orientation: landscape){
-          //font-size: 5rem;
-        }
-        @media (min-height: $tablet-1024) and (orientation: portrait){
-          //font-size: 3.5rem;
-        }
-        @media (min-height: $break-1900) and (orientation: portrait){
-          //font-size: 6.3rem;
-        }
-        @media (min-height: $break-2000){
-          //font-size: 9rem;
+        @media (min-height: $break-2001) {
+          font-size: 9rem;
         }
         line-height: .3;
         text-transform: uppercase;
