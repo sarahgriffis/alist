@@ -143,11 +143,11 @@ $break-2001: 2001px;
         display: block;
         @media (max-height: $break-850) and (orientation: portrait){
           object-fit: contain;
-          max-width: 80vw;
+          max-width: 60vh;
         }
         @media (max-height: $break-750) and (orientation: landscape){
           object-fit: contain;
-          max-width: 80vw;
+          max-width: 60vh;
         }
       }
     }       
