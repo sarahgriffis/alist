@@ -95,6 +95,10 @@ $break-2001: 2001px;
         font-size: 1.7rem;
         margin: 0 auto;
       }
+      @media (min-width: $break-1000) and (orientation: portrait){
+        font-size: 2rem;
+        margin: 0 auto;
+      }
     
       margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
