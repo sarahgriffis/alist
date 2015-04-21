@@ -33,6 +33,7 @@ $break-800: 800px;
 $break-801: 801px;
 $break-950: 950px;
 $break-1000: 1000px;
+$break-1201: 1201px;
 $break-1900: 1900px;
 $break-2000: 2000px;
 
@@ -76,10 +77,10 @@ $break-2000: 2000px;
       @media (min-width: $break-600) and (max-width: $break-700) and (orientation: landscape){
         font-size: 1rem;
       }  
-      @media (min-width: $break-701) and (max-width: $break-800) and (orientation: landscape){
+      @media (min-width: $break-701) and (max-width: $break-1200) and (orientation: landscape){
         font-size: 1.3rem;
       }
-      @media (min-width: $break-801) and (orientation: landscape){
+      @media (min-width: $break-1201) and (orientation: landscape){
         font-size: 1.7rem;
         margin: 0 auto;
       }  
@@ -115,8 +116,8 @@ $break-2000: 2000px;
         margin: 0 auto;
       }
       @media (min-height: $tablet-768) and (orientation: landscape){
-        font-size: 1.7rem;
-        margin: 0 auto;
+        //font-size: 1.7rem;
+        //margin: 0 auto;
       }
       @media (min-width: $tablet-768) and (orientation: portrait){
         //font-size: 1.7rem;
@@ -126,7 +127,7 @@ $break-2000: 2000px;
         //font-size: 1.5rem;
       }
       @media (max-height: $tablet-800) and (orientation: landscape){
-        font-size: 1.4rem;
+        //font-size: 1.4rem;
         //margin: 0 auto;
       }
       @media (max-height: $break-600) and (orientation: landscape){
