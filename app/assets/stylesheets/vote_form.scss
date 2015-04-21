@@ -32,6 +32,7 @@ $break-600: 600px;
 $break-650: 650px;
 $break-666: 666px;
 $break-667: 667px;
+$break-710: 710px;
 $break-767: 767px;
 $break-780: 780px;
 $break-849: 849px;
@@ -119,8 +120,8 @@ form {
         @media (min-height: $break-1201) and (orientation: landscape){
           font-size: 5.8rem;
         }
-        @media (min-width: $break-600) and (orientation: portrait){
-          //font-size: 3.5rem;
+        @media (min-width: $break-400) and (max-width: $break-710) and (orientation: portrait){
+          font-size: 2.1rem;
         }
         @media (min-height: $tablet-1024) and (max-height: $break-1600) and (orientation: portrait){
           //font-size: 3.4rem;
