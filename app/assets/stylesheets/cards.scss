@@ -1,22 +1,8 @@
-$iphone-320: 320px;
-$iphone-375: 375px;
-$iphone-480: 480px;
-$iphone-568: 568px;
-$iphone-601: 601px;
-$galaxy-640: 640px;
-$iphone-667: 667px;
-$iphone-736: 736px;
+
 $tablet-768: 768px;
-$tablet-800: 800px;
-$tablet-906: 906px;
-$tablet-1024: 1024px;
-$screen-1200: 1200px;
-$tablet-1280: 1280px;
-$tablet-screen-1600: 1600px;
 
 $break-320: 320px;
 $break-321: 321px;
-$break-360: 360px;
 $break-370: 370px;
 $break-371: 371px;
 $break-400: 400px;
@@ -25,13 +11,9 @@ $break-450: 450px;
 $break-500: 500px;
 $break-501: 501px;
 $break-600: 600px;
-$break-650: 650px;
 $break-700: 700px;
 $break-701: 701px;
 $break-769: 769px;
-$break-800: 800px;
-$break-801: 801px;
-$break-950: 950px;
 $break-1000: 1000px;
 $break-1001: 1001px;
 $break-1200: 1200px;
@@ -93,7 +75,7 @@ $break-2001: 2001px;
         margin: 0 auto;
       } 
       @media (max-height: $break-400) and (orientation: landscape){
-        font-size: .5rem;
+        font-size: .65rem;
       }  
       @media (min-width: $break-501) and (max-width: $tablet-768) and (orientation: portrait){
         font-size: 1.5rem;
@@ -115,8 +97,6 @@ $break-2001: 2001px;
 
     .img-container {
       max-height: 39.5vh;
-      @media (min-height: $break-650){
-      }
       @media (max-height: $break-400) and (orientation: landscape){
         max-height: 35vh;
       }
