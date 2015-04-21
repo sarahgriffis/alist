@@ -111,7 +111,7 @@ form {
         @media (min-height: $tablet-1024) and (max-height: $break-1600) and (orientation: portrait){
           font-size: 3.4rem;
         }
-         @media (min-height: $tablet-1601) and (max-height: $break-1900) and (orientation: portrait){
+         @media (min-height: $break-1601) and (max-height: $break-1900) and (orientation: portrait){
           font-size: 4rem;
         }
         @media (min-height: $break-1901) and (max-height: $break-2000) and (orientation: portrait){
