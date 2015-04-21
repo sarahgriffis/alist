@@ -15,6 +15,8 @@ $screen-1200: 1200px;
 $tablet-1280: 1280px;
 $tablet-screen-1600: 1600px;
 
+$break-349: 349px;
+$break-350: 350px;
 $break-360: 360px;
 $break-370: 370px;
 $break-371: 371px;
@@ -78,8 +80,11 @@ form {
         @media (min-width: $break-1200) and (orientation: landscape){
           font-size: 2.65rem;
         }
-        @media (max-height: $break-370) and (orientation: landscape){
+        @media (max-height: $break-349) and (orientation: landscape){
           font-size: 1.1rem;
+        }
+        @media (max-height: $break-350) and (max-height: $break-370) and (orientation: landscape){
+          font-size: 1.25rem;
         }
         @media (min-height: $break-371) and (max-height: $break-400) and (orientation: landscape){
           font-size: 1.4rem;
