@@ -44,6 +44,9 @@ $break-2000: 2000px;
   @media (min-width: $break-2000) and (orientation: landscape){
     font-size: 1.2rem;
   }
+  @media (max-width: $break-500) and (orientation: portrait) {
+    font-size: 0.5rem;
+  }
   @media (min-width: $break-800) and (orientation: portrait) {
     font-size: 1.15rem;
   }
