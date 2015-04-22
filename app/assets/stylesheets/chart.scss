@@ -14,7 +14,7 @@ $break-1500: 1500px;
 $break-2000: 2000px;
 
 .chart rect{
-  overflow-x: hidden;
+  overflow: hidden;
   @media (max-height: $break-850) and (orientation: portrait){
     object-fit: contain;
     max-width: 60vh;
