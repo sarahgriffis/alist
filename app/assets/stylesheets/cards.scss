@@ -112,7 +112,7 @@ $break-2001: 2001px;
       @media (max-height: $break-400) and (orientation: landscape){
         max-height: 35vh;
       }
-      @media (min-aspect-ratio: 724:414){
+      @media screen and (min-aspect-ratio: 724:414){
         max-height: 42vh;
       }
       max-width: 45vh;
@@ -129,7 +129,7 @@ $break-2001: 2001px;
         @media (max-height: $break-400) and (orientation: landscape){
           min-height: 35vh;
         }
-        @media (min-aspect-ratio: 724:414){
+        @media screen and (min-aspect-ratio: 724:414){
           min-height: 42vh;
         }
         height: auto;
@@ -148,12 +148,12 @@ $break-2001: 2001px;
         overflow: visible;
         display: block;
         @media (max-height: $break-850) and (orientation: portrait){
-          object-fit: contain;
-          max-width: 60vh;
+          //object-fit: contain;
+          //max-width: 60vh;
         }
         @media (max-height: $break-750) and (orientation: landscape){
-          object-fit: contain;
-          max-width: 60vh;
+          //object-fit: contain;
+          //max-width: 60vh;
         }
       }
     }       
