@@ -53,8 +53,9 @@ $break-2001: 2001px;
     height: auto;
     width: 67.5vh;
     max-width: 90vw;
-    margin-right: auto;
-    margin-left: auto;
+    left: 50%;
+    //margin-right: auto;
+    //margin-left: auto;
 
     .celeb-name {
       color: black;
