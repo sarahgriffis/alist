@@ -51,7 +51,7 @@ $break-2001: 2001px;
     -webkit-border-radius: 0.9em;
     border-radius: .9em;
     height: auto;
-    width: inherit;
+    width: -webkit-calc(100% - 0px);
     width: 67.5vh;
     max-width: 90vw;
     left: 50%;
