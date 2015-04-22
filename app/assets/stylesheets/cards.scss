@@ -112,7 +112,7 @@ $break-2001: 2001px;
       @media (max-height: $break-400) and (orientation: landscape){
         max-height: 35vh;
       }
-      @media screen and (min-aspect-ratio: 16/9){
+      @media(min-aspect-ratio: 16/9){
         max-height: 42vh;
       }
       max-width: 45vh;
@@ -129,7 +129,7 @@ $break-2001: 2001px;
         @media (max-height: $break-400) and (orientation: landscape){
           min-height: 35vh;
         }
-        @media screen and (min-aspect-ratio: 16/9){
+        @media (min-aspect-ratio: 16/9){
           min-height: 42vh;
         }
         height: auto;
