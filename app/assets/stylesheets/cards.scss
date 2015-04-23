@@ -53,7 +53,6 @@ $break-2001: 2001px;
     width: -webkit-calc(100% - 0px);
     width: 67.5vh;
     max-width: 90vw;
-    //left: 50%;
     margin-right: auto;
     margin-left: auto;
     @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
@@ -66,55 +65,44 @@ $break-2001: 2001px;
       color: black;
       font-size: .8rem;
       font-weight: 400;
-      margin: 2vh auto 1%;
+      margin: 20px auto 1%;
       @media (max-width: $break-320) and (orientation: landscape){
         font-size: .4rem;
-        margin: 20px auto;
       }
       @media (min-width: $break-321) and (max-width: $break-370) and (orientation: landscape){
         font-size: .5rem;
-        margin: 20px auto;
       }
       @media (min-width: $break-371) and (max-width: $break-400) and (orientation: landscape){
         font-size: .6rem;
-        margin: 20px auto;
       }
       @media (min-width: $break-401) and (max-width: $break-500) and (orientation: landscape){
         font-size: .7rem;
       }     
       @media (min-width: $break-600) and (max-width: $break-1200) and (orientation: landscape){
-        font-size: 1rem;
-        margin: 0 auto;
+        //font-size: 1rem;
       }  
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
-        margin: 0 auto;
       } 
       @media (min-width: $break-1901) and (orientation: landscape){
         font-size: 1.7rem;
-        margin: 0 auto;
       } 
       @media (max-height: $break-450) and (orientation: landscape){
         font-size: .65rem;
       }
       @media (min-height: $break-451) and (max-height: $break-700) and (orientation: landscape){
-        font-size: 1rem;
       }  
       @media (min-width: $break-501) and (max-width: $tablet-768) and (orientation: portrait){
         font-size: 1.5rem;
-        margin: 0 auto;
       } 
       @media (min-height: $tablet-768) and (orientation: portrait){
         font-size: 1.5rem;
-        margin: 0 auto;
       }
       @media (min-width: $break-769) and (orientation: portrait){
         font-size: 1.7rem;
-        margin: 0 auto;
       }
       @media (min-width: $break-1000) and (orientation: portrait){
         font-size: 2rem;
-        margin: 0 auto;
       }
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
@@ -133,7 +121,7 @@ $break-2001: 2001px;
       }
       max-width: 45vh;
       @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
-        max-height: 150px;
+        max-height: 180px;
         max-width: 250px;
       }
       margin: 1% auto 3%;
@@ -174,14 +162,6 @@ $break-2001: 2001px;
       svg{
         overflow: visible;
         display: block;
-        @media (max-height: $break-850) and (orientation: portrait){
-          //object-fit: contain;
-          //max-width: 60vh;
-        }
-        @media (max-height: $break-750) and (orientation: landscape){
-          //object-fit: contain;
-          //max-width: 60vh;
-        }
       }
     }       
 
