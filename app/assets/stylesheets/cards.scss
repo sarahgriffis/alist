@@ -58,11 +58,16 @@ $break-2001: 2001px;
     left: 50%;
     //margin-right: auto;
     //margin-left: auto;
+    @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+      width: 90%;
+      max-width: 90%;
+    }
 
     .celeb-name {
       color: black;
       font-size: .8rem;
       font-weight: 400;
+      margin: 2vh auto 1%;
       @media (max-width: $break-320) and (orientation: landscape){
         font-size: .4rem;
       }
@@ -113,8 +118,6 @@ $break-2001: 2001px;
         font-size: 2rem;
         margin: 0 auto;
       }
-    
-      margin: 2vh auto 1%;
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
     }
@@ -131,7 +134,7 @@ $break-2001: 2001px;
         max-height: 46vh;
       }
       max-width: 45vh;
-       @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+      @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
         max-height: 250px;
         max-width: 250px;
       }
