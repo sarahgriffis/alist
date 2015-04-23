@@ -79,7 +79,7 @@ $break-2001: 2001px;
         font-size: .7rem;
       }     
       @media (min-width: $break-600) and (max-width: $break-1200) and (orientation: landscape){
-        //font-size: 1rem;
+        font-size: 1rem;
       }  
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
@@ -93,7 +93,7 @@ $break-2001: 2001px;
       @media (min-height: $break-451) and (max-height: $break-700) and (orientation: landscape){
       }  
       @media (min-width: $break-501) and (max-width: $tablet-768) and (orientation: portrait){
-        font-size: 1.5rem;
+        //font-size: 1.5rem;
       } 
       @media (min-height: $tablet-768) and (orientation: portrait){
         font-size: 1.5rem;
