@@ -127,13 +127,14 @@ $break-2001: 2001px;
       @media (max-aspect-ratio: 16/9) and (min-height: $break-550) and (max-height: $break-650) and (orientation: portrait){
         max-height: 42vh;
       }
-      @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
-        max-height: 250px;
-      }
       @media (max-aspect-ratio: 16/9) and (min-height: $break-651) and (max-height: $break-750) and (orientation: portrait){
         max-height: 46vh;
       }
       max-width: 45vh;
+       @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+        max-height: 250px;
+        max-width: 250px;
+      }
       margin: 1% auto 3%;
       overflow: hidden;
       display: block;
