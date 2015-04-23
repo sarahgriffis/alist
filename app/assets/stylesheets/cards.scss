@@ -136,7 +136,7 @@ $break-2001: 2001px;
       }
       max-width: 45vh;
       @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
-        max-height: 250px;
+        max-height: 150px;
         max-width: 250px;
       }
       margin: 1% auto 3%;
