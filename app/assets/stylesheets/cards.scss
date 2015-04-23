@@ -9,6 +9,7 @@ $break-400: 400px;
 $break-401: 401px;
 $break-450: 450px;
 $break-451: 451px;
+$break-480: 480px;
 $break-500: 500px;
 $break-501: 501px;
 $break-550: 550px;
@@ -126,6 +127,9 @@ $break-2001: 2001px;
       @media (max-aspect-ratio: 16/9) and (min-height: $break-550) and (max-height: $break-650) and (orientation: portrait){
         max-height: 42vh;
       }
+      @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+        max-height: 250px;
+      }
       @media (max-aspect-ratio: 16/9) and (min-height: $break-651) and (max-height: $break-750) and (orientation: portrait){
         max-height: 46vh;
       }
@@ -150,6 +154,9 @@ $break-2001: 2001px;
         @media (max-aspect-ratio: 16/9) and (min-height: $break-650) and (max-height: $break-750) and (orientation: portrait){
           min-height: 46vh;
         }
+        @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+        min-height: 250px;
+      }
         height: auto;
         max-width: 100%;
         object-fit: cover;
