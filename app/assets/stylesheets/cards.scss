@@ -59,8 +59,9 @@ $break-2001: 2001px;
     //margin-right: auto;
     //margin-left: auto;
     @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
-      width: 90%;
-      max-width: 90%;
+      width: 100%;
+      max-width: 90%
+      height: 90%;
     }
 
     .celeb-name {
