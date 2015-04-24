@@ -137,11 +137,11 @@ html{
         max-width: 80%;
       }
       @media (min-width: $break-800) and (max-width: $break-1600) {
-        max-height: 37vh;
+        max-height: 39vh;
         max-width: 45vh;
       }
       @media (min-height: $break-800) and (max-height: $break-1600) {
-        max-height: 37vh;
+        max-height: 39vh;
         max-width: 45vh;
       }
       @media (min-width: $break-1600) {
@@ -160,11 +160,11 @@ html{
         margin: 0 auto;
         display: block;
         @media (min-height: $break-800) and (max-height: $break-1600) {
-          min-height: 37vh;
+          min-height: 39vh;
           max-width: 100%;
         }
         @media (min-width: $break-800) and (max-width: $break-1600){
-          min-height: 37vh;
+          min-height: 39vh;
           max-width: 100%;
         }
         @media (min-height: $break-1600) {
