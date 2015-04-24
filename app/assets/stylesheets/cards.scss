@@ -62,8 +62,11 @@ html{
     max-width: 90vw;
     margin-right: auto;
     margin-left: auto;
-    @media (max-width: $break-450)  {
+    @media (max-width: $break-450) and (orientation: portrait){
       width: 100%;
+    }
+    @media (max-width: $break-769) and (orientation: landscape){
+      width: 80%;
     }
     
     
