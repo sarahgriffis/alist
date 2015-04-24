@@ -88,7 +88,7 @@ html{
         font-size: .7rem;
       }     
       @media (min-width: $break-600) and (max-width: $break-1200) and (orientation: landscape){
-        //font-size: 1rem;
+        font-size: .8rem;
       }  
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
@@ -120,11 +120,11 @@ html{
     .img-container {
       max-height: 39.5vh;
       @media (max-aspect-ratio: 16/9) and (min-width: $break-320) and (max-
-        height: $break-750) {
+        width: $break-750) and (orientation: portrait){
         max-height: 200px;
       }
       @media (max-aspect-ratio: 4/3) and (min-width: $break-320) and (max-
-        height: $break-750) {
+        width: $break-750) and (orientation: portrait){
         max-height: 200px;
       }
       @media (max-height: $break-400) and (orientation: landscape){
@@ -155,11 +155,11 @@ html{
           min-height: 35vh;
         }
         @media (max-aspect-ratio: 16/9) and (min-width: $break-320) and (max-
-        height: $break-750) {
+        width: $break-750) and (orientation: portrait){
           min-height: 200px;
         }
         @media (max-aspect-ratio: 4/3) and (min-width: $break-320) and (max-
-        height: $break-750) {
+        width: $break-750) and (orientation: portrait){
           min-height: 200px;
         }
         @media (max-aspect-ratio: 16/9) and (min-height: $break-650) and (max-height: $break-750) and (orientation: portrait){
