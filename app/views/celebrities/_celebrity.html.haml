@@ -50,6 +50,7 @@
   min_width = 65;
   var letters = ["A","B","C","D"]
   var x = d3.scale.linear()
+  var mq = window.matchMedia("(orientation:landscape)")
     .domain([0, 1])
     .range([min_width, chart_width]);
   var chart = d3.select(".chart")
