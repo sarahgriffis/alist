@@ -129,7 +129,7 @@ form {
         @media (min-height: $break-1201) and (orientation: landscape){
           font-size: 5.7rem;
         }
-        @media (max-width: $break-350) and (orientation: portrait){
+        @media (max-width: $break-400) and (orientation: portrait){
           font-size: 1.2rem;
         }
         @media (min-width: $break-400) and (max-width: $break-710) and (orientation: portrait){
