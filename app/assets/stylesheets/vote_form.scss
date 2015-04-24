@@ -90,6 +90,9 @@ form {
         @media (max-height: $break-349) and (orientation: landscape){
           font-size: 1rem;
         }
+        @media (max-height: $break-349) and (min-width: $break-450) and (orientation: landscape){
+          font-size: 1.4rem;
+        }
         @media (min-height: $break-350) and (max-height: $break-370) and (orientation: landscape){
           font-size: 1.15rem;
         }
