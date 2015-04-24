@@ -88,8 +88,8 @@ html{
         font-size: .7rem;
       }     
       @media (min-width: $break-600) and (max-width: $break-1200) and (orientation: landscape){
-        //font-size: .8rem;
-        font-size: 10px;
+        font-size: .8rem;
+        //font-size: 10px;
       }  
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
