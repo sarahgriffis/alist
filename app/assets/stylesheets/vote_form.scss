@@ -81,6 +81,9 @@ form {
         @media (max-width: $break-370) and (orientation: landscape){
           font-size: 1.6rem;
         }
+        @media (min-width: $break-600) and (min-height: $break-350)) and (orientation: landscape){
+          font-size: 2.2rem;
+        }
         @media (min-width: $break-1200) and (orientation: landscape){
           font-size: 2.5rem;
         }
@@ -101,6 +104,9 @@ form {
         }
         @media (min-height: $break-451) and (max-height: $break-500) and (orientation: landscape){
           font-size: 1.65rem;
+        }
+        @media (max-height: $break-451) and (min-width: $break-650) and (orientation: landscape){
+          font-size: 2.2rem;
         }
         @media (min-height: $break-501) and (max-height: $break-630) and (min-width: $break-850) and (orientation: landscape){
           font-size: 2.1rem;
@@ -124,7 +130,7 @@ form {
           font-size: 5.7rem;
         }
         @media (max-width: $break-350) and (orientation: portrait){
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
         @media (min-width: $break-400) and (max-width: $break-710) and (orientation: portrait){
           font-size: 1.5rem;
@@ -153,7 +159,7 @@ form {
         -webkit-border-radius: 18px;
         -moz-border-radius: 18px;
         border-radius: 18px;
-        @media (max-height: $break-400) and (max-width: $break-400){
+        @media (max-height: $break-500) and (max-width: $break-500){
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
           border-radius: 10px;
