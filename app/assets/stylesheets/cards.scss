@@ -62,31 +62,6 @@ html{
     max-width: 90vw;
     margin-right: auto;
     margin-left: auto;
-    @media (max-aspect-ratio: 16/9) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-max-device-pixel-ratio: 2){
-      width: 300px;
-      max-width: 100%;
-      height: 470px;
-    }
-    @media (max-aspect-ratio: 16/9) and (min-width: $break-360) and (max-width: $break-700) and (-webkit-max-device-pixel-ratio: 2){
-      width: 350px;
-      max-width: 100%;
-      height: 650px;
-    }
-    @media (max-aspect-ratio: 16/9) and (min-width: $break-400) and (max-width: $break-750) and (-webkit-max-device-pixel-ratio: 3){
-      width: 400px;
-      max-width: 100%;
-      height: 720px;
-    }
-    @media (max-aspect-ratio: 16/9) and (min-width: $break-320) and (max-width: $iphone-568) and (-webkit-max-device-pixel-ratio: 2) {
-      width: 310px;
-      max-width: 100%;
-      height: 550px;
-    }
-    @media (max-aspect-ratio: 4/3) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-max-device-pixel-ratio: 2) {
-      width: 310px;
-      max-width: 100%;
-      height: 470px;
-    }
     @media (max-width: $break-450)  {
       width: 100%;
     }
@@ -112,7 +87,6 @@ html{
       }     
       @media (min-width: $break-850) and (max-width: $break-1200) and (orientation: landscape){
         font-size: 1.1rem;
-        //font-size: 10px;
       }  
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
@@ -123,22 +97,6 @@ html{
       @media (max-height: $break-450) and (orientation: landscape){
         font-size: .65rem;
       }
-      @media (min-height: $break-451) and (max-height: $break-700) and (orientation: landscape){
-      }  
-      @media (min-width: $break-501) and (max-width: $tablet-768) and (orientation: portrait){
-        //font-size: 1.5rem;
-      } 
-      @media (min-height: $tablet-768) and (orientation: portrait){
-        //font-size: 1.5rem;
-        font-size: 1.2rem;
-      }
-      @media (min-width: $break-769) and (orientation: portrait){
-        //font-size: 1.7rem;
-        font-size: 1.3rem;
-      }
-      @media (min-width: $break-1000) and (orientation: portrait){
-        //font-size: 2rem;
-      }
       font-family: 'Varela Round', Arial, sans-serif;
       text-transform: uppercase;
     }
@@ -147,29 +105,6 @@ html{
       //max-height: 39.5vh;
       max-height: 37vh;
       max-width: 45vh;
-      @media (max-height: $break-400) and (orientation: landscape){
-        max-height: 35vh;
-      }
-      @media (min-aspect-ratio: 16/9) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-min-device-pixel-ratio: 2){
-        max-height: 200px;
-        max-width: 280px;
-      }
-      @media (min-aspect-ratio: 16/9) and (min-width: $break-360) and (max-width: $break-700) and (-webkit-min-device-pixel-ratio: 2){
-        max-height: 300px;
-        max-width: 320px;
-      }
-      @media (min-aspect-ratio: 16/9) and (min-width: $break-400) and (max-width: $break-750) and (-webkit-min-device-pixel-ratio: 3){
-        max-height: 300px;
-        max-width: 360px;
-      }
-      @media (min-aspect-ratio: 16/9) and (min-width: $break-320) and (max-width: $iphone-568) and (-webkit-min-device-pixel-ratio: 2) {
-        max-height: 260px;
-        max-width: 300px;
-      }
-      @media (min-aspect-ratio: 4/3) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-min-device-pixel-ratio: 2) {
-        max-height: 260px;
-        max-width: 300px;
-      }
       @media (max-width: $break-400) and (orientation: portrait){
         max-height: 30%;
         max-width: 90%;
@@ -190,36 +125,11 @@ html{
         @media (min-width: $break-2000){
           min-height: 42vh;
         }
-        @media (max-height: $break-400) and (orientation: landscape){
-          min-height: 35vh;
-        }
-        @media (max-aspect-ratio: 16/9) and (min-height: $break-650) and (max-height: $break-750) and (orientation: portrait){
-          min-height: 46vh;
-        }
-        @media (max-aspect-ratio: 4/3) and (min-height: $break-320) and (max-height: $break-480) {
-        //min-height: 250px;
-        //display: block;
-        }
-        @media (min-aspect-ratio: 16/9) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-min-device-pixel-ratio: 2){
-          min-height: 200px;
-        }
-        @media (min-aspect-ratio: 16/9) and (min-width: $break-360) and (max-width: $break-700) and (-webkit-min-device-pixel-ratio: 2){
-          min-height: 300px;
-        }
-        @media (min-aspect-ratio: 16/9) and (min-width: $break-400) and (max-width: $break-750) and (-webkit-min-device-pixel-ratio: 3){
-          min-height: 300px;
-        }
-        @media (min-aspect-ratio: 16/9) and (min-width: $break-320) and (max-width: $iphone-568) and (-webkit-min-device-pixel-ratio: 2) {
-          min-height: 260px;
-        }
-        @media (min-aspect-ratio: 4/3) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-min-device-pixel-ratio: 2) {
-          min-height: 260px;
-        }
         @media (max-width: $break-400) and (orientation: portrait){
-          min-height: 40%;
+          min-height: 55%;
         }
         @media (max-width: $break-750) and (orientation: landscape){
-          min-height: 40%;
+          min-height: 55%;
         }
         height: auto;
         max-width: 100%;
