@@ -80,7 +80,7 @@ html{
       font-size: .8rem;
       font-weight: 400;
       margin: 2% auto 1%;
-      @media (max-width: $break-320) and (orientation: landscape){
+      @media (max-width: $break-320) and (max-height: $break-320){
         font-size: .4rem;
       }
       @media (min-width: $break-321) and (max-width: $break-370) and (orientation: landscape){
