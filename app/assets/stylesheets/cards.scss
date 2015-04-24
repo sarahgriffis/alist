@@ -205,7 +205,11 @@ html{
       width: 67.5vh;
       max-height: 95vh;
       max-width: 90vw;
-      @media (max-width: $break-400) and (orientation: portrait){
+      @media (max-width: $break-320) and (orientation: portrait){
+        height: 95%;
+        width: 95%;
+      }
+      @media (min-width: $break-321) and (max-width: $break-450) and (orientation: portrait){
         height: 95%;
         width: 95%;
         max-height: 95%;
