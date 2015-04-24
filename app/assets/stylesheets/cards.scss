@@ -170,6 +170,10 @@ html{
         max-height: 260px;
         max-width: 300px;
       }
+      @media (max-height: $break-750) {
+        max-height: 40%;
+        max-width: 90%;
+      }
       margin: 1% auto 3%;
       overflow: hidden;
       display: block;
@@ -206,6 +210,9 @@ html{
         }
         @media (min-aspect-ratio: 4/3) and (min-width: $break-320) and (max-width: $break-480) and (-webkit-min-device-pixel-ratio: 2) {
           min-height: 260px;
+        }
+        @media (max-height: $break-750) {
+          min-height: 90%;
         }
         height: auto;
         max-width: 100%;
