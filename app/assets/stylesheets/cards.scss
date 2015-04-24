@@ -60,6 +60,11 @@ $break-2001: 2001px;
       max-width: 100%;
       height: 470px;
     }
+     @media (max-aspect-ratio: 4/3) and (min-width: $break-320) and (max-height: $break-480) {
+      width: 300px;
+      max-width: 100%;
+      height: 470px;
+    }
 
     .celeb-name {
       color: black;
