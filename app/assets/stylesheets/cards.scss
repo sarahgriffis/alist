@@ -55,7 +55,7 @@ $break-2001: 2001px;
     max-width: 90vw;
     margin-right: auto;
     margin-left: auto;
-    @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+    @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) {
       width: 300px;
       max-width: 100%;
       height: 470px;
@@ -120,7 +120,7 @@ $break-2001: 2001px;
         max-height: 46vh;
       }
       max-width: 45vh;
-      @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+      @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) {
         max-height: 180px;
         max-width: 250px;
       }
@@ -144,8 +144,9 @@ $break-2001: 2001px;
         @media (max-aspect-ratio: 16/9) and (min-height: $break-650) and (max-height: $break-750) and (orientation: portrait){
           min-height: 46vh;
         }
-        @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) and (orientation: portrait){
+        @media (max-aspect-ratio: 48/32) and (min-height: $break-320) and (max-height: $break-480) {
         min-height: 250px;
+        display: block;
       }
         height: auto;
         max-width: 100%;

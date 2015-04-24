@@ -16,14 +16,6 @@ $break-2000: 2000px;
 
 .chart rect{
   overflow: hidden;
-  @media (max-height: $break-850) and (orientation: portrait){
-    //object-fit: contain;
-    //max-width: 60vh;
-  }
-  @media (max-height: $break-750) and (orientation: landscape){
-    //object-fit: contain;
-    //max-width: 60vh;
-  }
 }
 .chart text {
   fill: #fff;
