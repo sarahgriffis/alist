@@ -137,7 +137,11 @@ html{
         //max-height: 50%;
         //max-width: 90%;
       }
-      @media (min-height: $break-800) and (max-height: $break-1600), (min-width: $break-800) and (max-width: $1600) {
+      @media (min-width: $break-800) and (max-width: $break-1600) {
+        max-height: 37vh;
+        max-width: 45vh;
+      }
+      @media (min-height: $break-800) and (max-height: $break-1600) {
         max-height: 37vh;
         max-width: 45vh;
       }
@@ -154,7 +158,11 @@ html{
         //min-height: 39.5vh;
         //min-height: 37vh;
         display: block;
-        @media (min-height: $break-800) and (max-height: $break-1600), (min-width: $break-800) and (max-width: $break-1600){
+        @media (min-height: $break-800) and (max-height: $break-1600) {
+          min-height: 37vh;
+          max-width: 100%;
+        }
+        @media (min-width: $break-800) and (max-width: $break-1600){
           min-height: 37vh;
           max-width: 100%;
         }
