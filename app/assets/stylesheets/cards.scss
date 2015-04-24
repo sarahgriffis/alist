@@ -126,10 +126,10 @@ html{
           min-height: 42vh;
         }
         @media (max-width: $break-400) and (orientation: portrait){
-          min-height: 55%;
+          min-height: 50%;
         }
         @media (max-width: $break-750) and (orientation: landscape){
-          min-height: 55%;
+          min-height: 50%;
         }
         height: auto;
         max-width: 100%;
