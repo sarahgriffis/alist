@@ -123,19 +123,22 @@ html{
 
     .img-container {
       //max-height: 39.5vh;
-      max-height: 37vh;
+      //max-height: 37vh;
       max-width: 45vh;
       @media (max-width: $break-400) and (orientation: portrait){
-        max-height: 25%;
+        //max-height: 25%;
         max-width: 80%;
       }
       @media (min-width: $break-321) and (max-width: $break-450) and (orientation: portrait){
-        max-height: 50%;
+        //max-height: 50%;
         max-width: 90%;
       }
       @media (max-width: $break-750) and (orientation: landscape){
-        max-height: 50%;
+        //max-height: 50%;
         max-width: 90%;
+      }
+      @media (min-height: $break-1000) and (max-width: $break-650) and (orientation: portrait){
+        max-height: 40vh;
       }
       margin: 1% auto 3%;
       overflow: hidden;
@@ -144,20 +147,20 @@ html{
       img {
         margin: 0 auto;
         //min-height: 39.5vh;
-        min-height: 37vh;
+        //min-height: 37vh;
         display: block;
         @media (min-width: $break-2000){
-          min-height: 42vh;
+          //min-height: 42vh;
         }
         @media (max-width: $break-320) and (orientation: portrait){
-          min-height: 25%;
+          //min-height: 25%;
           max-width: 80%;
         }
         @media (min-width: $break-321) and (max-width: $break-450) and (orientation: portrait){
-          min-height: 50%;
+          //min-height: 50%;
         }
         @media (max-width: $break-750) and (orientation: landscape){
-          min-height: 50%;
+          //min-height: 50%;
         }
         height: auto;
         max-width: 100%;
