@@ -29,6 +29,7 @@ $break-1000: 1000px;
 $break-1001: 1001px;
 $break-1200: 1200px;
 $break-1201: 1201px;
+$BREAK-1600: 1600PX;
 $break-1900: 1900px;
 $break-1901: 1901px;
 $break-2000: 2000px;
@@ -138,8 +139,12 @@ html{
         //max-height: 50%;
         //max-width: 90%;
       }
-      @media (min-height: $break-800) , (min-width: $break-800){
+      @media (min-height: $break-800) and (max-height: $break-1600), (min-width: $break-800) and (max-width: $1600) {
         max-height: 37vh;
+        max-width: 45vh;
+      }
+      @media (min-height: $break-1600), (min-width: $break-1600) {
+        max-height: 42vh;
         max-width: 45vh;
       }
       margin: 1% auto 3%;
@@ -151,11 +156,12 @@ html{
         //min-height: 39.5vh;
         //min-height: 37vh;
         display: block;
-        @media (min-width: $break-2000){
-          min-height: 42vh;
-        }
         @media (min-height: $break-800) , (min-width: $break-800) {
           min-height: 37vh;
+          max-width: 100%;
+        }
+        @media (min-height: $break-1600), (min-width: $break-1600) {
+          min-height: 42vh;
           max-width: 100%;
         }
         height: auto;
