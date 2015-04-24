@@ -93,6 +93,9 @@ html{
       }  
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
+      }
+      @media (min-width: $break-1201) and (max-width: $break-1900) and (max-width: $break-850) and(orientation: landscape){
+        font-size: 1.2rem;
       } 
       @media (min-width: $break-1901) and (orientation: landscape){
         font-size: 1.7rem;
