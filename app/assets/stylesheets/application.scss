@@ -32,8 +32,8 @@ body {
 h1 {
   color: #fff;
   font-size: 1rem;
-  @media (min-width: $break-350){
-    font-size: 1.05rem;
+  @media (max-width: $break-350){
+    font-size: .8rem;
   }
   @media (min-width: $break-700){
     font-size: 1.9rem;
