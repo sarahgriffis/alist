@@ -87,6 +87,10 @@ html{
       max-width: 100%;
       height: 470px;
     }
+    @media (max-width: $break-440)  {
+      width: 90%;
+    }
+    
     
 
     .celeb-name {
