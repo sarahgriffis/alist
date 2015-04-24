@@ -80,13 +80,13 @@ html{
       font-size: .8rem;
       font-weight: 400;
       margin: 2% auto 1%;
-      @media (max-width: $break-320) and (max-height: $break-320){
+      @media (max-width: $break-320) and (max-height: $break-500){
         font-size: .4rem;
       }
-      @media (min-width: $break-321) and (max-width: $break-370) and (max-height: $break-400) and (orientation: landscape){
+      @media (min-width: $break-321) and (max-width: $break-370) and (max-height: $break-500) and (orientation: landscape){
         font-size: .5rem;
       }
-      @media (min-width: $break-371) and (max-width: $break-400) and (max-height: $break-400) and (orientation: landscape){
+      @media (min-width: $break-371) and (max-width: $break-400) and (max-height: $break-500) and (orientation: landscape){
         font-size: .6rem;
       }
       @media (min-width: $break-401) and (max-width: $break-500) and (max-height: $break-500) and (orientation: landscape){
@@ -114,13 +114,13 @@ html{
         font-size: .4rem;
         margin-top: 0.5%;
       } 
-      @media (min-width: $break-1901) and (orientation: landscape){
+      @media (min-width: $break-1901) and (orientation: landscape) {
         font-size: 1.7rem;
       } 
-      @media (max-height: $break-450) and (orientation: landscape){
+      @media (max-height: $break-450) and (orientation: landscape) {
         font-size: .65rem;
       }
-      @media (max-height: $break-450) and (max-width: $break-450) and (orientation: portrait){
+      @media (max-height: $break-450) and (max-width: $break-450) and (orientation: portrait) {
         font-size: .65rem;
       }
       @media (max-height: $break-450) and (min-width: $break-500) and (orientation: landscape){
@@ -131,21 +131,10 @@ html{
     }
 
     .img-container {
-      //max-height: 39.5vh;
-      //max-height: 37vh;
-      //max-width: 45vh;
       max-width: 90%;
       @media (max-width: $break-400) and (orientation: portrait){
         max-height: auto;
         max-width: 80%;
-      }
-      @media (min-width: $break-321) and (max-width: $break-450) and (orientation: portrait){
-        //max-height: 50%;
-        //max-width: 90%;
-      }
-      @media (max-width: $break-750) and (orientation: landscape){
-        //max-height: 50%;
-        //max-width: 90%;
       }
       @media (min-width: $break-800) and (max-width: $break-1600) {
         max-height: 37vh;
@@ -169,8 +158,6 @@ html{
 
       img {
         margin: 0 auto;
-        //min-height: 39.5vh;
-        //min-height: 37vh;
         display: block;
         @media (min-height: $break-800) and (max-height: $break-1600) {
           min-height: 37vh;

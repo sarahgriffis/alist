@@ -17,7 +17,6 @@
 $break-350: 350px;
 $break-700: 700px;
 
-//$tablet: "(min-width: 768px)";
 
 html{
   font-size: 30px; //1rem=30px
@@ -62,20 +61,16 @@ h1 {
 
 #search {
   max-width: 67.5vh;
-  //max-width: 90vw;
   margin: 0 auto;
 }
 
 .right-inner-addon {
-  //display: inline;
   position: relative;
 
   .glyphicon-search {
     position: absolute;
-    //right: 30vh;
     z-index: 1;
     color: #fff;
-    //float: right;
     right: 0;
   }
 
