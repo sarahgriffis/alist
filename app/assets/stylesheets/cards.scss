@@ -121,7 +121,8 @@ html{
     }
 
     .img-container {
-      max-height: 39.5vh;
+      //max-height: 39.5vh;
+      max-height: 37vh;
       max-width: 45vh;
       @media (max-aspect-ratio: 16/9) and (min-width: $break-320) and (max-
         width: $break-750) and (orientation: portrait){
@@ -152,7 +153,8 @@ html{
 
       img {
         margin: 0 auto;
-        min-height: 39.5vh;
+        //min-height: 39.5vh;
+        min-height: 37vh;
         @media (min-width: $break-2000){
           min-height: 42vh;
         }
