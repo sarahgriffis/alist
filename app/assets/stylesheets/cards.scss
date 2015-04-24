@@ -94,7 +94,7 @@ html{
       @media (min-width: $break-1201) and (max-width: $break-1900) and (orientation: landscape){
         font-size: 1.5rem;
       }
-      @media (min-width: $break-1201) and (max-width: $break-1900) and (max-width: $break-850) and(orientation: landscape){
+      @media (min-width: $break-1201) and (max-width: $break-1900) and (max-height: $break-850) and(orientation: landscape){
         font-size: 1.2rem;
       } 
       @media (min-width: $break-1901) and (orientation: landscape){
@@ -112,7 +112,7 @@ html{
       max-height: 37vh;
       max-width: 45vh;
       @media (max-width: $break-400) and (orientation: portrait){
-        max-height: 30%;
+        max-height: 22%;
         max-width: 90%;
       }
       @media (max-width: $break-750) and (orientation: landscape){
