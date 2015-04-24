@@ -171,7 +171,7 @@ html{
         max-width: 300px;
       }
       @media (max-width: $break-400) and (orientation: portrait){
-        max-height: 40%;
+        max-height: 30%;
         max-width: 90%;
       }
       @media (max-width: $break-750) and (orientation: landscape){
@@ -216,10 +216,10 @@ html{
           min-height: 260px;
         }
         @media (max-width: $break-400) and (orientation: portrait){
-          min-height: 40%;
+          min-height: 30%;
         }
         @media (max-width: $break-750) and (orientation: landscape){
-          min-height: 40%;
+          min-height: 30%;
         }
         height: auto;
         max-width: 100%;
@@ -275,6 +275,18 @@ html{
       width: 67.5vh;
       max-height: 95vh;
       max-width: 90vw;
+      @media (max-width: $break-400) and (orientation: portrait){
+        height: 95%;
+        width: 95%;
+        max-height: 95%;
+        max-width: 95%;
+      }
+      @media (max-width: $break-750) and (orientation: landscape){
+        height: 95%;
+        width: 95%;
+        max-height: 95%;
+        max-width: 95%;
+      }
     }
 
     .back {
