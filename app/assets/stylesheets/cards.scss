@@ -83,13 +83,13 @@ html{
       @media (max-width: $break-320) and (max-height: $break-320){
         font-size: .4rem;
       }
-      @media (min-width: $break-321) and (max-width: $break-370) and (orientation: landscape){
+      @media (min-width: $break-321) and (max-width: $break-370) and (max-height: $break-400) and (orientation: landscape){
         font-size: .5rem;
       }
-      @media (min-width: $break-371) and (max-width: $break-400) and (orientation: landscape){
+      @media (min-width: $break-371) and (max-width: $break-400) and (max-height: $break-400) and (orientation: landscape){
         font-size: .6rem;
       }
-      @media (min-width: $break-401) and (max-width: $break-500) and (orientation: landscape){
+      @media (min-width: $break-401) and (max-width: $break-500) and (max-height: $break-500) and (orientation: landscape){
         font-size: .7rem;
       } 
       @media (min-width: $break-600) and (min-height: $break-1000) and (orientation: portrait){
