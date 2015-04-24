@@ -30,6 +30,10 @@ $break-1901: 1901px;
 $break-2000: 2000px;
 $break-2001: 2001px;
 
+html{
+  font-size: 30px; //1rem=30px
+}
+
 .all-cards{
   display: flex;
   flex-flow: column;
