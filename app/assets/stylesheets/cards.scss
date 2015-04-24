@@ -64,7 +64,11 @@ html{
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    @media (min-height: $break-800) , (min-width: $break-800) {
+    @media (min-width: $break-800) {
+      width: 67.5vh;
+      max-width: 90vw;
+    }
+    @media (min-height: $break-800) {
       width: 67.5vh;
       max-width: 90vw;
     }
@@ -145,7 +149,11 @@ html{
         max-height: 37vh;
         max-width: 45vh;
       }
-      @media (min-height: $break-1600), (min-width: $break-1600) {
+      @media (min-width: $break-1600) {
+        max-height: 42vh;
+        max-width: 45vh;
+      }
+      @media (min-height: $break-1600) {
         max-height: 42vh;
         max-width: 45vh;
       }
@@ -166,7 +174,11 @@ html{
           min-height: 37vh;
           max-width: 100%;
         }
-        @media (min-height: $break-1600), (min-width: $break-1600) {
+        @media (min-height: $break-1600) {
+          min-height: 42vh;
+          max-width: 100%;
+        }
+        @media (min-width: $break-1600) {
           min-height: 42vh;
           max-width: 100%;
         }
@@ -224,12 +236,19 @@ html{
       width: 95%;
       max-height: 95%;
       max-width: 95%; 
-      @media (min-height: $break-800) , (min-width: $break-800) {
+      @media (min-height: $break-800) {
         height: 95vh;
         width: 67.5vh;
         max-height: 95vh;
         max-width: 90vw;
       }
+      @media (min-width: $break-800) {
+        height: 95vh;
+        width: 67.5vh;
+        max-height: 95vh;
+        max-width: 90vw;
+      }
+
     }
 
     .back {
