@@ -60,8 +60,8 @@ html{
     border-radius: .9em;
     height: auto;
     width: -webkit-calc(100% - 0px);
-    width: 90%;
-    max-width: 100%;
+    width: 100%;
+    //max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     @media (min-width: $break-800) {
@@ -86,10 +86,10 @@ html{
       @media (min-width: $break-321) and (max-width: $break-370) and (max-height: $break-500) and (orientation: landscape){
         font-size: .5rem;
       }
-      @media (min-width: $break-371) and (max-width: $break-400) and (max-height: $break-500) and (orientation: landscape){
+      @media (min-width: $break-371) and (max-width: $break-400) and (max-height: $break-700) and (orientation: landscape){
         font-size: .6rem;
       }
-      @media (min-width: $break-401) and (max-width: $break-500) and (max-height: $break-500) and (orientation: landscape){
+      @media (min-width: $break-401) and (max-width: $break-500) and (max-height: $break-700) and (orientation: landscape){
         font-size: .7rem;
       } 
       @media (min-width: $break-600) and (min-height: $break-1000) and (orientation: portrait){
