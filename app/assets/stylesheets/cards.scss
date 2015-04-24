@@ -29,7 +29,7 @@ $break-1000: 1000px;
 $break-1001: 1001px;
 $break-1200: 1200px;
 $break-1201: 1201px;
-$break-1600: 1600PX;
+$break-1600: 1600px;
 $break-1900: 1900px;
 $break-1901: 1901px;
 $break-2000: 2000px;
@@ -60,15 +60,13 @@ html{
     border-radius: .9em;
     height: auto;
     width: -webkit-calc(100% - 0px);
-    width: 67.5vh;
-    max-width: 90vw;
+    width: 90%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    @media (max-width: $break-450) and (orientation: portrait){
-      width: 100%;
-    }
-    @media (max-width: $break-769) and (orientation: landscape){
-      width: 80%;
+    @media (min-height: $break-800) , (min-width: $break-800) {
+      width: 67.5vh;
+      max-width: 90vw;
     }
     
     
@@ -156,7 +154,7 @@ html{
         //min-height: 39.5vh;
         //min-height: 37vh;
         display: block;
-        @media (min-height: $break-800) , (min-width: $break-800) {
+        @media (min-height: $break-800) and (max-height: $break-1600), (min-width: $break-800) and (max-width: $break-1600){
           min-height: 37vh;
           max-width: 100%;
         }
@@ -214,25 +212,15 @@ html{
 
     .front {
       margin: 1.5% auto;
-      height: 95vh;
-      width: 67.5vh;
-      max-height: 95vh;
-      max-width: 90vw;
-      @media (max-width: $break-320) and (orientation: portrait){
-        height: 95%;
-        width: 95%;
-      }
-      @media (min-width: $break-321) and (max-width: $break-450) and (orientation: portrait){
-        height: 95%;
-        width: 95%;
-        max-height: 95%;
-        max-width: 95%;
-      }
-      @media (max-width: $break-750) and (orientation: landscape){
-        height: 95%;
-        width: 95%;
-        max-height: 95%;
-        max-width: 95%;
+      height: 95%;
+      width: 95%;
+      max-height: 95%;
+      max-width: 95%; 
+      @media (min-height: $break-800) , (min-width: $break-800) {
+        height: 95vh;
+        width: 67.5vh;
+        max-height: 95vh;
+        max-width: 90vw;
       }
     }
 
