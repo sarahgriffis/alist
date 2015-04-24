@@ -128,7 +128,10 @@ html{
         @media (min-width: $break-2000){
           min-height: 42vh;
         }
-        @media (max-width: $break-400) and (orientation: portrait){
+        @media (max-width: $break-320) and (orientation: portrait){
+          min-height: 40%;
+        }
+        @media (min-width: $break-321) and (max-width: $break-450) and (orientation: portrait){
           min-height: 50%;
         }
         @media (max-width: $break-750) and (orientation: landscape){
