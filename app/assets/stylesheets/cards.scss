@@ -106,7 +106,7 @@ html{
         font-size: 1.2rem;
         margin-top: 0.5%;
       } 
-      @media (min-width: $break-1201) and (max-width: $break-1900) and (max-height: $break-650) and (min-height: $break-451) (orientation: landscape){
+      @media (min-width: $break-1201) and (max-width: $break-1900) and (max-height: $break-650) and (min-height: $break-451) and (orientation: landscape){
         font-size: .8rem;
         margin-top: 0.5%;
       }
