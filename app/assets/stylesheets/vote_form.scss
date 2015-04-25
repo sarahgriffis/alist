@@ -1,53 +1,3 @@
-$iphone-320: 320px;
-$iphone-375: 375px;
-$iphone-414: 414px;
-$iphone-480: 480px;
-$iphone-568: 568px;
-$iphone-601: 601px;
-$galaxy-640: 640px;
-$iphone-667: 667px;
-$iphone-736: 736px;
-$tablet-768: 768px;
-$tablet-800: 800px;
-$tablet-906: 906px;
-$tablet-1024: 1024px;
-$screen-1200: 1200px;
-$tablet-1280: 1280px;
-$tablet-screen-1600: 1600px;
-
-$break-349: 349px;
-$break-350: 350px;
-$break-360: 360px;
-$break-370: 370px;
-$break-371: 371px;
-$break-400: 400px;
-$break-401: 401px;
-$break-450: 450px;
-$break-451: 451px;
-$break-500: 500px;
-$break-501: 501px;
-$break-570: 570px;
-$break-630: 630px;
-$break-600: 600px;
-$break-650: 650px;
-$break-666: 666px;
-$break-667: 667px;
-$break-710: 710px;
-$break-767: 767px;
-$break-780: 780px;
-$break-849: 849px;
-$break-850: 850px;
-$break-1000: 1000px;
-$break-1001: 1001px;
-$break-1200: 1200px;
-$break-1201: 1201px;
-$break-1600: 1600px;
-$break-1601: 1601px;
-$break-1900: 1900px;
-$break-1901: 1901px;
-$break-2000: 2000px;
-$break-2001: 2001px;
-
 form {
   width: 97%;
   bottom: 0;
@@ -59,7 +9,7 @@ form {
     display: inline-block;
     width: 21.5%;
     margin-right: 2%;
-    @media (max-height: $break-400) and (orientation: landscape){
+    @media (max-height: 400px) and (orientation: landscape){
       margin-right: 1%;
     }
     &:last-child{
@@ -156,7 +106,7 @@ form {
         -webkit-border-radius: 18px;
         -moz-border-radius: 18px;
         border-radius: 18px;
-        @media (max-height: $break-500) and (max-width: $break-500){
+        @media (max-height: 500px) and (max-width: 500px){
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
           border-radius: 10px;
