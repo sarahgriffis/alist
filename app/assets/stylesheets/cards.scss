@@ -100,8 +100,12 @@ html{
         max-height: 39vh;
         max-width: 45vh;
       }
+      @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
+        max-height: 42vh;
+        max-width: 42vh;
+      }
       @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-        max-height: 44vh;
+        max-height: 45vh;
         max-width: 45vh;
       }
       @media (min-width: 1600px) {
@@ -128,7 +132,11 @@ html{
           max-width: 100%;
         }
         @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-          min-height: 44vh;
+          min-height: 42vh;
+          max-width: 100%;
+        }
+        @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
+          min-height: 45vh;
           max-width: 100%;
         }
         @media (min-height: 1600px) {
