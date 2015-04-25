@@ -1,18 +1,4 @@
 
-$tablet-1280: 1280px;
-
-
-$break-400: 400px;
-$break-401: 401px;
-$break-500: 500px;
-$break-501: 501px;
-$break-700: 700px;
-$break-750: 750px;
-$break-800: 800px;
-$break-850: 850px;
-$break-1500: 1500px;
-$break-1700: 1700px;
-$break-2000: 2000px;
 
 .chart rect{
   overflow: hidden;
@@ -21,29 +7,20 @@ $break-2000: 2000px;
   fill: #fff;
   text-anchor: start;
   font-size: .7rem;
-  @media (max-height: $break-700) and (orientation: landscape){
+  @media (max-height: 700px) and (orientation: landscape){
     font-size: .45rem;
   }
-  @media (min-height: $break-401) and (max-height: $break-500) and (orientation: landscape){
-    //font-size: .2rem;
-  }
-  @media (min-height: $break-501) and (max-height: $break-700) and (orientation: landscape){
-    //font-size: .4rem;
-  }
-  @media (min-width: $break-1700) and (orientation: landscape){
+  @media (min-width: 1700px) and (min-height: 600px) and (orientation: landscape){
     font-size: 1rem;
   }
-  @media (min-width: $break-2000) and (orientation: landscape){
+  @media (min-width: 2000px) and (min-height: 600px) and (orientation: landscape){
     font-size: 1.05rem;
   }
-  @media (max-width: $break-500) and (orientation: portrait) {
+  @media (max-width: 500px) and (max-height: 500px) and (orientation: portrait) {
     font-size: 0.4rem;
   }
-  @media (min-width: $break-800) and (orientation: portrait) {
+  @media (min-width: 800px) and (min-height: 800px) and (orientation: portrait) {
     font-size: 1rem;
-  }
-    @media (min-height: $tablet-1280) and (orientation: portrait) {
-    font-size: 1.05rem;
   }
   
 }

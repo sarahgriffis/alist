@@ -14,8 +14,6 @@
  *= require_tree .
  *= require_self
  */
-$break-350: 350px;
-$break-700: 700px;
 
 
 html{
@@ -37,10 +35,10 @@ body {
 h1 {
   color: #fff;
   font-size: 1rem;
-  @media (max-width: $break-350){
+  @media (max-width: 350px){
     font-size: .8rem;
   }
-  @media (min-width: $break-700){
+  @media (min-width: 700px){
     font-size: 1.9rem;
   }
   text-transform: uppercase;
