@@ -106,7 +106,7 @@ form {
         @media (min-height: 2000px) and (min-width: 400px){
           font-size: 8rem;
         }
-        @media (device-aspect-ratio: 3/4) and (orientation: landscape) {
+        @media (device-aspect-ratio: 4/3) and (orientation: landscape) {
           font-size: 1.5rem;
         }
         line-height: .3;
