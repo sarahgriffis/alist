@@ -49,6 +49,9 @@ html{
       @media (max-width: 450px) and (max-height: 500px){
         font-size: .6rem;
       }
+      @media (max-height: 450px) and (min-width: 710px) and (orientation: landscape){
+        font-size: .6rem;
+      }
       @media (min-width: 400px) and (max-width: 500px) and (max-height: 700px) and (orientation: landscape){
         font-size: .7rem;
       }      
@@ -56,7 +59,7 @@ html{
         font-size: .8rem;
         margin-top: 0.5%;
       }
-      @media (max-height: 450px) and (min-width: 500px) and (orientation: landscape){
+      @media (max-height: 450px) and (min-width: 500px) and (max-width: 710px) and (orientation: landscape){
         font-size: .9rem;
       }
       @media (min-height: 600px) and (min-width: 600px) {
