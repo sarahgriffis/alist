@@ -78,85 +78,73 @@ form {
         background-color: #fff;
         margin-top: 1%;
         font-size: 1.8rem;
-        @media (max-width: $break-370) and (orientation: landscape){
-          font-size: 1.6rem;
-        }
-        @media (min-width: $break-600) and (min-height: $break-350) and (orientation: landscape){
-          font-size: 2.2rem;
-        }
-        @media (min-width: $break-1200) and (orientation: landscape){
-          font-size: 2.5rem;
-        }
-        @media (max-height: $break-349) and (orientation: landscape){
+        @media (max-height: 350px) and (orientation: landscape){
           font-size: 1rem;
         }
-        @media (max-height: $break-349) and (min-width: $break-450) and (orientation: landscape){
-          font-size: 1.4rem;
-        }
-        @media (min-height: $break-350) and (max-height: $break-370) and (orientation: landscape){
+        @media (min-height: 350px) and (max-height: 370px) and (orientation: landscape){
           font-size: 1.15rem;
         }
-        @media (min-height: $break-350) and (max-height: $break-370) and (min-width: $break-630) and (orientation: landscape){
-          font-size: 2rem;
-        }
-        @media (min-height: $break-371) and (max-height: $break-400) and (orientation: landscape){
-          font-size: 1.3rem;
-        }
-        @media (min-height: $break-401) and (max-height: $break-450) and (orientation: landscape){
-          font-size: 1.4rem;
-        }
-        @media (min-height: $break-451) and (max-height: $break-500) and (orientation: landscape){
-          font-size: 1.65rem;
-        }
-        @media (max-height: $break-451) and (min-width: $break-650) and (orientation: landscape){
-          font-size: 2.5rem;
-        }
-        @media (min-height: $break-501) and (max-height: $break-630) and (min-width: $break-850) and (orientation: landscape){
-          font-size: 2.1rem;
-        }
-        @media (min-height: $break-630) and (max-height: $break-666) and (orientation: landscape){
-          font-size: 2.2rem;
-        }
-        @media (min-height: $break-667) and (max-height: $break-767) and (orientation: landscape){
-          font-size: 2.5rem;
-        }
-        @media (min-height: $tablet-768) and (max-height: $break-849) and (orientation: landscape){
-          font-size: 3.1rem;
-        }
-        @media (min-height: $break-850) and (max-height: $break-1000) and (orientation: landscape){
-          font-size: 3.5rem;
-        }
-        @media (min-height: $break-1001) and (max-height: $break-1200) and (orientation: landscape){
-          font-size: 4.9rem;
-        }
-        @media (min-height: $break-1201) and (orientation: landscape){
-          font-size: 5.7rem;
-        }
-        @media (max-width: $break-400) and (orientation: portrait){
+        @media (max-width: 400px) and (orientation: portrait) {
           font-size: 1.2rem;
         }
-        @media (max-width: $break-400) and (min-height: $break-600) and (orientation: portrait){
+        @media (min-height: 370px) and (max-height: 400px) and (orientation: landscape){
+          font-size: 1.3rem;
+        }
+        @media (min-height: 400px) and (max-height: 450px) and (min-width: 450px) and and (max-width: 710px) and (orientation: landscape){
+          font-size: 1.4rem;
+        }
+        @media (max-width: 370px) and (max-height: 370px) and (orientation: landscape){
+          font-size: 1.6rem;
+        }       
+        @media (max-width: 400px) and (min-height: 600px) and (orientation: portrait){
           font-size: 1.6rem;
         }
-        @media (min-width: $break-400) and (max-width: $break-710) and (orientation: portrait){
-          font-size: 1.5rem;
-        }
-        @media (min-width: $break-400) and (max-width: $break-710) and (max-height: $break-650) and (orientation: portrait){
+        @media (min-width: 400px) and (max-width: 710px) and (max-height: 650px) and (orientation: portrait) {
           font-size: 1.9rem;
         }
-        @media (min-height: $tablet-1024) and (max-height: $break-1600) and (orientation: portrait){
+        @media (min-height: 350px) and (max-height: 370px) and (min-width: 630px) and (orientation: landscape){
+          font-size: 2rem;
+        }
+        @media (min-height: 500px) and (max-height: 630px) and (min-width: 850px) and (orientation: landscape){
+          font-size: 2.1rem;
+        }
+        @media (min-height: 350px) and (max-height: 666px) and (min-width: 600px) and (orientation: landscape){
+          font-size: 2.2rem;
+        }
+        @media (min-width: 1200px) and (min-height: 400px) and (orientation: landscape){
+          font-size: 2.5rem;
+        }
+        @media (max-height: 450px) and (min-width: 650px) and (orientation: landscape){
+          font-size: 2.5rem;
+        }   
+        @media (min-height: 667px) and (max-height: 767px) and (orientation: landscape){
+          font-size: 2.5rem;
+        }
+        @media (min-height: 768px) and (max-height: 849px) and (min-width: 400px) and (orientation: landscape){
+          font-size: 3.1rem;
+        }
+        @media (min-height: 850px) and (max-height: 1000px) and (min-width: 400px) and (orientation: landscape){
+          font-size: 3.5rem;
+        }
+        @media (min-height: 1024px) and (max-height: 1600px) and (min-width: 400px) and (orientation: portrait){
           font-size: 3.4rem;
         }
-        @media (min-height: $tablet-1024) and (max-height: $break-1600) and (min-width: $break-780) and (orientation: portrait){
+        @media (min-height: 1024px) and (max-height: 1600px) and (min-width: 780px) and (orientation: portrait){
           font-size: 3.8rem;
         }
-         @media (min-height: $break-1601) and (max-height: $break-1900) and (orientation: portrait){
+         @media (min-height: 1600px) and (max-height: 1900px) and (min-width: 400px) and (orientation: portrait){
           font-size: 3.9rem;
         }
-        @media (min-height: $break-1901) and (max-height: $break-2000) and (orientation: portrait){
+        @media (min-height: 1000px) and (max-height: 1200px) and (min-width: 400px) and (orientation: landscape){
+          font-size: 4.9rem;
+        }
+        @media (min-height: 1200px) and (min-width: 400px) and (orientation: landscape){
+          font-size: 5.7rem;
+        }
+        @media (min-height: 1900px) and (max-height: 2000px) and (min-width: 400px) and (orientation: portrait){
           font-size: 6.2rem;
         }
-        @media (min-height: $break-2001) {
+        @media (min-height: 2000px) and (min-width: 400px){
           font-size: 8rem;
         }
         line-height: .3;
