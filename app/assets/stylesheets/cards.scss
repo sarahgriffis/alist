@@ -100,6 +100,7 @@ html{
 
     .img-container {
       max-width: 90%;
+      margin: 1% auto 3%;
       @media (max-width: 400px) and (orientation: portrait){
         max-height: auto;
         max-width: 80%;
@@ -115,10 +116,12 @@ html{
       @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
         max-height: 42vh;
         max-width: 42vh;
+        margin-bottom: 4%;
       }
       @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
         max-height: 45vh;
         max-width: 45vh;
+        margin-bottom: 6%;
       }
       @media (min-width: 1600px) {
         max-height: 42vh;
@@ -128,7 +131,6 @@ html{
         max-height: 42vh;
         max-width: 45vh;
       }
-      margin: 1% auto 3%;
       overflow: hidden;
       display: block;
 
