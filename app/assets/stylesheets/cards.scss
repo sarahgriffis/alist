@@ -97,6 +97,9 @@ html{
       @media (max-height: 450px) and (min-width: 500px) and (orientation: landscape){
         font-size: .9rem;
       }
+      @media (min-height: 600px) and (min-width: 600px) {
+        font-size: .9rem;
+      }
       @media (min-width: 850px) and (max-width: 1200px) and (min-height: 500px) and(orientation: landscape){
         font-size: 1.1rem;
         margin-top: 0.5%;
