@@ -123,6 +123,16 @@ html{
         max-width: 45vh;
         margin-bottom: 6%;
       }
+      @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
+        max-height: 45vh;
+        max-width: 45vh;
+        margin-bottom: 6%;
+      }
+      @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
+        max-height: 45vh;
+        max-width: 45vh;
+        margin-bottom: 6%;
+      }
       @media (min-width: 1600px) {
         max-height: 42vh;
         max-width: 45vh;
@@ -145,11 +155,19 @@ html{
           min-height: 39vh;
           max-width: 100%;
         }
-        @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
+        @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
           min-height: 42vh;
           max-width: 100%;
         }
         @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
+          min-height: 45vh;
+          max-width: 100%;
+        }
+        @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
+          min-height: 45vh;
+          max-width: 100%;
+        }
+        @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
           min-height: 45vh;
           max-width: 100%;
         }
