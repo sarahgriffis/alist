@@ -58,7 +58,13 @@ h1 {
 }
 
 #search {
-  max-width: 67.5vh;
+  @media (min-width: 800px){
+    max-width: 67.5vh;
+  }
+  @media (min-height: 800px){
+    max-width: 67.5vh;
+  }
+  max-width: 90%;
   margin: 0 auto;
 }
 
