@@ -20,12 +20,6 @@ html{
   font-size: 30px; //1rem=30px
 }
 
-.col-lg-offset-3 {
-  @media (min-width: 1200px){
-    //margin-left: 0;
-  }
-}
-
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   text-align: center;
