@@ -101,6 +101,7 @@ html{
     .img-container {
       max-width: 90%;
       margin: 1% auto 3%;
+      max-height: auto;
       @media (max-width: 400px) and (orientation: portrait){
         max-height: auto;
         max-width: 80%;
