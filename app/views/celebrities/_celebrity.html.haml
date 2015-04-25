@@ -65,8 +65,8 @@
     .attr("height", chart_height);
   var bar = chart.selectAll("g")
     .data(graph_data)
-    .attr("preserveAspectRatio", "xMinYMin none")
-    .attr("viewbox", "0 0 200 200")
+    //.attr("preserveAspectRatio", "xMinYMin none")
+    //.attr("viewbox", "0 0 200 200")
     .enter().append("g")
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
   bar.append("rect")
