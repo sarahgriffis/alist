@@ -106,17 +106,8 @@ form {
         @media (min-height: 2000px) and (min-width: 400px){
           font-size: 8rem;
         }
-        @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-          margin-top: 2%;
-          margin-bottom: 2%;
-        }
-        @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
-          margin-top: 2%;
-          margin-bottom: 2%;
-        }
-        @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
-          margin-top: 2%;
-          margin-bottom: 2%;
+        @media (device-aspect-ratio: 3/4) and (orientation: landscape) {
+          font-size: 2rem;
         }
         line-height: .3;
         text-transform: uppercase;
