@@ -41,7 +41,7 @@ html{
       color: black;
       font-size: .8rem;
       font-weight: 400;
-      margin: 2% auto 1%;
+      margin: 1.2% auto 1%;
       @media (min-width: 1200px) and (max-width: 1900px) and (max-height: 450px) and (orientation: landscape){
         font-size: .4rem;
         margin-top: 0.5%;
@@ -110,39 +110,39 @@ html{
         max-width: 80%;
       }
       @media (min-width: 800px) and (max-width: 1600px) {
-        max-height: 39vh;
+        max-height: 38vh;
         max-width: 45vh;
       }
       @media (min-height: 800px) and (max-height: 1600px) {
-        max-height: 39vh;
+        max-height: 38vh;
         max-width: 45vh;
       }
       @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
-        max-height: 42vh;
+        max-height: 41vh;
         max-width: 42vh;
         margin-bottom: 4%;
       }
       @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-        max-height: 45vh;
+        max-height: 44vh;
         max-width: 45vh;
         margin-bottom: 6%;
       }
       @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
-        max-height: 45vh;
+        max-height: 44vh;
         max-width: 45vh;
         margin-bottom: 6%;
       }
       @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
-        max-height: 45vh;
+        max-height: 44vh;
         max-width: 45vh;
         margin-bottom: 6%;
       }
       @media (min-width: 1600px) {
-        max-height: 42vh;
+        max-height: 41vh;
         max-width: 45vh;
       }
       @media (min-height: 1600px) {
-        max-height: 42vh;
+        max-height: 41vh;
         max-width: 45vh;
       }
       overflow: hidden;
@@ -152,35 +152,35 @@ html{
         margin: 0 auto;
         display: block;
         @media (min-height: 800px) and (max-height: 1600px) {
-          min-height: 39vh;
+          min-height: 38vh;
           max-width: 100%;
         }
         @media (min-width: 800px) and (max-width: 1600px){
-          min-height: 39vh;
+          min-height: 38vh;
           max-width: 100%;
         }
         @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
-          min-height: 42vh;
+          min-height: 41vh;
           max-width: 100%;
         }
         @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-          min-height: 45vh;
+          min-height: 46vh;
           max-width: 100%;
         }
         @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
-          min-height: 45vh;
+          min-height: 44vh;
           max-width: 100%;
         }
         @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
-          min-height: 45vh;
+          min-height: 44vh;
           max-width: 100%;
         }
         @media (min-height: 1600px) {
-          min-height: 42vh;
+          min-height: 41vh;
           max-width: 100%;
         }
         @media (min-width: 1600px) {
-          min-height: 42vh;
+          min-height: 41vh;
           max-width: 100%;
         }
         height: auto;
