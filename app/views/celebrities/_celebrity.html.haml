@@ -39,7 +39,7 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  var mq = window.matchMedia("(max-height: 650px)")
+  var mq = window.matchMedia("(max-height: 768px) and (min-width: 1024px")
   if (mq.matches) {
     chart_width = $('.all-cards').width()*0.5 - $('.all-cards').width()*0.01;
   }
