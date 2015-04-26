@@ -80,7 +80,7 @@ h2 {
   border: .1em solid  rgba(255, 255, 255, 0.9);
 
 }
-.container-fluid{
+.container-fluid {
   text-transform: uppercase;
   a {
     vertical-align: middle;
@@ -91,6 +91,7 @@ h2 {
     &:hover{
       color: #ccc;
     }
+  }
   p {
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
