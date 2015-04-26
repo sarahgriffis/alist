@@ -15,11 +15,11 @@ var x = d3.scale.linear()
   .range([min_width, chart_width]);
 var chart = d3.select(chart_id)
   .attr("width", chart_width)
-  .attr("height", chart_height);
+  .attr("height", chart_height)
+  .attr("preserveAspectRatio", "xMinYMid none")
+  .attr("viewbox", "0 0 200 200");
 var bar = chart.selectAll("g")
   .data(graph_data)
-  .attr("preserveAspectRatio", "xMinYMid none")
-  .attr("viewbox", "0 0 200 200")
   .enter().append("g")
   .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
 bar.append("rect")
