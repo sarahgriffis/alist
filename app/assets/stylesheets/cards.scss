@@ -118,24 +118,24 @@ html{
         max-height: 38vh;
         max-width: 45vh;
       }
-      @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
-        max-height: 41vh;
-        max-width: 42vh;
+      @media (device-aspect-ratio: 2/3) and (max-height: 400px) and (orientation: portrait) {
+        max-height: auto;
+        max-width: 80%;
         margin-bottom: 4%;
       }
-      @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-        max-height: 44vh;
-        max-width: 45vh;
+      @media (device-aspect-ratio: 40/71) and (max-height: 568px) and (orientation: portrait) {
+        max-height: auto;
+        max-width: 80%;
         margin-bottom: 6%;
       }
-      @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
-        max-height: 44vh;
-        max-width: 45vh;
+      @media (device-aspect-ratio: 667/375) and (max-height: 800px) and (orientation: portrait) {
+        max-height: auto;
+        max-width: 80%;
         margin-bottom: 6%;
       }
-      @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
-        max-height: 44vh;
-        max-width: 45vh;
+      @media (device-aspect-ratio: 16/9) and (max-height: 800px) and (orientation: portrait) {
+        max-height: auto;
+        max-width: 80%;
         margin-bottom: 6%;
       }
       @media (min-width: 1600px) {
