@@ -160,20 +160,20 @@ html{
           min-height: 38vh;
           max-width: 100%;
         }
-        @media (device-aspect-ratio: 2/3) and (orientation: portrait) {
-          min-height: 41vh;
+        @media (device-aspect-ratio: 2/3) and (max-height: 400px) and (orientation: portrait) {
+          min-height: 80%;
           max-width: 100%;
         }
-        @media (device-aspect-ratio: 40/71) and (orientation: portrait) {
-          min-height: 46vh;
+        @media (device-aspect-ratio: 40/71) and (max-height: 568px) and (orientation: portrait) {
+          min-height: 80%;
           max-width: 100%;
         }
-        @media (device-aspect-ratio: 667/375) and (orientation: portrait) {
-          min-height: 44vh;
+        @media (device-aspect-ratio: 667/375) and (max-height: 800px) and (orientation: portrait) {
+          min-height: 80%;
           max-width: 100%;
         }
-        @media (device-aspect-ratio: 16/9) and (orientation: portrait) {
-          min-height: 44vh;
+        @media (device-aspect-ratio: 16/9) and (max-height: 800px) and (orientation: portrait) {
+          min-height: 80%;
           max-width: 100%;
         }
         @media (min-height: 1600px) {
