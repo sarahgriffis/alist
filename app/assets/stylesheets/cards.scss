@@ -117,18 +117,22 @@ html{
         max-width: 45vh;
       }
       @media (device-aspect-ratio: 2/3) and (max-height: 400px) and (orientation: portrait) {
+        max-height: 40%;
         max-width: 80%;
         margin-bottom: 4%;
       }
       @media (device-aspect-ratio: 40/71) and (max-height: 568px) and (orientation: portrait) {
+        max-height: 40%;
         max-width: 80%;
         margin-bottom: 6%;
       }
       @media (device-aspect-ratio: 667/375) and (max-height: 800px) and (orientation: portrait) {
+        max-height: 40%;
         max-width: 80%;
         margin-bottom: 6%;
       }
       @media (device-aspect-ratio: 16/9) and (max-height: 800px) and (orientation: portrait) {
+        max-height: 40%;
         max-width: 80%;
         margin-bottom: 6%;
       }
