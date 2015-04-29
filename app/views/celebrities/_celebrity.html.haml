@@ -39,14 +39,14 @@
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
 
-  var mq = window.matchMedia("(max-height: 768px) and (min-width: 1024px")
-  if (mq.matches) {
-    chart_width = $('.card').width()*0.5 - $('.card').width()*0.01;
-  }
-  else {
-    chart_width = $('.card').width()*0.7 - $('.card').width()*0.01;
-  }
-
+  //var mq = window.matchMedia("(max-height: 768px) and (min-width: 1024px")
+  //if (mq.matches) {
+    //chart_width = $('.card').width()*0.5 - $('.card').width()*0.01;
+  //}
+  //else {
+    //chart_width = $('.card').width()*0.7 - $('.card').width()*0.01;
+  //}
+  chart_width = $('.card').width()*0.8 - $('.card').width()*0.01;
   //chart_width = $('.all-cards').width()*0.7 - $('.all-cards').width()*0.01;
   //$('#celeb-#{celebrity.id}').width();
   //chart_height = $('.card').first().height()*0.245;
