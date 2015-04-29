@@ -129,12 +129,14 @@ html{
         margin-bottom: 6%;
       }
       @media (device-aspect-ratio: 667/375) and (max-height: 800px) and (orientation: portrait) {
-        max-height: 40%;
+        //max-height: 40%;
+        height: 250px;
         max-width: 80%;
         margin-bottom: 6%;
       }
       @media (device-aspect-ratio: 16/9) and (max-height: 800px) and (orientation: portrait) {
-        max-height: 40%;
+        //max-height: 40%;
+        height: 270px;
         max-width: 80%;
         margin-bottom: 6%;
       }
