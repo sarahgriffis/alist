@@ -150,6 +150,8 @@ html{
       img {
         margin: 0 auto;
         display: block;
+        height: auto;
+        max-width: 90%;
         @media (min-height: 800px) and (max-height: 1600px) {
           height: 38vh;
           max-width: 100%;
@@ -182,8 +184,6 @@ html{
           height: 41vh;
           max-width: 100%;
         }
-        //height: auto;
-        //max-width: 90%;
         object-fit: cover;
       }
     }
