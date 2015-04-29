@@ -117,7 +117,8 @@ html{
         max-width: 45vh;
       }
       @media (device-aspect-ratio: 2/3) and (max-height: 400px) and (orientation: portrait) {
-        max-height: 40%;
+        //max-height: 40%;
+        height: 200px;
         max-width: 80%;
         margin-bottom: 4%;
       }
