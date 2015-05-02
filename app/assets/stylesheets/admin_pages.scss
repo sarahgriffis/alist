@@ -19,10 +19,6 @@ $break-450: 450px;
   }
 }
 
-h2 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
 .form-inputs{
   max-width: 80vw;
   @media (min-width: $break-450){
@@ -36,7 +32,7 @@ h2 {
   p{
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
-    line-height:1.2;
+    line-height: 1.4;
   }
   .control-label{
     line-height: 1.5;
