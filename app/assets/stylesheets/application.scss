@@ -41,6 +41,7 @@ h1 {
   }
   text-transform: uppercase;
   letter-spacing: 0.02rem;
+  margin-bottom: 3px;
 }
 h2 {
   color: #fff;
@@ -53,10 +54,10 @@ h2 {
   }
   text-transform: uppercase;
   letter-spacing: 0.02rem;
-  line-height: .2;
+  line-height: 1;
 }
 h3 {
-  color: #ccc;
+  color: #f6bb90;
   font-size: .7rem;
   @media (max-width: 350px){
     font-size: .6rem;
