@@ -42,6 +42,18 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.02rem;
 }
+h2 {
+  color: #fff;
+  font-size: .7rem;
+  @media (max-width: 350px){
+    font-size: .5rem;
+  }
+  @media (min-width: 700px){
+    font-size: 1.6rem;
+  }
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+}
 
 
 .header {
