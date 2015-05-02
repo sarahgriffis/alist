@@ -55,6 +55,19 @@ h2 {
   letter-spacing: 0.02rem;
   line-height: .2;
 }
+h3 {
+  color: #ccc;
+  font-size: .7rem;
+  @media (max-width: 350px){
+    font-size: .6rem;
+  }
+  @media (min-width: 700px){
+    font-size: 1.5rem;
+  }
+  text-transform: uppercase;
+  letter-spacing: 0.02rem;
+
+}
 
 
 .header {
