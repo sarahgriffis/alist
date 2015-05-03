@@ -150,14 +150,14 @@ html{
         max-width: 80%;
         margin-bottom: 6%;
       }
-      @media (min-width: 1600px) and (min-height: 1200px) {
+      @media (min-width: 1600px) and (min-height: 1600px) {
         max-height: 41vh;
         max-width: 45vh;
       }
-      @media (min-height: 1600px) {
-        max-height: 41vh;
-        max-width: 45vh;
-      }
+      //@media (min-height: 1600px) {
+        //max-height: 41vh;
+        //max-width: 45vh;
+      //}
       overflow: hidden;
       display: block;
 
@@ -198,14 +198,14 @@ html{
           min-height: 80%;
           max-width: 100%;
         }
-        @media (min-height: 1600px) and (min-height: 1200px) {
+        @media (min-width: 1600px) and (min-height: 1600px) {
           min-height: 41vh;
           max-width: 100%;
         }
-        @media (min-width: 1600px) {
-          min-height: 41vh;
-          max-width: 100%;
-        }
+        //@media (min-width: 1600px) {
+          //min-height: 41vh;
+          //max-width: 100%;
+        //}
         object-fit: cover;
       }
     }
