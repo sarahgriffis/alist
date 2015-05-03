@@ -90,8 +90,9 @@
   }
   p{
     line-height: 1;
-    //&.info-text {
-    //  line-height: 1.4;
-    //}
+    &.info-text {
+      line-height: 1.4;
+      color: rgba(0,0,0, 0.6);
+    }
   }
 }
