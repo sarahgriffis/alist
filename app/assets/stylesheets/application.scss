@@ -70,7 +70,10 @@ h3 {
   }
   text-transform: uppercase;
   letter-spacing: 0.02rem;
-
+  max-width: 80vw;
+  @media (min-width: $break-450){
+    max-width: 60vw;
+  }
 }
 
 
