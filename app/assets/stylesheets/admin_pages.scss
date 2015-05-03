@@ -1,4 +1,4 @@
-$break-450: 450px;
+
 .admin_index {
   .boolean {
     label {
@@ -21,9 +21,9 @@ $break-450: 450px;
 
 .form-inputs{
   max-width: 80vw;
-  @media (min-width: $break-450){
-          max-width: 60vw;
-        }
+  @media (min-width: 450px){
+    max-width: 60vw;
+  }
   margin: 0 auto;
   label{
     text-transform: uppercase;
@@ -90,8 +90,8 @@ $break-450: 450px;
   }
   p{
     line-height: 1;
-    &.info-text {
-      line-height: 1.4;
-    }
+    //&.info-text {
+    //  line-height: 1.4;
+    //}
   }
 }
