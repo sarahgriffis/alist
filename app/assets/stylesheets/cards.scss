@@ -145,6 +145,11 @@ html{
         max-width: 80%;
         margin-bottom: 6%;
       }
+      @media (device-aspect-ratio: 768/1024) and (max-width: 1024px) {
+        height: 430px;
+        max-width: 80%;
+        margin-bottom: 6%;
+      }
       @media (min-width: 1600px) {
         max-height: 41vh;
         max-width: 45vh;
@@ -186,6 +191,10 @@ html{
           max-width: 100%;
         }
         @media (device-aspect-ratio: 768/1024) and (max-height: 1024px) {
+          min-height: 80%;
+          max-width: 100%;
+        }
+        @media (device-aspect-ratio: 1024/768) and (max-width: 1024px) {
           min-height: 80%;
           max-width: 100%;
         }
