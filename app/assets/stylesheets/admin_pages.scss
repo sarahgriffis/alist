@@ -1,4 +1,4 @@
-$break-450: 450px;
+
 .admin_index {
   .boolean {
     label {
@@ -21,9 +21,9 @@ $break-450: 450px;
 
 .form-inputs{
   max-width: 80vw;
-  @media (min-width: $break-450){
-          max-width: 60vw;
-        }
+  @media (min-width: 450px){
+    max-width: 60vw;
+  }
   margin: 0 auto;
   label{
     text-transform: uppercase;
@@ -78,6 +78,9 @@ $break-450: 450px;
 }
 .container-fluid {
   text-transform: uppercase;
+  p{
+    line-height: 1;
+  }
   a {
     vertical-align: middle;
     font-size: .7rem;
@@ -88,10 +91,17 @@ $break-450: 450px;
       color: #ccc;
     }
   }
-  p{
-    line-height: 1;
-    &.info-text {
-      line-height: 1.4;
+  .text-container {
+    max-width: 80vw;
+    @media (min-width: 450px){
+      max-width: 60vw;
+    }
+    margin: 0 auto;
+    p {
+      &.info-text {
+        line-height: 1.4;
+        color: #34495e;
+      } 
     }
   }
 }
