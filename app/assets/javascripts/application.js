@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require d3.v3
 //= require typeahead.bundle.min
+//= require social-share-button
 //= require_tree .
 //
 jQuery.ajaxSetup({

@@ -41,6 +41,7 @@ gem 'geocoder'
 gem 'wikipedia-client'
 gem 'will_paginate'
 gem 'chartkick'
+gem 'social-share-button'
 
 # Added by amy to make button text responsive
 #gem 'fittextjs_rails'

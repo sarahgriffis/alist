@@ -161,6 +161,9 @@ GEM
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     slop (3.6.0)
+    social-share-button (0.1.8)
+      coffee-rails
+      sass-rails
     spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -211,6 +214,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple_form (~> 3.1.0rc1)
+  social-share-button
   spring
   uglifier (>= 1.3.0)
   unicorn
