@@ -2,6 +2,8 @@
 <div class="text-container">
 %p.info-text In order to maintain the integrity of the voting, and prevent users from voting multiple times for a given celebrity, we need you to register before you can vote. We will not send you anything or sell your data.
 </div>
+.facebook-auth
+  = link_to '<i class="fa fa-facebook"></i>Sign up with Facebook'.html_safe, user_omniauth_authorize_path(:facebook), :class => 'btn btn-block btn-social btn-facebook'
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
   = f.error_notification
 
@@ -13,11 +15,12 @@
   <div class="form-actions">
   = f.button :submit, "Sign up"
 
-= render "devise/shared/links"
+= link_to 'LOG IN', new_user_session_path
 %br
 //%p.info-text In order to maintain the integrity of the voting, and prevent users from voting multiple times for a given celebrity, we need you to register before you can vote. We will not send you anything or sell your data.
 %p For best experience, please use a Safari or Chrome browser.
 = mail_to "contact@theofficialalist.com", 'Contact Us', class: "mail_link"
+
 
 <script>
 $('.btn').on('click', function() {

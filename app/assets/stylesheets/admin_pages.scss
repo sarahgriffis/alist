@@ -19,6 +19,19 @@
   }
 }
 
+.facebook-auth {
+  text-align: center;
+  a {
+    width: 50%;
+    margin: 0 auto;
+    color: white !important;
+    padding-left: 50px;
+    i {
+      padding-top: 10px;
+    }
+  }
+}
+
 .form-inputs{
   max-width: 80vw;
   @media (min-width: 450px){

@@ -1,6 +1,7 @@
 .col-xs-12.col-sm-12.col-md-12.col-lg-6.col-lg-offset-3
 <h2>Log in</h2>
-
+.facebook-auth
+  = link_to '<i class="fa fa-facebook"></i>Log in with Facebook'.html_safe, user_omniauth_authorize_path(:facebook), :class => 'btn btn-block btn-social btn-facebook'
 = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
   <div class="form-inputs">
   = f.input :email, required: false, autofocus: true
@@ -12,6 +13,9 @@
   = f.button :submit, "Log in"
   </div>
 
-= render "devise/shared/links"
+= link_to 'SIGN UP', new_user_registration_path
+%br
+= link_to 'FORGOT YOUR PASSWORD?', new_user_password_path
+%br
 //%p Contact us at contact@theofficialalist.com.
 = mail_to "contact@theofficialalist.com", 'Contact Us', class: "mail_link"

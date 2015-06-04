@@ -42,9 +42,12 @@ gem 'wikipedia-client'
 gem 'will_paginate'
 gem 'chartkick'
 gem 'social-share-button'
+gem 'omniauth-facebook'
 
 # Added by amy to make button text responsive
 #gem 'fittextjs_rails'
+#
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :production do
   gem 'unicorn'
