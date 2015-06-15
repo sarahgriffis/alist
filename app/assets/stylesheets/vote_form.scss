@@ -2,7 +2,7 @@ form {
   width: 97%;
   bottom: 0;
   margin: 3.5% auto .5%;
-  height: 15%;
+  height: 10%;
   overflow: visible;
 
   .custom_radio {
@@ -18,11 +18,11 @@ form {
 
     label {
       width: 100%;
-      height: auto;
+      height: 95%;
       label {
         display: inline-block;
         height: 0;
-        padding-bottom: 100%;
+        padding-bottom: 90%;
         width: 100%;
         color: black;
         background-color: #fff;
@@ -45,7 +45,7 @@ form {
         }
         @media (max-width: 370px) and (max-height: 370px) and (orientation: landscape){
           font-size: 1.6rem;
-        }       
+        }
         @media (max-width: 400px) and (min-height: 600px) and (orientation: portrait){
           font-size: 1.6rem;
         }
@@ -90,10 +90,10 @@ form {
           font-size: 3.1rem;
         }
         @media (min-height: 850px) and (max-height: 1000px) and (min-width: 400px) and (orientation: landscape){
-          font-size: 3.5rem;
+          font-size: 3.3rem;
         }
         @media (min-height: 1024px) and (max-height: 1600px) and (min-width: 400px) and (orientation: portrait){
-          font-size: 3.4rem;
+          font-size: 3.2rem;
         }
         @media (min-height: 1024px) and (max-height: 1600px) and (min-width: 780px) and (orientation: portrait){
           font-size: 3.8rem;
