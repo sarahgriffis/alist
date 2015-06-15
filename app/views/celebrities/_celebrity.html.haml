@@ -32,6 +32,8 @@
 
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
+    .share-buttons
+      = social_share_button_tag("Vote for #{celebrity.first_name.strip} #{celebrity.last_name.strip}!", :url => "http://thealist.io", via: "")
 
   .back
 

@@ -103,7 +103,7 @@ html{
     }
 
     .img-container {
-      max-width: 90%;
+      max-width: 80%;
       margin: 1% auto 3%;
       @media (max-width: 400px) and (orientation: portrait){
         max-width: 80%;
@@ -165,7 +165,7 @@ html{
         margin: 0 auto;
         display: block;
         height: auto;
-        max-width: 90%;
+        max-width: 80%;
         @media (min-height: 800px) and (max-height: 1600px) {
           min-height: 38vh;
           max-width: 100%;
@@ -246,6 +246,13 @@ html{
       }
       text-transform: uppercase;
       font-weight: 700;
+    }
+
+    .share-buttons {
+      min-height: 10%;
+      padding-top: 5%;
+
+    
     }
 
     .front {
