@@ -10,6 +10,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     else
       session["devise.facebook_data"] = request.env["omniauth.auth"]
       redirect_to new_user_registration_url
+      flash[:alert] = 'Facebook authentication unavailable, please sign in through email.'
     end
   end
 end
