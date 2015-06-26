@@ -26,6 +26,15 @@
     margin: 0 auto;
     color: white !important;
     padding-left: 50px;
+    @media (min-width:750px) and (max-width:1000px){
+      width: 40%;
+    }
+    @media (min-width:1001px) and (max-width:1530px){
+      width: 30%;
+    }
+    @media (min-width:1531px){
+      width: 20%;
+    }
     i {
       padding-top: 10px;
     }
