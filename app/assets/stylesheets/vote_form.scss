@@ -67,8 +67,11 @@ form {
         @media (min-height: 640px) and (max-height: 767px) and (min-width: 450px) and (max-width: 600px) and (orientation: portrait){
           font-size: 2.5rem;
         }
-        @media (min-width: 1200px) and (min-height: 400px) and (orientation: landscape){
+        @media (min-width: 1200px) and (min-height: 531px) and (orientation: landscape){
           font-size: 2.4rem;
+        }
+        @media (min-width: 800px) and (min-height: 401px) and (max-height: 530px) and (orientation: landscape){
+          font-size: 1.7rem;
         }
         @media (max-height: 450px) and (max-width: 750px) and (orientation: landscape){
           font-size: 2.5rem;
@@ -87,10 +90,11 @@ form {
           font-size: 70px;
         }
         @media (min-height: 768px) and (max-height: 849px) and (min-width: 1030px) and (orientation: landscape){
-          font-size: 3.1rem;
+          //font-size: 3.1rem;
+          font-size: 2.8rem;
         }
         @media (min-height: 850px) and (max-height: 1000px) and (min-width: 400px) and (orientation: landscape){
-          font-size: 3.3rem;
+          font-size: 3.1rem;
         }
         @media (min-height: 1024px) and (max-height: 1600px) and (min-width: 400px) and (orientation: portrait){
           font-size: 3.2rem;

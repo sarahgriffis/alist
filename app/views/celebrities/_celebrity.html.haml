@@ -5,6 +5,8 @@
       <a  name="#{celebrity.id}"></a>
     .img-container
       = image_tag("#{celebrity.photo_url}", :class => "img-responsive")
+      .share-buttons
+        = social_share_button_tag("Vote for #{celebrity.first_name.strip} #{celebrity.last_name.strip}!", :url => "http://thealist.io", via: "")
     .bar-chart
       %svg{:class => "chart", :id => "celeb-#{celebrity.id}"}
     %p{:class => "action-text"}
@@ -32,8 +34,6 @@
 
         - if current_user
           = cv.input :user_id, :as => :hidden, :input_html => { :value => current_user.id }
-    .share-buttons
-      = social_share_button_tag("Vote for #{celebrity.first_name.strip} #{celebrity.last_name.strip}!", :url => "http://thealist.io", via: "")
 
   .back
 
