@@ -37,6 +37,20 @@
 
   .back
 
+
+<script>
+$('.social-share-button-twitter').on('click', function() {
+ga('send', 'event', 'social_share_twitter', 'click', 'share_button');
+console.log("twitter");
+});
+$('.social-share-button-facebook').on('click', function() {
+ga('send', 'event', 'social_share_facebook', 'click', 'share_button');
+console.log("facebook");
+
+});
+
+</script>
+
 :javascript
   window.raw_data = #{celebrity.graph_data}
   graph_data = [raw_data[0]/raw_data[4],raw_data[1]/raw_data[4],raw_data[2]/raw_data[4],raw_data[3]/raw_data[4]]
